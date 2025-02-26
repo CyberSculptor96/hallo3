@@ -1,0 +1,24 @@
+# 忽略大文件夹
+stage-1/
+stage-2/
+pretrained_models/
+evaluation/
+hallo3/
+data/
+json/
+
+# 忽略临时缓存和日志文件
+.cache/
+temp/
+assets/
+__pycache__/
+.vscode/
+
+# Git 相关
+.git/
+
+# 其他可能的日志和临时文件
+# *.log
+*.tmp
+*.swp
+*.bak

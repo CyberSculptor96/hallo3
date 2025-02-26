@@ -1,0 +1,420 @@
+[2025-02-11 12:43:48,289] [INFO] [RANK 0]  iteration        1/   30000 | elapsed time per iteration (ms): 32397.4 | learning rate 6.667E-08 | total loss 2.833465E-01 | loss 2.833465E-01 |speed 1.85 samples/(min*GPU)
+[2025-02-11 12:43:48,296] [INFO] [RANK 0] after 1 iterations memory (MB) | allocated: 49588.9638671875 | max allocated: 61778.80810546875 | cached: 69998.0 | max cached: 69998.0
+[2025-02-11 12:43:48,297] [INFO] [RANK 0] time (ms) | forward: 22605.61 | backward: 7947.56 | allreduce: 0.00 | optimizer: 1837.64 | data loader: 1235.23
+[2025-02-11 12:44:07,508] [INFO] [RANK 0]  iteration        2/   30000 | elapsed time per iteration (ms): 19219.2 | learning rate 1.000E-07 | total loss 1.352209E-01 | loss 1.352209E-01 |speed 3.12 samples/(min*GPU)
+[2025-02-11 12:44:07,512] [INFO] [RANK 0] time (ms) | forward: 9645.76 | backward: 8199.54 | allreduce: 0.00 | optimizer: 249.21 | data loader: 0.84
+[2025-02-11 12:44:25,450] [INFO] [RANK 0]  iteration        3/   30000 | elapsed time per iteration (ms): 17942.4 | learning rate 1.333E-07 | total loss 1.750408E-01 | loss 1.750408E-01 |speed 3.34 samples/(min*GPU)
+[2025-02-11 12:44:25,452] [INFO] [RANK 0] time (ms) | forward: 9256.43 | backward: 8423.27 | allreduce: 0.00 | optimizer: 254.40 | data loader: 0.86
+[2025-02-11 12:44:45,137] [INFO] [RANK 0]  iteration        4/   30000 | elapsed time per iteration (ms): 19686.2 | learning rate 1.667E-07 | total loss 1.214288E-01 | loss 1.214288E-01 |speed 3.05 samples/(min*GPU)
+[2025-02-11 12:44:45,139] [INFO] [RANK 0] time (ms) | forward: 11327.23 | backward: 7987.18 | allreduce: 0.00 | optimizer: 366.55 | data loader: 0.25
+[2025-02-11 12:45:04,115] [INFO] [RANK 0]  iteration        5/   30000 | elapsed time per iteration (ms): 18978.7 | learning rate 2.000E-07 | total loss 1.019172E-01 | loss 1.019172E-01 |speed 3.16 samples/(min*GPU)
+[2025-02-11 12:45:04,117] [INFO] [RANK 0] time (ms) | forward: 9858.52 | backward: 7982.73 | allreduce: 0.00 | optimizer: 444.79 | data loader: 0.46
+[2025-02-11 12:45:20,963] [INFO] [RANK 0]  iteration        6/   30000 | elapsed time per iteration (ms): 16847.1 | learning rate 2.333E-07 | total loss 1.232471E-01 | loss 1.232471E-01 |speed 3.56 samples/(min*GPU)
+[2025-02-11 12:45:20,965] [INFO] [RANK 0] time (ms) | forward: 8327.27 | backward: 7998.44 | allreduce: 0.00 | optimizer: 426.07 | data loader: 0.31
+[2025-02-11 12:45:39,712] [INFO] [RANK 0]  iteration        7/   30000 | elapsed time per iteration (ms): 18749.7 | learning rate 2.667E-07 | total loss 1.186914E-01 | loss 1.186914E-01 |speed 3.20 samples/(min*GPU)
+[2025-02-11 12:45:39,714] [INFO] [RANK 0] time (ms) | forward: 9675.77 | backward: 8101.76 | allreduce: 0.00 | optimizer: 333.38 | data loader: 0.39
+[2025-02-11 12:45:56,859] [INFO] [RANK 0]  iteration        8/   30000 | elapsed time per iteration (ms): 17146.9 | learning rate 3.000E-07 | total loss 1.915653E-01 | loss 1.915653E-01 |speed 3.50 samples/(min*GPU)
+[2025-02-11 12:45:56,860] [INFO] [RANK 0] time (ms) | forward: 8174.17 | backward: 8006.15 | allreduce: 0.00 | optimizer: 336.22 | data loader: 1.40
+[2025-02-11 12:46:17,231] [INFO] [RANK 0]  iteration        9/   30000 | elapsed time per iteration (ms): 20371.5 | learning rate 3.333E-07 | total loss 9.044982E-02 | loss 9.044982E-02 |speed 2.95 samples/(min*GPU)
+[2025-02-11 12:46:17,233] [INFO] [RANK 0] time (ms) | forward: 9128.70 | backward: 7959.90 | allreduce: 0.00 | optimizer: 328.39 | data loader: 0.42
+[2025-02-11 12:46:35,510] [INFO] [RANK 0]  iteration       10/   30000 | elapsed time per iteration (ms): 18279.5 | learning rate 3.667E-07 | total loss 1.013106E-01 | loss 1.013106E-01 |speed 3.28 samples/(min*GPU)
+[2025-02-11 12:46:35,512] [INFO] [RANK 0] time (ms) | forward: 8117.46 | backward: 8194.63 | allreduce: 0.00 | optimizer: 268.49 | data loader: 0.45
+[2025-02-11 12:46:52,682] [INFO] [RANK 0]  iteration       11/   30000 | elapsed time per iteration (ms): 17171.3 | learning rate 4.000E-07 | total loss 9.855138E-02 | loss 9.855138E-02 |speed 3.49 samples/(min*GPU)
+[2025-02-11 12:46:52,683] [INFO] [RANK 0] time (ms) | forward: 7800.51 | backward: 8000.43 | allreduce: 0.00 | optimizer: 362.06 | data loader: 0.35
+[2025-02-11 12:47:10,395] [INFO] [RANK 0]  iteration       12/   30000 | elapsed time per iteration (ms): 17713.5 | learning rate 4.333E-07 | total loss 1.377719E-01 | loss 1.377719E-01 |speed 3.39 samples/(min*GPU)
+[2025-02-11 12:47:10,397] [INFO] [RANK 0] time (ms) | forward: 7552.61 | backward: 8326.13 | allreduce: 0.00 | optimizer: 288.00 | data loader: 0.46
+[2025-02-11 12:47:26,984] [INFO] [RANK 0]  iteration       13/   30000 | elapsed time per iteration (ms): 16588.8 | learning rate 4.667E-07 | total loss 1.244018E-01 | loss 1.244018E-01 |speed 3.62 samples/(min*GPU)
+[2025-02-11 12:47:26,989] [INFO] [RANK 0] time (ms) | forward: 7881.22 | backward: 7893.38 | allreduce: 0.00 | optimizer: 372.41 | data loader: 0.39
+[2025-02-11 12:47:43,893] [INFO] [RANK 0]  iteration       14/   30000 | elapsed time per iteration (ms): 16908.9 | learning rate 5.000E-07 | total loss 9.537436E-02 | loss 9.537436E-02 |speed 3.55 samples/(min*GPU)
+[2025-02-11 12:47:43,894] [INFO] [RANK 0] time (ms) | forward: 7816.63 | backward: 8268.20 | allreduce: 0.00 | optimizer: 355.71 | data loader: 0.80
+[2025-02-11 12:48:02,412] [INFO] [RANK 0]  iteration       15/   30000 | elapsed time per iteration (ms): 18518.9 | learning rate 5.000E-07 | total loss 1.009007E-01 | loss 1.009007E-01 |speed 3.24 samples/(min*GPU)
+[2025-02-11 12:48:02,413] [INFO] [RANK 0] time (ms) | forward: 7627.12 | backward: 8026.33 | allreduce: 0.00 | optimizer: 340.60 | data loader: 0.19
+[2025-02-11 12:48:18,644] [INFO] [RANK 0]  iteration       16/   30000 | elapsed time per iteration (ms): 16232.0 | learning rate 5.000E-07 | total loss 1.130052E-01 | loss 1.130052E-01 |speed 3.70 samples/(min*GPU)
+[2025-02-11 12:48:18,646] [INFO] [RANK 0] time (ms) | forward: 7708.68 | backward: 7950.09 | allreduce: 0.00 | optimizer: 369.54 | data loader: 0.21
+[2025-02-11 12:48:35,050] [INFO] [RANK 0]  iteration       17/   30000 | elapsed time per iteration (ms): 16406.3 | learning rate 5.000E-07 | total loss 1.293741E-01 | loss 1.293741E-01 |speed 3.66 samples/(min*GPU)
+[2025-02-11 12:48:35,052] [INFO] [RANK 0] time (ms) | forward: 7644.72 | backward: 7953.93 | allreduce: 0.00 | optimizer: 308.82 | data loader: 0.24
+[2025-02-11 12:48:51,986] [INFO] [RANK 0]  iteration       18/   30000 | elapsed time per iteration (ms): 16936.0 | learning rate 5.000E-07 | total loss 1.917239E-01 | loss 1.917239E-01 |speed 3.54 samples/(min*GPU)
+[2025-02-11 12:48:51,987] [INFO] [RANK 0] time (ms) | forward: 8759.70 | backward: 7888.15 | allreduce: 0.00 | optimizer: 208.91 | data loader: 0.45
+[2025-02-11 12:49:09,191] [INFO] [RANK 0]  iteration       19/   30000 | elapsed time per iteration (ms): 17205.2 | learning rate 5.000E-07 | total loss 1.272882E-01 | loss 1.272882E-01 |speed 3.49 samples/(min*GPU)
+[2025-02-11 12:49:09,194] [INFO] [RANK 0] time (ms) | forward: 8507.50 | backward: 7908.02 | allreduce: 0.00 | optimizer: 382.58 | data loader: 0.26
+[2025-02-11 12:49:29,482] [INFO] [RANK 0]  iteration       20/   30000 | elapsed time per iteration (ms): 20291.1 | learning rate 5.000E-07 | total loss 1.958928E-01 | loss 1.958928E-01 |speed 2.96 samples/(min*GPU)
+[2025-02-11 12:49:29,484] [INFO] [RANK 0] time (ms) | forward: 9371.73 | backward: 7958.59 | allreduce: 0.00 | optimizer: 380.30 | data loader: 0.61
+[2025-02-11 12:49:47,162] [INFO] [RANK 0]  iteration       21/   30000 | elapsed time per iteration (ms): 17679.7 | learning rate 5.000E-07 | total loss 1.428225E-01 | loss 1.428225E-01 |speed 3.39 samples/(min*GPU)
+[2025-02-11 12:49:47,164] [INFO] [RANK 0] time (ms) | forward: 7999.61 | backward: 8038.96 | allreduce: 0.00 | optimizer: 437.02 | data loader: 0.46
+[2025-02-11 12:50:06,358] [INFO] [RANK 0]  iteration       22/   30000 | elapsed time per iteration (ms): 19196.1 | learning rate 5.000E-07 | total loss 1.137621E-01 | loss 1.137621E-01 |speed 3.13 samples/(min*GPU)
+[2025-02-11 12:50:06,360] [INFO] [RANK 0] time (ms) | forward: 10688.28 | backward: 7917.50 | allreduce: 0.00 | optimizer: 584.39 | data loader: 0.63
+[2025-02-11 12:50:24,773] [INFO] [RANK 0]  iteration       23/   30000 | elapsed time per iteration (ms): 18414.6 | learning rate 5.000E-07 | total loss 1.132453E-01 | loss 1.132453E-01 |speed 3.26 samples/(min*GPU)
+[2025-02-11 12:50:24,776] [INFO] [RANK 0] time (ms) | forward: 8761.65 | backward: 8239.19 | allreduce: 0.00 | optimizer: 297.17 | data loader: 0.81
+[2025-02-11 12:50:45,141] [INFO] [RANK 0]  iteration       24/   30000 | elapsed time per iteration (ms): 20367.5 | learning rate 5.000E-07 | total loss 1.503955E-01 | loss 1.503955E-01 |speed 2.95 samples/(min*GPU)
+[2025-02-11 12:50:45,143] [INFO] [RANK 0] time (ms) | forward: 9645.38 | backward: 8123.19 | allreduce: 0.00 | optimizer: 441.48 | data loader: 0.42
+[2025-02-11 12:51:03,042] [INFO] [RANK 0]  iteration       25/   30000 | elapsed time per iteration (ms): 17901.2 | learning rate 5.000E-07 | total loss 1.121489E-01 | loss 1.121489E-01 |speed 3.35 samples/(min*GPU)
+[2025-02-11 12:51:03,043] [INFO] [RANK 0] time (ms) | forward: 8929.22 | backward: 8644.46 | allreduce: 0.00 | optimizer: 320.82 | data loader: 0.79
+[2025-02-11 12:51:19,586] [INFO] [RANK 0]  iteration       26/   30000 | elapsed time per iteration (ms): 16544.8 | learning rate 5.000E-07 | total loss 1.543603E-01 | loss 1.543603E-01 |speed 3.63 samples/(min*GPU)
+[2025-02-11 12:51:19,587] [INFO] [RANK 0] time (ms) | forward: 8212.69 | backward: 7889.81 | allreduce: 0.00 | optimizer: 365.97 | data loader: 0.88
+[2025-02-11 12:51:36,967] [INFO] [RANK 0]  iteration       27/   30000 | elapsed time per iteration (ms): 17380.3 | learning rate 5.000E-07 | total loss 1.663873E-01 | loss 1.663873E-01 |speed 3.45 samples/(min*GPU)
+[2025-02-11 12:51:36,980] [INFO] [RANK 0] time (ms) | forward: 9169.86 | backward: 7863.42 | allreduce: 0.00 | optimizer: 225.90 | data loader: 0.20
+[2025-02-11 12:51:55,682] [INFO] [RANK 0]  iteration       28/   30000 | elapsed time per iteration (ms): 18714.7 | learning rate 5.000E-07 | total loss 1.241911E-01 | loss 1.241911E-01 |speed 3.21 samples/(min*GPU)
+[2025-02-11 12:51:55,685] [INFO] [RANK 0] time (ms) | forward: 9048.82 | backward: 8069.69 | allreduce: 0.00 | optimizer: 290.37 | data loader: 1.11
+[2025-02-11 12:52:13,105] [INFO] [RANK 0]  iteration       29/   30000 | elapsed time per iteration (ms): 17423.8 | learning rate 5.000E-07 | total loss 1.395490E-01 | loss 1.395490E-01 |speed 3.44 samples/(min*GPU)
+[2025-02-11 12:52:13,108] [INFO] [RANK 0] time (ms) | forward: 9083.21 | backward: 7925.36 | allreduce: 0.00 | optimizer: 388.35 | data loader: 0.44
+[2025-02-11 12:52:32,604] [INFO] [RANK 0]  iteration       30/   30000 | elapsed time per iteration (ms): 19498.9 | learning rate 5.000E-07 | total loss 2.120765E-01 | loss 2.120765E-01 |speed 3.08 samples/(min*GPU)
+[2025-02-11 12:52:32,606] [INFO] [RANK 0] time (ms) | forward: 8288.90 | backward: 8065.16 | allreduce: 0.00 | optimizer: 2813.27 | data loader: 0.39
+[2025-02-11 12:52:54,325] [INFO] [RANK 0]  iteration       31/   30000 | elapsed time per iteration (ms): 21720.3 | learning rate 5.000E-07 | total loss 1.181535E-01 | loss 1.181535E-01 |speed 2.76 samples/(min*GPU)
+[2025-02-11 12:52:54,327] [INFO] [RANK 0] time (ms) | forward: 13386.91 | backward: 7902.88 | allreduce: 0.00 | optimizer: 254.91 | data loader: 0.35
+[2025-02-11 12:53:12,657] [INFO] [RANK 0]  iteration       32/   30000 | elapsed time per iteration (ms): 18332.3 | learning rate 5.000E-07 | total loss 1.321757E-01 | loss 1.321757E-01 |speed 3.27 samples/(min*GPU)
+[2025-02-11 12:53:12,659] [INFO] [RANK 0] time (ms) | forward: 8121.87 | backward: 7928.17 | allreduce: 0.00 | optimizer: 429.84 | data loader: 0.40
+[2025-02-11 12:53:30,023] [INFO] [RANK 0]  iteration       33/   30000 | elapsed time per iteration (ms): 17365.7 | learning rate 5.000E-07 | total loss 1.082323E-01 | loss 1.082323E-01 |speed 3.46 samples/(min*GPU)
+[2025-02-11 12:53:30,026] [INFO] [RANK 0] time (ms) | forward: 8442.13 | backward: 8016.60 | allreduce: 0.00 | optimizer: 228.38 | data loader: 1.51
+[2025-02-11 12:53:46,757] [INFO] [RANK 0]  iteration       34/   30000 | elapsed time per iteration (ms): 16734.3 | learning rate 5.000E-07 | total loss 1.092388E-01 | loss 1.092388E-01 |speed 3.59 samples/(min*GPU)
+[2025-02-11 12:53:46,758] [INFO] [RANK 0] time (ms) | forward: 8103.76 | backward: 8335.93 | allreduce: 0.00 | optimizer: 288.11 | data loader: 0.78
+[2025-02-11 12:54:03,142] [INFO] [RANK 0]  iteration       35/   30000 | elapsed time per iteration (ms): 16385.4 | learning rate 5.000E-07 | total loss 1.823107E-01 | loss 1.823107E-01 |speed 3.66 samples/(min*GPU)
+[2025-02-11 12:54:03,144] [INFO] [RANK 0] time (ms) | forward: 8288.46 | backward: 7865.28 | allreduce: 0.00 | optimizer: 227.59 | data loader: 1.08
+[2025-02-11 12:54:20,435] [INFO] [RANK 0]  iteration       36/   30000 | elapsed time per iteration (ms): 17292.9 | learning rate 5.000E-07 | total loss 1.360168E-01 | loss 1.360168E-01 |speed 3.47 samples/(min*GPU)
+[2025-02-11 12:54:20,437] [INFO] [RANK 0] time (ms) | forward: 8085.33 | backward: 7982.54 | allreduce: 0.00 | optimizer: 254.70 | data loader: 0.23
+[2025-02-11 12:54:36,688] [INFO] [RANK 0]  iteration       37/   30000 | elapsed time per iteration (ms): 16252.6 | learning rate 5.000E-07 | total loss 1.020713E-01 | loss 1.020713E-01 |speed 3.69 samples/(min*GPU)
+[2025-02-11 12:54:36,690] [INFO] [RANK 0] time (ms) | forward: 7947.09 | backward: 7974.80 | allreduce: 0.00 | optimizer: 326.48 | data loader: 0.63
+[2025-02-11 12:54:53,308] [INFO] [RANK 0]  iteration       38/   30000 | elapsed time per iteration (ms): 16619.6 | learning rate 5.000E-07 | total loss 1.574489E-01 | loss 1.574489E-01 |speed 3.61 samples/(min*GPU)
+[2025-02-11 12:54:53,309] [INFO] [RANK 0] time (ms) | forward: 7669.38 | backward: 8255.31 | allreduce: 0.00 | optimizer: 256.81 | data loader: 0.30
+[2025-02-11 12:55:09,954] [INFO] [RANK 0]  iteration       39/   30000 | elapsed time per iteration (ms): 16646.2 | learning rate 5.000E-07 | total loss 8.893914E-02 | loss 8.893914E-02 |speed 3.60 samples/(min*GPU)
+[2025-02-11 12:55:09,955] [INFO] [RANK 0] time (ms) | forward: 8386.24 | backward: 8019.13 | allreduce: 0.00 | optimizer: 229.27 | data loader: 0.31
+[2025-02-11 12:55:28,025] [INFO] [RANK 0]  iteration       40/   30000 | elapsed time per iteration (ms): 18071.3 | learning rate 5.000E-07 | total loss 1.722633E-01 | loss 1.722633E-01 |speed 3.32 samples/(min*GPU)
+[2025-02-11 12:55:28,029] [INFO] [RANK 0] time (ms) | forward: 8770.88 | backward: 7825.20 | allreduce: 0.00 | optimizer: 507.42 | data loader: 0.23
+[2025-02-11 12:55:46,052] [INFO] [RANK 0]  iteration       41/   30000 | elapsed time per iteration (ms): 18026.8 | learning rate 5.000E-07 | total loss 2.077661E-01 | loss 2.077661E-01 |speed 3.33 samples/(min*GPU)
+[2025-02-11 12:55:46,053] [INFO] [RANK 0] time (ms) | forward: 8562.59 | backward: 7928.83 | allreduce: 0.00 | optimizer: 355.69 | data loader: 0.59
+[2025-02-11 12:56:05,494] [INFO] [RANK 0]  iteration       42/   30000 | elapsed time per iteration (ms): 19441.9 | learning rate 5.000E-07 | total loss 1.529323E-01 | loss 1.529323E-01 |speed 3.09 samples/(min*GPU)
+[2025-02-11 12:56:05,495] [INFO] [RANK 0] time (ms) | forward: 9455.28 | backward: 7958.55 | allreduce: 0.00 | optimizer: 205.24 | data loader: 0.26
+[2025-02-11 12:56:22,727] [INFO] [RANK 0]  iteration       43/   30000 | elapsed time per iteration (ms): 17232.7 | learning rate 5.000E-07 | total loss 2.174251E-01 | loss 2.174251E-01 |speed 3.48 samples/(min*GPU)
+[2025-02-11 12:56:22,727] [INFO] [RANK 0] time (ms) | forward: 9134.54 | backward: 7887.10 | allreduce: 0.00 | optimizer: 207.61 | data loader: 0.18
+[2025-02-11 12:56:39,820] [INFO] [RANK 0]  iteration       44/   30000 | elapsed time per iteration (ms): 17093.5 | learning rate 5.000E-07 | total loss 1.510947E-01 | loss 1.510947E-01 |speed 3.51 samples/(min*GPU)
+[2025-02-11 12:56:39,821] [INFO] [RANK 0] time (ms) | forward: 8396.68 | backward: 7938.70 | allreduce: 0.00 | optimizer: 386.74 | data loader: 0.25
+[2025-02-11 12:56:56,086] [INFO] [RANK 0]  iteration       45/   30000 | elapsed time per iteration (ms): 16266.1 | learning rate 5.000E-07 | total loss 1.024761E-01 | loss 1.024761E-01 |speed 3.69 samples/(min*GPU)
+[2025-02-11 12:56:56,087] [INFO] [RANK 0] time (ms) | forward: 8092.83 | backward: 7836.02 | allreduce: 0.00 | optimizer: 333.11 | data loader: 0.25
+[2025-02-11 12:57:14,211] [INFO] [RANK 0]  iteration       46/   30000 | elapsed time per iteration (ms): 18124.7 | learning rate 5.000E-07 | total loss 1.278228E-01 | loss 1.278228E-01 |speed 3.31 samples/(min*GPU)
+[2025-02-11 12:57:14,213] [INFO] [RANK 0] time (ms) | forward: 8078.35 | backward: 7903.58 | allreduce: 0.00 | optimizer: 334.85 | data loader: 0.20
+[2025-02-11 12:57:32,256] [INFO] [RANK 0]  iteration       47/   30000 | elapsed time per iteration (ms): 18044.8 | learning rate 5.000E-07 | total loss 2.515903E-01 | loss 2.515903E-01 |speed 3.33 samples/(min*GPU)
+[2025-02-11 12:57:32,257] [INFO] [RANK 0] time (ms) | forward: 8460.55 | backward: 7906.10 | allreduce: 0.00 | optimizer: 810.98 | data loader: 0.36
+[2025-02-11 12:57:48,207] [INFO] [RANK 0]  iteration       48/   30000 | elapsed time per iteration (ms): 15951.3 | learning rate 5.000E-07 | total loss 1.859445E-01 | loss 1.859445E-01 |speed 3.76 samples/(min*GPU)
+[2025-02-11 12:57:48,208] [INFO] [RANK 0] time (ms) | forward: 7827.23 | backward: 7894.56 | allreduce: 0.00 | optimizer: 225.08 | data loader: 0.19
+[2025-02-11 12:58:04,665] [INFO] [RANK 0]  iteration       49/   30000 | elapsed time per iteration (ms): 16458.4 | learning rate 5.000E-07 | total loss 9.704186E-02 | loss 9.704186E-02 |speed 3.65 samples/(min*GPU)
+[2025-02-11 12:58:04,666] [INFO] [RANK 0] time (ms) | forward: 7715.64 | backward: 7876.21 | allreduce: 0.00 | optimizer: 677.32 | data loader: 0.33
+[2025-02-11 12:58:22,726] [INFO] [RANK 0]  iteration       50/   30000 | elapsed time per iteration (ms): 18060.6 | learning rate 5.000E-07 | total loss 1.052432E-01 | loss 1.052432E-01 |speed 3.32 samples/(min*GPU)
+[2025-02-11 12:58:22,728] [INFO] [RANK 0] time (ms) | forward: 8349.22 | backward: 7844.71 | allreduce: 0.00 | optimizer: 229.94 | data loader: 0.35
+[2025-02-11 12:58:22,665] [INFO] [logging.py:128:log_dist] [Rank 0] step=50, skipped=0, lr=[5.000000000000001e-07, 5.000000000000001e-07], mom=[[0.9, 0.95], [0.9, 0.95]]
+[2025-02-11 12:58:40,141] [INFO] [RANK 0]  iteration       51/   30000 | elapsed time per iteration (ms): 17415.2 | learning rate 5.000E-07 | total loss 1.629207E-01 | loss 1.629207E-01 |speed 3.45 samples/(min*GPU)
+[2025-02-11 12:58:40,143] [INFO] [RANK 0] time (ms) | forward: 7705.96 | backward: 8219.70 | allreduce: 0.00 | optimizer: 379.09 | data loader: 0.42
+[2025-02-11 12:58:57,143] [INFO] [RANK 0]  iteration       52/   30000 | elapsed time per iteration (ms): 17001.5 | learning rate 5.000E-07 | total loss 1.107577E-01 | loss 1.107577E-01 |speed 3.53 samples/(min*GPU)
+[2025-02-11 12:58:57,144] [INFO] [RANK 0] time (ms) | forward: 8606.05 | backward: 7876.77 | allreduce: 0.00 | optimizer: 340.79 | data loader: 0.47
+[2025-02-11 12:59:12,886] [INFO] [RANK 0]  iteration       53/   30000 | elapsed time per iteration (ms): 15742.9 | learning rate 5.000E-07 | total loss 9.198896E-02 | loss 9.198896E-02 |speed 3.81 samples/(min*GPU)
+[2025-02-11 12:59:12,888] [INFO] [RANK 0] time (ms) | forward: 7519.80 | backward: 7929.06 | allreduce: 0.00 | optimizer: 198.64 | data loader: 0.20
+[2025-02-11 12:59:28,994] [INFO] [RANK 0]  iteration       54/   30000 | elapsed time per iteration (ms): 16108.0 | learning rate 5.000E-07 | total loss 9.195624E-02 | loss 9.195624E-02 |speed 3.72 samples/(min*GPU)
+[2025-02-11 12:59:28,995] [INFO] [RANK 0] time (ms) | forward: 7799.87 | backward: 7877.09 | allreduce: 0.00 | optimizer: 426.47 | data loader: 0.25
+[2025-02-11 12:59:45,261] [INFO] [RANK 0]  iteration       55/   30000 | elapsed time per iteration (ms): 16267.5 | learning rate 5.000E-07 | total loss 1.822259E-01 | loss 1.822259E-01 |speed 3.69 samples/(min*GPU)
+[2025-02-11 12:59:45,263] [INFO] [RANK 0] time (ms) | forward: 7898.58 | backward: 8050.55 | allreduce: 0.00 | optimizer: 313.74 | data loader: 0.34
+[2025-02-11 13:00:01,448] [INFO] [RANK 0]  iteration       56/   30000 | elapsed time per iteration (ms): 16186.8 | learning rate 5.000E-07 | total loss 1.100481E-01 | loss 1.100481E-01 |speed 3.71 samples/(min*GPU)
+[2025-02-11 13:00:01,449] [INFO] [RANK 0] time (ms) | forward: 7837.34 | backward: 8015.68 | allreduce: 0.00 | optimizer: 327.59 | data loader: 0.50
+[2025-02-11 13:00:18,124] [INFO] [RANK 0]  iteration       57/   30000 | elapsed time per iteration (ms): 16676.1 | learning rate 5.000E-07 | total loss 1.419341E-01 | loss 1.419341E-01 |speed 3.60 samples/(min*GPU)
+[2025-02-11 13:00:18,125] [INFO] [RANK 0] time (ms) | forward: 8194.77 | backward: 8032.82 | allreduce: 0.00 | optimizer: 350.94 | data loader: 0.40
+[2025-02-11 13:00:34,857] [INFO] [RANK 0]  iteration       58/   30000 | elapsed time per iteration (ms): 16732.5 | learning rate 5.000E-07 | total loss 9.354335E-02 | loss 9.354335E-02 |speed 3.59 samples/(min*GPU)
+[2025-02-11 13:00:34,858] [INFO] [RANK 0] time (ms) | forward: 8488.63 | backward: 7856.21 | allreduce: 0.00 | optimizer: 268.87 | data loader: 1.29
+[2025-02-11 13:00:51,931] [INFO] [RANK 0]  iteration       59/   30000 | elapsed time per iteration (ms): 17073.9 | learning rate 5.000E-07 | total loss 1.043810E-01 | loss 1.043810E-01 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:00:51,933] [INFO] [RANK 0] time (ms) | forward: 8272.20 | backward: 8029.70 | allreduce: 0.00 | optimizer: 414.36 | data loader: 0.25
+[2025-02-11 13:01:07,921] [INFO] [RANK 0]  iteration       60/   30000 | elapsed time per iteration (ms): 15990.4 | learning rate 5.000E-07 | total loss 1.042536E-01 | loss 1.042536E-01 |speed 3.75 samples/(min*GPU)
+[2025-02-11 13:01:07,922] [INFO] [RANK 0] time (ms) | forward: 7902.05 | backward: 7859.41 | allreduce: 0.00 | optimizer: 223.26 | data loader: 0.49
+[2025-02-11 13:01:24,386] [INFO] [RANK 0]  iteration       61/   30000 | elapsed time per iteration (ms): 16464.8 | learning rate 5.000E-07 | total loss 1.036769E-01 | loss 1.036769E-01 |speed 3.64 samples/(min*GPU)
+[2025-02-11 13:01:24,388] [INFO] [RANK 0] time (ms) | forward: 7927.77 | backward: 8248.37 | allreduce: 0.00 | optimizer: 284.30 | data loader: 1.29
+[2025-02-11 13:01:40,216] [INFO] [RANK 0]  iteration       62/   30000 | elapsed time per iteration (ms): 15830.0 | learning rate 5.000E-07 | total loss 2.715555E-01 | loss 2.715555E-01 |speed 3.79 samples/(min*GPU)
+[2025-02-11 13:01:40,218] [INFO] [RANK 0] time (ms) | forward: 7659.93 | backward: 7823.67 | allreduce: 0.00 | optimizer: 334.79 | data loader: 0.70
+[2025-02-11 13:01:56,621] [INFO] [RANK 0]  iteration       63/   30000 | elapsed time per iteration (ms): 16405.0 | learning rate 5.000E-07 | total loss 8.858979E-02 | loss 8.858979E-02 |speed 3.66 samples/(min*GPU)
+[2025-02-11 13:01:56,622] [INFO] [RANK 0] time (ms) | forward: 8048.76 | backward: 8083.81 | allreduce: 0.00 | optimizer: 264.13 | data loader: 0.78
+[2025-02-11 13:02:15,928] [INFO] [RANK 0]  iteration       64/   30000 | elapsed time per iteration (ms): 19307.3 | learning rate 5.000E-07 | total loss 1.612664E-01 | loss 1.612664E-01 |speed 3.11 samples/(min*GPU)
+[2025-02-11 13:02:15,930] [INFO] [RANK 0] time (ms) | forward: 8846.88 | backward: 8103.98 | allreduce: 0.00 | optimizer: 324.63 | data loader: 0.28
+[2025-02-11 13:02:33,692] [INFO] [RANK 0]  iteration       65/   30000 | elapsed time per iteration (ms): 17764.3 | learning rate 5.000E-07 | total loss 1.014022E-01 | loss 1.014022E-01 |speed 3.38 samples/(min*GPU)
+[2025-02-11 13:02:33,695] [INFO] [RANK 0] time (ms) | forward: 9394.57 | backward: 8126.36 | allreduce: 0.00 | optimizer: 237.71 | data loader: 0.39
+[2025-02-11 13:02:50,938] [INFO] [RANK 0]  iteration       66/   30000 | elapsed time per iteration (ms): 17245.6 | learning rate 5.000E-07 | total loss 9.343576E-02 | loss 9.343576E-02 |speed 3.48 samples/(min*GPU)
+[2025-02-11 13:02:50,940] [INFO] [RANK 0] time (ms) | forward: 7905.21 | backward: 7905.34 | allreduce: 0.00 | optimizer: 431.30 | data loader: 0.44
+[2025-02-11 13:03:06,868] [INFO] [RANK 0]  iteration       67/   30000 | elapsed time per iteration (ms): 15929.3 | learning rate 5.000E-07 | total loss 8.394334E-02 | loss 8.394334E-02 |speed 3.77 samples/(min*GPU)
+[2025-02-11 13:03:06,873] [INFO] [RANK 0] time (ms) | forward: 7520.69 | backward: 7881.76 | allreduce: 0.00 | optimizer: 334.79 | data loader: 0.39
+[2025-02-11 13:03:23,886] [INFO] [RANK 0]  iteration       68/   30000 | elapsed time per iteration (ms): 17018.8 | learning rate 5.000E-07 | total loss 9.843509E-02 | loss 9.843509E-02 |speed 3.53 samples/(min*GPU)
+[2025-02-11 13:03:23,888] [INFO] [RANK 0] time (ms) | forward: 8797.36 | backward: 7847.84 | allreduce: 0.00 | optimizer: 308.85 | data loader: 0.83
+[2025-02-11 13:03:41,273] [INFO] [RANK 0]  iteration       69/   30000 | elapsed time per iteration (ms): 17386.5 | learning rate 5.000E-07 | total loss 9.670453E-02 | loss 9.670453E-02 |speed 3.45 samples/(min*GPU)
+[2025-02-11 13:03:41,275] [INFO] [RANK 0] time (ms) | forward: 9246.54 | backward: 7857.11 | allreduce: 0.00 | optimizer: 269.48 | data loader: 0.26
+[2025-02-11 13:03:58,045] [INFO] [RANK 0]  iteration       70/   30000 | elapsed time per iteration (ms): 16772.6 | learning rate 5.000E-07 | total loss 7.824834E-02 | loss 7.824834E-02 |speed 3.58 samples/(min*GPU)
+[2025-02-11 13:03:58,047] [INFO] [RANK 0] time (ms) | forward: 8609.18 | backward: 7921.41 | allreduce: 0.00 | optimizer: 237.00 | data loader: 0.26
+[2025-02-11 13:04:14,565] [INFO] [RANK 0]  iteration       71/   30000 | elapsed time per iteration (ms): 16519.9 | learning rate 5.000E-07 | total loss 1.514550E-01 | loss 1.514550E-01 |speed 3.63 samples/(min*GPU)
+[2025-02-11 13:04:14,568] [INFO] [RANK 0] time (ms) | forward: 7736.69 | backward: 7953.13 | allreduce: 0.00 | optimizer: 416.30 | data loader: 0.60
+[2025-02-11 13:04:32,330] [INFO] [RANK 0]  iteration       72/   30000 | elapsed time per iteration (ms): 17764.3 | learning rate 5.000E-07 | total loss 9.422180E-02 | loss 9.422180E-02 |speed 3.38 samples/(min*GPU)
+[2025-02-11 13:04:32,331] [INFO] [RANK 0] time (ms) | forward: 7959.91 | backward: 8047.58 | allreduce: 0.00 | optimizer: 297.52 | data loader: 0.58
+[2025-02-11 13:04:49,692] [INFO] [RANK 0]  iteration       73/   30000 | elapsed time per iteration (ms): 17362.4 | learning rate 5.000E-07 | total loss 1.864007E-01 | loss 1.864007E-01 |speed 3.46 samples/(min*GPU)
+[2025-02-11 13:04:49,694] [INFO] [RANK 0] time (ms) | forward: 9318.62 | backward: 7843.25 | allreduce: 0.00 | optimizer: 195.80 | data loader: 0.27
+[2025-02-11 13:05:05,360] [INFO] [RANK 0]  iteration       74/   30000 | elapsed time per iteration (ms): 15668.2 | learning rate 5.000E-07 | total loss 9.321932E-02 | loss 9.321932E-02 |speed 3.83 samples/(min*GPU)
+[2025-02-11 13:05:05,361] [INFO] [RANK 0] time (ms) | forward: 7281.81 | backward: 7858.32 | allreduce: 0.00 | optimizer: 214.76 | data loader: 0.20
+[2025-02-11 13:05:22,455] [INFO] [RANK 0]  iteration       75/   30000 | elapsed time per iteration (ms): 17094.9 | learning rate 5.000E-07 | total loss 8.872589E-02 | loss 8.872589E-02 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:05:22,456] [INFO] [RANK 0] time (ms) | forward: 7618.61 | backward: 7958.79 | allreduce: 0.00 | optimizer: 462.56 | data loader: 0.63
+[2025-02-11 13:05:38,826] [INFO] [RANK 0]  iteration       76/   30000 | elapsed time per iteration (ms): 16371.1 | learning rate 5.000E-07 | total loss 1.218724E-01 | loss 1.218724E-01 |speed 3.66 samples/(min*GPU)
+[2025-02-11 13:05:38,827] [INFO] [RANK 0] time (ms) | forward: 8080.47 | backward: 7909.77 | allreduce: 0.00 | optimizer: 375.09 | data loader: 0.25
+[2025-02-11 13:05:57,603] [INFO] [RANK 0]  iteration       77/   30000 | elapsed time per iteration (ms): 18776.9 | learning rate 5.000E-07 | total loss 9.733188E-02 | loss 9.733188E-02 |speed 3.20 samples/(min*GPU)
+[2025-02-11 13:05:57,604] [INFO] [RANK 0] time (ms) | forward: 9481.38 | backward: 7876.50 | allreduce: 0.00 | optimizer: 213.38 | data loader: 0.22
+[2025-02-11 13:06:15,983] [INFO] [RANK 0]  iteration       78/   30000 | elapsed time per iteration (ms): 18379.1 | learning rate 5.000E-07 | total loss 1.164838E-01 | loss 1.164838E-01 |speed 3.26 samples/(min*GPU)
+[2025-02-11 13:06:15,987] [INFO] [RANK 0] time (ms) | forward: 9896.80 | backward: 7978.91 | allreduce: 0.00 | optimizer: 208.80 | data loader: 0.20
+[2025-02-11 13:06:33,055] [INFO] [RANK 0]  iteration       79/   30000 | elapsed time per iteration (ms): 17073.1 | learning rate 5.000E-07 | total loss 9.506631E-02 | loss 9.506631E-02 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:06:33,057] [INFO] [RANK 0] time (ms) | forward: 7861.18 | backward: 7793.62 | allreduce: 0.00 | optimizer: 251.43 | data loader: 0.96
+[2025-02-11 13:06:49,755] [INFO] [RANK 0]  iteration       80/   30000 | elapsed time per iteration (ms): 16699.1 | learning rate 5.000E-07 | total loss 1.489454E-01 | loss 1.489454E-01 |speed 3.59 samples/(min*GPU)
+[2025-02-11 13:06:49,756] [INFO] [RANK 0] time (ms) | forward: 7982.65 | backward: 7941.50 | allreduce: 0.00 | optimizer: 223.67 | data loader: 0.89
+[2025-02-11 13:07:06,021] [INFO] [RANK 0]  iteration       81/   30000 | elapsed time per iteration (ms): 16266.9 | learning rate 5.000E-07 | total loss 8.650005E-02 | loss 8.650005E-02 |speed 3.69 samples/(min*GPU)
+[2025-02-11 13:07:06,023] [INFO] [RANK 0] time (ms) | forward: 7896.97 | backward: 7927.62 | allreduce: 0.00 | optimizer: 413.41 | data loader: 0.32
+[2025-02-11 13:07:22,438] [INFO] [RANK 0]  iteration       82/   30000 | elapsed time per iteration (ms): 16416.2 | learning rate 5.000E-07 | total loss 8.514768E-02 | loss 8.514768E-02 |speed 3.65 samples/(min*GPU)
+[2025-02-11 13:07:22,439] [INFO] [RANK 0] time (ms) | forward: 7761.45 | backward: 7969.36 | allreduce: 0.00 | optimizer: 343.89 | data loader: 0.41
+[2025-02-11 13:07:38,593] [INFO] [RANK 0]  iteration       83/   30000 | elapsed time per iteration (ms): 16155.8 | learning rate 5.000E-07 | total loss 8.155306E-02 | loss 8.155306E-02 |speed 3.71 samples/(min*GPU)
+[2025-02-11 13:07:38,611] [INFO] [RANK 0] time (ms) | forward: 7902.56 | backward: 7911.41 | allreduce: 0.00 | optimizer: 297.69 | data loader: 0.33
+[2025-02-11 13:07:55,175] [INFO] [RANK 0]  iteration       84/   30000 | elapsed time per iteration (ms): 16581.8 | learning rate 5.000E-07 | total loss 8.103897E-02 | loss 8.103897E-02 |speed 3.62 samples/(min*GPU)
+[2025-02-11 13:07:55,176] [INFO] [RANK 0] time (ms) | forward: 7443.32 | backward: 8205.52 | allreduce: 0.00 | optimizer: 454.15 | data loader: 0.36
+[2025-02-11 13:08:11,766] [INFO] [RANK 0]  iteration       85/   30000 | elapsed time per iteration (ms): 16590.6 | learning rate 5.000E-07 | total loss 1.063190E-01 | loss 1.063190E-01 |speed 3.62 samples/(min*GPU)
+[2025-02-11 13:08:11,767] [INFO] [RANK 0] time (ms) | forward: 8436.89 | backward: 7922.89 | allreduce: 0.00 | optimizer: 226.67 | data loader: 0.66
+[2025-02-11 13:08:27,660] [INFO] [RANK 0]  iteration       86/   30000 | elapsed time per iteration (ms): 15893.6 | learning rate 5.000E-07 | total loss 7.992078E-02 | loss 7.992078E-02 |speed 3.78 samples/(min*GPU)
+[2025-02-11 13:08:27,662] [INFO] [RANK 0] time (ms) | forward: 7545.02 | backward: 7935.58 | allreduce: 0.00 | optimizer: 327.15 | data loader: 0.23
+[2025-02-11 13:08:45,488] [INFO] [RANK 0]  iteration       87/   30000 | elapsed time per iteration (ms): 17828.7 | learning rate 5.000E-07 | total loss 1.304667E-01 | loss 1.304667E-01 |speed 3.37 samples/(min*GPU)
+[2025-02-11 13:08:45,490] [INFO] [RANK 0] time (ms) | forward: 9094.27 | backward: 7878.45 | allreduce: 0.00 | optimizer: 243.62 | data loader: 1.04
+[2025-02-11 13:09:03,585] [INFO] [RANK 0]  iteration       88/   30000 | elapsed time per iteration (ms): 18096.9 | learning rate 5.000E-07 | total loss 1.209924E-01 | loss 1.209924E-01 |speed 3.32 samples/(min*GPU)
+[2025-02-11 13:09:03,586] [INFO] [RANK 0] time (ms) | forward: 9274.94 | backward: 8514.96 | allreduce: 0.00 | optimizer: 302.46 | data loader: 1.09
+[2025-02-11 13:09:20,216] [INFO] [RANK 0]  iteration       89/   30000 | elapsed time per iteration (ms): 16631.2 | learning rate 5.000E-07 | total loss 1.190488E-01 | loss 1.190488E-01 |speed 3.61 samples/(min*GPU)
+[2025-02-11 13:09:20,218] [INFO] [RANK 0] time (ms) | forward: 7520.79 | backward: 8253.01 | allreduce: 0.00 | optimizer: 285.70 | data loader: 0.49
+[2025-02-11 13:09:37,660] [INFO] [RANK 0]  iteration       90/   30000 | elapsed time per iteration (ms): 17444.0 | learning rate 5.000E-07 | total loss 8.561502E-02 | loss 8.561502E-02 |speed 3.44 samples/(min*GPU)
+[2025-02-11 13:09:37,661] [INFO] [RANK 0] time (ms) | forward: 8379.92 | backward: 8175.80 | allreduce: 0.00 | optimizer: 206.94 | data loader: 0.37
+[2025-02-11 13:09:53,651] [INFO] [RANK 0]  iteration       91/   30000 | elapsed time per iteration (ms): 15990.5 | learning rate 5.000E-07 | total loss 8.324851E-02 | loss 8.324851E-02 |speed 3.75 samples/(min*GPU)
+[2025-02-11 13:09:53,652] [INFO] [RANK 0] time (ms) | forward: 7483.86 | backward: 7923.18 | allreduce: 0.00 | optimizer: 338.25 | data loader: 0.28
+[2025-02-11 13:10:09,806] [INFO] [RANK 0]  iteration       92/   30000 | elapsed time per iteration (ms): 16154.7 | learning rate 5.000E-07 | total loss 1.303061E-01 | loss 1.303061E-01 |speed 3.71 samples/(min*GPU)
+[2025-02-11 13:10:09,807] [INFO] [RANK 0] time (ms) | forward: 7719.44 | backward: 8095.74 | allreduce: 0.00 | optimizer: 319.34 | data loader: 0.55
+[2025-02-11 13:10:26,172] [INFO] [RANK 0]  iteration       93/   30000 | elapsed time per iteration (ms): 16366.6 | learning rate 5.000E-07 | total loss 1.410988E-01 | loss 1.410988E-01 |speed 3.67 samples/(min*GPU)
+[2025-02-11 13:10:26,175] [INFO] [RANK 0] time (ms) | forward: 7928.86 | backward: 7971.17 | allreduce: 0.00 | optimizer: 352.71 | data loader: 0.48
+[2025-02-11 13:10:43,834] [INFO] [RANK 0]  iteration       94/   30000 | elapsed time per iteration (ms): 17661.5 | learning rate 5.000E-07 | total loss 2.043508E-01 | loss 2.043508E-01 |speed 3.40 samples/(min*GPU)
+[2025-02-11 13:10:43,854] [INFO] [RANK 0] time (ms) | forward: 9393.96 | backward: 7916.64 | allreduce: 0.00 | optimizer: 340.42 | data loader: 0.32
+[2025-02-11 13:10:59,735] [INFO] [RANK 0]  iteration       95/   30000 | elapsed time per iteration (ms): 15901.2 | learning rate 5.000E-07 | total loss 8.481616E-02 | loss 8.481616E-02 |speed 3.77 samples/(min*GPU)
+[2025-02-11 13:10:59,736] [INFO] [RANK 0] time (ms) | forward: 6806.66 | backward: 7942.10 | allreduce: 0.00 | optimizer: 305.29 | data loader: 0.83
+[2025-02-11 13:11:18,306] [INFO] [RANK 0]  iteration       96/   30000 | elapsed time per iteration (ms): 18571.0 | learning rate 5.000E-07 | total loss 7.604077E-02 | loss 7.604077E-02 |speed 3.23 samples/(min*GPU)
+[2025-02-11 13:11:18,307] [INFO] [RANK 0] time (ms) | forward: 10271.49 | backward: 7941.17 | allreduce: 0.00 | optimizer: 352.47 | data loader: 0.29
+[2025-02-11 13:11:35,441] [INFO] [RANK 0]  iteration       97/   30000 | elapsed time per iteration (ms): 17135.3 | learning rate 5.000E-07 | total loss 1.101308E-01 | loss 1.101308E-01 |speed 3.50 samples/(min*GPU)
+[2025-02-11 13:11:35,443] [INFO] [RANK 0] time (ms) | forward: 8791.09 | backward: 7911.84 | allreduce: 0.00 | optimizer: 418.49 | data loader: 0.40
+[2025-02-11 13:11:52,459] [INFO] [RANK 0]  iteration       98/   30000 | elapsed time per iteration (ms): 17017.9 | learning rate 5.000E-07 | total loss 9.185657E-02 | loss 9.185657E-02 |speed 3.53 samples/(min*GPU)
+[2025-02-11 13:11:52,461] [INFO] [RANK 0] time (ms) | forward: 8456.38 | backward: 7818.71 | allreduce: 0.00 | optimizer: 473.52 | data loader: 0.31
+[2025-02-11 13:12:09,016] [INFO] [RANK 0]  iteration       99/   30000 | elapsed time per iteration (ms): 16557.0 | learning rate 5.000E-07 | total loss 9.122427E-02 | loss 9.122427E-02 |speed 3.62 samples/(min*GPU)
+[2025-02-11 13:12:09,018] [INFO] [RANK 0] time (ms) | forward: 7997.33 | backward: 7886.99 | allreduce: 0.00 | optimizer: 319.61 | data loader: 0.24
+[2025-02-11 13:12:26,536] [INFO] [logging.py:128:log_dist] [Rank 0] step=100, skipped=0, lr=[5.000000000000001e-07, 5.000000000000001e-07], mom=[[0.9, 0.95], [0.9, 0.95]]
+[2025-02-11 13:12:26,601] [INFO] [RANK 0]  iteration      100/   30000 | elapsed time per iteration (ms): 17584.6 | learning rate 3.367E-06 | total loss 9.284294E-02 | loss 9.284294E-02 |speed 3.41 samples/(min*GPU)
+[2025-02-11 13:12:26,602] [INFO] [RANK 0] time (ms) | forward: 9089.14 | backward: 7908.84 | allreduce: 0.00 | optimizer: 367.58 | data loader: 0.48
+[2025-02-11 13:12:42,910] [INFO] [RANK 0]  iteration      101/   30000 | elapsed time per iteration (ms): 16309.3 | learning rate 3.400E-06 | total loss 9.226362E-02 | loss 9.226362E-02 |speed 3.68 samples/(min*GPU)
+[2025-02-11 13:12:42,911] [INFO] [RANK 0] time (ms) | forward: 7987.97 | backward: 7862.70 | allreduce: 0.00 | optimizer: 360.07 | data loader: 0.37
+[2025-02-11 13:12:59,538] [INFO] [RANK 0]  iteration      102/   30000 | elapsed time per iteration (ms): 16628.3 | learning rate 3.433E-06 | total loss 7.830726E-02 | loss 7.830726E-02 |speed 3.61 samples/(min*GPU)
+[2025-02-11 13:12:59,540] [INFO] [RANK 0] time (ms) | forward: 8165.71 | backward: 7898.09 | allreduce: 0.00 | optimizer: 269.23 | data loader: 0.32
+[2025-02-11 13:13:16,497] [INFO] [RANK 0]  iteration      103/   30000 | elapsed time per iteration (ms): 16958.7 | learning rate 3.467E-06 | total loss 1.493090E-01 | loss 1.493090E-01 |speed 3.54 samples/(min*GPU)
+[2025-02-11 13:13:16,498] [INFO] [RANK 0] time (ms) | forward: 8612.07 | backward: 8034.36 | allreduce: 0.00 | optimizer: 306.41 | data loader: 0.17
+[2025-02-11 13:13:33,382] [INFO] [RANK 0]  iteration      104/   30000 | elapsed time per iteration (ms): 16884.7 | learning rate 3.500E-06 | total loss 8.479442E-02 | loss 8.479442E-02 |speed 3.55 samples/(min*GPU)
+[2025-02-11 13:13:33,383] [INFO] [RANK 0] time (ms) | forward: 8427.57 | backward: 7950.32 | allreduce: 0.00 | optimizer: 308.36 | data loader: 0.50
+[2025-02-11 13:13:49,113] [INFO] [RANK 0]  iteration      105/   30000 | elapsed time per iteration (ms): 15731.3 | learning rate 3.533E-06 | total loss 1.622312E-01 | loss 1.622312E-01 |speed 3.81 samples/(min*GPU)
+[2025-02-11 13:13:49,129] [INFO] [RANK 0] time (ms) | forward: 7187.97 | backward: 8053.68 | allreduce: 0.00 | optimizer: 338.08 | data loader: 0.24
+[2025-02-11 13:14:07,412] [INFO] [RANK 0]  iteration      106/   30000 | elapsed time per iteration (ms): 18298.4 | learning rate 3.567E-06 | total loss 2.088219E-01 | loss 2.088219E-01 |speed 3.28 samples/(min*GPU)
+[2025-02-11 13:14:07,413] [INFO] [RANK 0] time (ms) | forward: 8826.40 | backward: 7957.07 | allreduce: 0.00 | optimizer: 279.34 | data loader: 0.25
+[2025-02-11 13:14:25,136] [INFO] [RANK 0]  iteration      107/   30000 | elapsed time per iteration (ms): 17724.4 | learning rate 3.600E-06 | total loss 1.108789E-01 | loss 1.108789E-01 |speed 3.39 samples/(min*GPU)
+[2025-02-11 13:14:25,137] [INFO] [RANK 0] time (ms) | forward: 8992.16 | backward: 8085.63 | allreduce: 0.00 | optimizer: 639.50 | data loader: 0.44
+[2025-02-11 13:14:41,918] [INFO] [RANK 0]  iteration      108/   30000 | elapsed time per iteration (ms): 16781.7 | learning rate 3.633E-06 | total loss 9.543233E-02 | loss 9.543233E-02 |speed 3.58 samples/(min*GPU)
+[2025-02-11 13:14:41,921] [INFO] [RANK 0] time (ms) | forward: 8309.26 | backward: 8073.69 | allreduce: 0.00 | optimizer: 392.86 | data loader: 0.26
+[2025-02-11 13:14:58,807] [INFO] [RANK 0]  iteration      109/   30000 | elapsed time per iteration (ms): 16889.7 | learning rate 3.667E-06 | total loss 1.358558E-01 | loss 1.358558E-01 |speed 3.55 samples/(min*GPU)
+[2025-02-11 13:14:58,809] [INFO] [RANK 0] time (ms) | forward: 8040.50 | backward: 8074.87 | allreduce: 0.00 | optimizer: 281.91 | data loader: 0.51
+[2025-02-11 13:15:15,220] [INFO] [RANK 0]  iteration      110/   30000 | elapsed time per iteration (ms): 16412.6 | learning rate 3.700E-06 | total loss 8.692838E-02 | loss 8.692838E-02 |speed 3.66 samples/(min*GPU)
+[2025-02-11 13:15:15,221] [INFO] [RANK 0] time (ms) | forward: 8139.68 | backward: 7981.14 | allreduce: 0.00 | optimizer: 286.49 | data loader: 0.33
+[2025-02-11 13:15:31,472] [INFO] [RANK 0]  iteration      111/   30000 | elapsed time per iteration (ms): 16251.9 | learning rate 3.733E-06 | total loss 7.744819E-02 | loss 7.744819E-02 |speed 3.69 samples/(min*GPU)
+[2025-02-11 13:15:31,473] [INFO] [RANK 0] time (ms) | forward: 7768.12 | backward: 7944.04 | allreduce: 0.00 | optimizer: 288.74 | data loader: 0.44
+[2025-02-11 13:15:47,918] [INFO] [RANK 0]  iteration      112/   30000 | elapsed time per iteration (ms): 16446.2 | learning rate 3.767E-06 | total loss 1.140847E-01 | loss 1.140847E-01 |speed 3.65 samples/(min*GPU)
+[2025-02-11 13:15:47,920] [INFO] [RANK 0] time (ms) | forward: 8206.78 | backward: 7895.60 | allreduce: 0.00 | optimizer: 339.20 | data loader: 0.40
+[2025-02-11 13:16:07,495] [INFO] [RANK 0]  iteration      113/   30000 | elapsed time per iteration (ms): 19577.2 | learning rate 3.800E-06 | total loss 7.379344E-02 | loss 7.379344E-02 |speed 3.06 samples/(min*GPU)
+[2025-02-11 13:16:07,497] [INFO] [RANK 0] time (ms) | forward: 10712.37 | backward: 8227.04 | allreduce: 0.00 | optimizer: 271.05 | data loader: 0.46
+[2025-02-11 13:16:24,473] [INFO] [RANK 0]  iteration      114/   30000 | elapsed time per iteration (ms): 16977.1 | learning rate 3.833E-06 | total loss 1.141955E-01 | loss 1.141955E-01 |speed 3.53 samples/(min*GPU)
+[2025-02-11 13:16:24,474] [INFO] [RANK 0] time (ms) | forward: 8764.10 | backward: 7950.97 | allreduce: 0.00 | optimizer: 258.05 | data loader: 1.25
+[2025-02-11 13:16:42,818] [INFO] [RANK 0]  iteration      115/   30000 | elapsed time per iteration (ms): 18345.1 | learning rate 3.867E-06 | total loss 1.148369E-01 | loss 1.148369E-01 |speed 3.27 samples/(min*GPU)
+[2025-02-11 13:16:42,821] [INFO] [RANK 0] time (ms) | forward: 9626.54 | backward: 8146.68 | allreduce: 0.00 | optimizer: 566.50 | data loader: 0.21
+[2025-02-11 13:17:00,526] [INFO] [RANK 0]  iteration      116/   30000 | elapsed time per iteration (ms): 17707.8 | learning rate 3.900E-06 | total loss 7.724494E-02 | loss 7.724494E-02 |speed 3.39 samples/(min*GPU)
+[2025-02-11 13:17:00,562] [INFO] [RANK 0] time (ms) | forward: 8081.19 | backward: 7911.97 | allreduce: 0.00 | optimizer: 414.53 | data loader: 0.66
+[2025-02-11 13:17:19,314] [INFO] [RANK 0]  iteration      117/   30000 | elapsed time per iteration (ms): 18788.9 | learning rate 3.933E-06 | total loss 6.904574E-02 | loss 6.904574E-02 |speed 3.19 samples/(min*GPU)
+[2025-02-11 13:17:19,316] [INFO] [RANK 0] time (ms) | forward: 8946.77 | backward: 8159.15 | allreduce: 0.00 | optimizer: 524.85 | data loader: 0.81
+[2025-02-11 13:17:37,110] [INFO] [RANK 0]  iteration      118/   30000 | elapsed time per iteration (ms): 17795.1 | learning rate 3.967E-06 | total loss 7.735963E-02 | loss 7.735963E-02 |speed 3.37 samples/(min*GPU)
+[2025-02-11 13:17:37,112] [INFO] [RANK 0] time (ms) | forward: 8351.31 | backward: 7981.06 | allreduce: 0.00 | optimizer: 282.51 | data loader: 0.32
+[2025-02-11 13:17:54,867] [INFO] [RANK 0]  iteration      119/   30000 | elapsed time per iteration (ms): 17757.8 | learning rate 4.000E-06 | total loss 8.180490E-02 | loss 8.180490E-02 |speed 3.38 samples/(min*GPU)
+[2025-02-11 13:17:54,869] [INFO] [RANK 0] time (ms) | forward: 9321.55 | backward: 8204.05 | allreduce: 0.00 | optimizer: 226.31 | data loader: 0.43
+[2025-02-11 13:18:11,613] [INFO] [RANK 0]  iteration      120/   30000 | elapsed time per iteration (ms): 16745.1 | learning rate 4.033E-06 | total loss 1.023799E-01 | loss 1.023799E-01 |speed 3.58 samples/(min*GPU)
+[2025-02-11 13:18:11,615] [INFO] [RANK 0] time (ms) | forward: 8129.65 | backward: 8022.90 | allreduce: 0.00 | optimizer: 588.54 | data loader: 0.58
+[2025-02-11 13:18:28,469] [INFO] [RANK 0]  iteration      121/   30000 | elapsed time per iteration (ms): 16856.7 | learning rate 4.067E-06 | total loss 7.055436E-02 | loss 7.055436E-02 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:18:28,471] [INFO] [RANK 0] time (ms) | forward: 8644.96 | backward: 7927.80 | allreduce: 0.00 | optimizer: 279.31 | data loader: 0.39
+[2025-02-11 13:18:47,573] [INFO] [RANK 0]  iteration      122/   30000 | elapsed time per iteration (ms): 19103.6 | learning rate 4.100E-06 | total loss 7.250202E-02 | loss 7.250202E-02 |speed 3.14 samples/(min*GPU)
+[2025-02-11 13:18:47,576] [INFO] [RANK 0] time (ms) | forward: 9120.37 | backward: 8030.48 | allreduce: 0.00 | optimizer: 765.02 | data loader: 0.27
+[2025-02-11 13:19:04,424] [INFO] [RANK 0]  iteration      123/   30000 | elapsed time per iteration (ms): 16851.6 | learning rate 4.133E-06 | total loss 1.022746E-01 | loss 1.022746E-01 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:19:04,426] [INFO] [RANK 0] time (ms) | forward: 8561.90 | backward: 7863.45 | allreduce: 0.00 | optimizer: 363.77 | data loader: 0.28
+[2025-02-11 13:19:21,212] [INFO] [RANK 0]  iteration      124/   30000 | elapsed time per iteration (ms): 16787.8 | learning rate 4.167E-06 | total loss 7.903811E-02 | loss 7.903811E-02 |speed 3.57 samples/(min*GPU)
+[2025-02-11 13:19:21,215] [INFO] [RANK 0] time (ms) | forward: 8578.29 | backward: 7878.34 | allreduce: 0.00 | optimizer: 284.42 | data loader: 0.26
+[2025-02-11 13:19:40,476] [INFO] [RANK 0]  iteration      125/   30000 | elapsed time per iteration (ms): 19263.4 | learning rate 4.200E-06 | total loss 1.125376E-01 | loss 1.125376E-01 |speed 3.11 samples/(min*GPU)
+[2025-02-11 13:19:40,478] [INFO] [RANK 0] time (ms) | forward: 9704.90 | backward: 7894.41 | allreduce: 0.00 | optimizer: 321.82 | data loader: 0.51
+[2025-02-11 13:19:58,298] [INFO] [RANK 0]  iteration      126/   30000 | elapsed time per iteration (ms): 17822.0 | learning rate 4.233E-06 | total loss 1.041267E-01 | loss 1.041267E-01 |speed 3.37 samples/(min*GPU)
+[2025-02-11 13:19:58,299] [INFO] [RANK 0] time (ms) | forward: 9304.87 | backward: 8191.36 | allreduce: 0.00 | optimizer: 320.88 | data loader: 0.55
+[2025-02-11 13:20:15,158] [INFO] [RANK 0]  iteration      127/   30000 | elapsed time per iteration (ms): 16859.9 | learning rate 4.267E-06 | total loss 8.284077E-02 | loss 8.284077E-02 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:20:15,174] [INFO] [RANK 0] time (ms) | forward: 8717.95 | backward: 7869.22 | allreduce: 0.00 | optimizer: 268.54 | data loader: 0.20
+[2025-02-11 13:20:31,695] [INFO] [RANK 0]  iteration      128/   30000 | elapsed time per iteration (ms): 16537.8 | learning rate 4.300E-06 | total loss 1.734329E-01 | loss 1.734329E-01 |speed 3.63 samples/(min*GPU)
+[2025-02-11 13:20:31,697] [INFO] [RANK 0] time (ms) | forward: 8328.04 | backward: 7956.61 | allreduce: 0.00 | optimizer: 232.95 | data loader: 0.24
+[2025-02-11 13:20:47,896] [INFO] [RANK 0]  iteration      129/   30000 | elapsed time per iteration (ms): 16200.9 | learning rate 4.333E-06 | total loss 7.273158E-02 | loss 7.273158E-02 |speed 3.70 samples/(min*GPU)
+[2025-02-11 13:20:47,898] [INFO] [RANK 0] time (ms) | forward: 7933.42 | backward: 7834.23 | allreduce: 0.00 | optimizer: 429.92 | data loader: 1.15
+[2025-02-11 13:21:04,732] [INFO] [RANK 0]  iteration      130/   30000 | elapsed time per iteration (ms): 16835.2 | learning rate 4.367E-06 | total loss 9.047067E-02 | loss 9.047067E-02 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:21:04,733] [INFO] [RANK 0] time (ms) | forward: 8461.23 | backward: 8074.92 | allreduce: 0.00 | optimizer: 267.70 | data loader: 0.63
+[2025-02-11 13:21:24,409] [INFO] [RANK 0]  iteration      131/   30000 | elapsed time per iteration (ms): 19677.7 | learning rate 4.400E-06 | total loss 9.181423E-02 | loss 9.181423E-02 |speed 3.05 samples/(min*GPU)
+[2025-02-11 13:21:24,412] [INFO] [RANK 0] time (ms) | forward: 9333.90 | backward: 8075.62 | allreduce: 0.00 | optimizer: 456.28 | data loader: 0.21
+[2025-02-11 13:21:42,720] [INFO] [RANK 0]  iteration      132/   30000 | elapsed time per iteration (ms): 18310.5 | learning rate 4.433E-06 | total loss 1.056568E-01 | loss 1.056568E-01 |speed 3.28 samples/(min*GPU)
+[2025-02-11 13:21:42,721] [INFO] [RANK 0] time (ms) | forward: 9284.81 | backward: 7906.97 | allreduce: 0.00 | optimizer: 226.26 | data loader: 0.46
+[2025-02-11 13:21:59,582] [INFO] [RANK 0]  iteration      133/   30000 | elapsed time per iteration (ms): 16862.1 | learning rate 4.467E-06 | total loss 1.828180E-01 | loss 1.828180E-01 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:21:59,585] [INFO] [RANK 0] time (ms) | forward: 7732.97 | backward: 7857.26 | allreduce: 0.00 | optimizer: 279.97 | data loader: 0.39
+[2025-02-11 13:22:16,951] [INFO] [RANK 0]  iteration      134/   30000 | elapsed time per iteration (ms): 17368.6 | learning rate 4.500E-06 | total loss 7.456959E-02 | loss 7.456959E-02 |speed 3.45 samples/(min*GPU)
+[2025-02-11 13:22:16,952] [INFO] [RANK 0] time (ms) | forward: 9265.02 | backward: 7819.44 | allreduce: 0.00 | optimizer: 278.57 | data loader: 0.31
+[2025-02-11 13:22:34,946] [INFO] [RANK 0]  iteration      135/   30000 | elapsed time per iteration (ms): 17995.3 | learning rate 4.533E-06 | total loss 8.436551E-02 | loss 8.436551E-02 |speed 3.33 samples/(min*GPU)
+[2025-02-11 13:22:34,948] [INFO] [RANK 0] time (ms) | forward: 9467.97 | backward: 8020.34 | allreduce: 0.00 | optimizer: 502.92 | data loader: 0.21
+[2025-02-11 13:22:53,229] [INFO] [RANK 0]  iteration      136/   30000 | elapsed time per iteration (ms): 18283.4 | learning rate 4.567E-06 | total loss 1.092229E-01 | loss 1.092229E-01 |speed 3.28 samples/(min*GPU)
+[2025-02-11 13:22:53,231] [INFO] [RANK 0] time (ms) | forward: 10036.74 | backward: 7987.68 | allreduce: 0.00 | optimizer: 254.28 | data loader: 0.27
+[2025-02-11 13:23:09,634] [INFO] [RANK 0]  iteration      137/   30000 | elapsed time per iteration (ms): 16404.3 | learning rate 4.600E-06 | total loss 7.409815E-02 | loss 7.409815E-02 |speed 3.66 samples/(min*GPU)
+[2025-02-11 13:23:09,636] [INFO] [RANK 0] time (ms) | forward: 8021.14 | backward: 7939.65 | allreduce: 0.00 | optimizer: 439.12 | data loader: 0.74
+[2025-02-11 13:23:28,065] [INFO] [RANK 0]  iteration      138/   30000 | elapsed time per iteration (ms): 18431.0 | learning rate 4.633E-06 | total loss 7.214919E-02 | loss 7.214919E-02 |speed 3.26 samples/(min*GPU)
+[2025-02-11 13:23:28,067] [INFO] [RANK 0] time (ms) | forward: 8629.01 | backward: 8044.99 | allreduce: 0.00 | optimizer: 291.43 | data loader: 0.42
+[2025-02-11 13:23:45,204] [INFO] [RANK 0]  iteration      139/   30000 | elapsed time per iteration (ms): 17138.5 | learning rate 4.667E-06 | total loss 7.517570E-02 | loss 7.517570E-02 |speed 3.50 samples/(min*GPU)
+[2025-02-11 13:23:45,207] [INFO] [RANK 0] time (ms) | forward: 8596.37 | backward: 8057.69 | allreduce: 0.00 | optimizer: 343.03 | data loader: 0.30
+[2025-02-11 13:24:02,283] [INFO] [RANK 0]  iteration      140/   30000 | elapsed time per iteration (ms): 17079.2 | learning rate 4.700E-06 | total loss 7.946956E-02 | loss 7.946956E-02 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:24:02,303] [INFO] [RANK 0] time (ms) | forward: 7513.98 | backward: 7914.32 | allreduce: 0.00 | optimizer: 347.06 | data loader: 0.76
+[2025-02-11 13:24:19,520] [INFO] [RANK 0]  iteration      141/   30000 | elapsed time per iteration (ms): 17236.8 | learning rate 4.733E-06 | total loss 7.753994E-02 | loss 7.753994E-02 |speed 3.48 samples/(min*GPU)
+[2025-02-11 13:24:19,521] [INFO] [RANK 0] time (ms) | forward: 8797.09 | backward: 8047.95 | allreduce: 0.00 | optimizer: 369.29 | data loader: 0.54
+[2025-02-11 13:24:37,807] [INFO] [RANK 0]  iteration      142/   30000 | elapsed time per iteration (ms): 18287.7 | learning rate 4.767E-06 | total loss 1.234469E-01 | loss 1.234469E-01 |speed 3.28 samples/(min*GPU)
+[2025-02-11 13:24:37,809] [INFO] [RANK 0] time (ms) | forward: 8539.80 | backward: 8134.77 | allreduce: 0.00 | optimizer: 387.53 | data loader: 0.22
+[2025-02-11 13:24:55,094] [INFO] [RANK 0]  iteration      143/   30000 | elapsed time per iteration (ms): 17286.9 | learning rate 4.800E-06 | total loss 2.349732E-01 | loss 2.349732E-01 |speed 3.47 samples/(min*GPU)
+[2025-02-11 13:24:55,096] [INFO] [RANK 0] time (ms) | forward: 8876.01 | backward: 8035.14 | allreduce: 0.00 | optimizer: 370.71 | data loader: 0.60
+[2025-02-11 13:25:12,192] [INFO] [RANK 0]  iteration      144/   30000 | elapsed time per iteration (ms): 17097.2 | learning rate 4.833E-06 | total loss 8.677997E-02 | loss 8.677997E-02 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:25:12,193] [INFO] [RANK 0] time (ms) | forward: 7951.62 | backward: 8109.46 | allreduce: 0.00 | optimizer: 491.49 | data loader: 0.42
+[2025-02-11 13:25:29,225] [INFO] [RANK 0]  iteration      145/   30000 | elapsed time per iteration (ms): 17033.2 | learning rate 4.867E-06 | total loss 1.730793E-01 | loss 1.730793E-01 |speed 3.52 samples/(min*GPU)
+[2025-02-11 13:25:29,228] [INFO] [RANK 0] time (ms) | forward: 8339.07 | backward: 7985.92 | allreduce: 0.00 | optimizer: 289.65 | data loader: 1.38
+[2025-02-11 13:25:47,000] [INFO] [RANK 0]  iteration      146/   30000 | elapsed time per iteration (ms): 17774.8 | learning rate 4.900E-06 | total loss 7.041457E-02 | loss 7.041457E-02 |speed 3.38 samples/(min*GPU)
+[2025-02-11 13:25:47,002] [INFO] [RANK 0] time (ms) | forward: 9500.05 | backward: 7885.33 | allreduce: 0.00 | optimizer: 383.60 | data loader: 0.74
+[2025-02-11 13:26:08,101] [INFO] [RANK 0]  iteration      147/   30000 | elapsed time per iteration (ms): 21101.0 | learning rate 4.933E-06 | total loss 9.094520E-02 | loss 9.094520E-02 |speed 2.84 samples/(min*GPU)
+[2025-02-11 13:26:08,123] [INFO] [RANK 0] time (ms) | forward: 9847.61 | backward: 8044.67 | allreduce: 0.00 | optimizer: 450.15 | data loader: 0.46
+[2025-02-11 13:26:24,184] [INFO] [RANK 0]  iteration      148/   30000 | elapsed time per iteration (ms): 16083.1 | learning rate 4.967E-06 | total loss 6.698227E-02 | loss 6.698227E-02 |speed 3.73 samples/(min*GPU)
+[2025-02-11 13:26:24,186] [INFO] [RANK 0] time (ms) | forward: 7748.40 | backward: 7990.94 | allreduce: 0.00 | optimizer: 317.71 | data loader: 0.84
+[2025-02-11 13:26:59,132] [INFO] [logging.py:128:log_dist] [Rank 0] step=150, skipped=0, lr=[5e-06, 5e-06], mom=[[0.9, 0.95], [0.9, 0.95]]
+[2025-02-11 13:26:42,534] [INFO] [RANK 0]  iteration      149/   30000 | elapsed time per iteration (ms): 18350.7 | learning rate 5.000E-06 | total loss 1.280261E-01 | loss 1.280261E-01 |speed 3.27 samples/(min*GPU)
+[2025-02-11 13:26:42,536] [INFO] [RANK 0] time (ms) | forward: 8093.80 | backward: 8075.84 | allreduce: 0.00 | optimizer: 401.20 | data loader: 0.37
+[2025-02-11 13:26:59,506] [INFO] [RANK 0]  iteration      150/   30000 | elapsed time per iteration (ms): 16971.8 | learning rate 5.033E-06 | total loss 7.404120E-02 | loss 7.404120E-02 |speed 3.54 samples/(min*GPU)
+[2025-02-11 13:26:59,508] [INFO] [RANK 0] time (ms) | forward: 8395.64 | backward: 8003.50 | allreduce: 0.00 | optimizer: 475.70 | data loader: 0.58
+[2025-02-11 13:27:17,580] [INFO] [RANK 0]  iteration      151/   30000 | elapsed time per iteration (ms): 18073.6 | learning rate 5.067E-06 | total loss 9.056972E-02 | loss 9.056972E-02 |speed 3.32 samples/(min*GPU)
+[2025-02-11 13:27:17,581] [INFO] [RANK 0] time (ms) | forward: 8789.74 | backward: 7923.59 | allreduce: 0.00 | optimizer: 366.59 | data loader: 0.28
+[2025-02-11 13:27:34,994] [INFO] [RANK 0]  iteration      152/   30000 | elapsed time per iteration (ms): 17413.6 | learning rate 5.100E-06 | total loss 7.850878E-02 | loss 7.850878E-02 |speed 3.45 samples/(min*GPU)
+[2025-02-11 13:27:34,994] [INFO] [RANK 0] time (ms) | forward: 8991.08 | backward: 7966.35 | allreduce: 0.00 | optimizer: 451.77 | data loader: 0.31
+[2025-02-11 13:27:52,739] [INFO] [RANK 0]  iteration      153/   30000 | elapsed time per iteration (ms): 17745.2 | learning rate 5.133E-06 | total loss 1.131237E-01 | loss 1.131237E-01 |speed 3.38 samples/(min*GPU)
+[2025-02-11 13:27:52,740] [INFO] [RANK 0] time (ms) | forward: 9528.35 | backward: 7864.35 | allreduce: 0.00 | optimizer: 348.90 | data loader: 0.20
+[2025-02-11 13:28:11,903] [INFO] [RANK 0]  iteration      154/   30000 | elapsed time per iteration (ms): 19163.8 | learning rate 5.167E-06 | total loss 7.857980E-02 | loss 7.857980E-02 |speed 3.13 samples/(min*GPU)
+[2025-02-11 13:28:11,905] [INFO] [RANK 0] time (ms) | forward: 9098.24 | backward: 8306.48 | allreduce: 0.00 | optimizer: 291.79 | data loader: 0.24
+[2025-02-11 13:28:29,591] [INFO] [RANK 0]  iteration      155/   30000 | elapsed time per iteration (ms): 17688.2 | learning rate 5.200E-06 | total loss 9.895711E-02 | loss 9.895711E-02 |speed 3.39 samples/(min*GPU)
+[2025-02-11 13:28:29,593] [INFO] [RANK 0] time (ms) | forward: 8285.17 | backward: 7906.58 | allreduce: 0.00 | optimizer: 360.83 | data loader: 0.53
+[2025-02-11 13:28:47,877] [INFO] [RANK 0]  iteration      156/   30000 | elapsed time per iteration (ms): 18286.6 | learning rate 5.233E-06 | total loss 9.572496E-02 | loss 9.572496E-02 |speed 3.28 samples/(min*GPU)
+[2025-02-11 13:28:47,880] [INFO] [RANK 0] time (ms) | forward: 9987.63 | backward: 7969.37 | allreduce: 0.00 | optimizer: 324.63 | data loader: 0.36
+[2025-02-11 13:29:06,449] [INFO] [RANK 0]  iteration      157/   30000 | elapsed time per iteration (ms): 18571.7 | learning rate 5.267E-06 | total loss 7.747006E-02 | loss 7.747006E-02 |speed 3.23 samples/(min*GPU)
+[2025-02-11 13:29:06,451] [INFO] [RANK 0] time (ms) | forward: 8627.32 | backward: 7924.42 | allreduce: 0.00 | optimizer: 206.58 | data loader: 0.46
+[2025-02-11 13:29:23,235] [INFO] [RANK 0]  iteration      158/   30000 | elapsed time per iteration (ms): 16786.2 | learning rate 5.300E-06 | total loss 9.467937E-02 | loss 9.467937E-02 |speed 3.57 samples/(min*GPU)
+[2025-02-11 13:29:23,238] [INFO] [RANK 0] time (ms) | forward: 8232.38 | backward: 7863.36 | allreduce: 0.00 | optimizer: 321.39 | data loader: 0.48
+[2025-02-11 13:29:39,336] [INFO] [RANK 0]  iteration      159/   30000 | elapsed time per iteration (ms): 16100.8 | learning rate 5.333E-06 | total loss 7.700088E-02 | loss 7.700088E-02 |speed 3.73 samples/(min*GPU)
+[2025-02-11 13:29:39,337] [INFO] [RANK 0] time (ms) | forward: 7800.80 | backward: 8023.97 | allreduce: 0.00 | optimizer: 201.37 | data loader: 0.29
+[2025-02-11 13:29:57,493] [INFO] [RANK 0]  iteration      160/   30000 | elapsed time per iteration (ms): 18156.3 | learning rate 5.367E-06 | total loss 8.998729E-02 | loss 8.998729E-02 |speed 3.30 samples/(min*GPU)
+[2025-02-11 13:29:57,510] [INFO] [RANK 0] time (ms) | forward: 9250.28 | backward: 8155.86 | allreduce: 0.00 | optimizer: 313.69 | data loader: 0.47
+[2025-02-11 13:30:16,055] [INFO] [RANK 0]  iteration      161/   30000 | elapsed time per iteration (ms): 18562.2 | learning rate 5.400E-06 | total loss 1.067732E-01 | loss 1.067732E-01 |speed 3.23 samples/(min*GPU)
+[2025-02-11 13:30:16,056] [INFO] [RANK 0] time (ms) | forward: 9688.07 | backward: 7891.86 | allreduce: 0.00 | optimizer: 576.08 | data loader: 0.19
+[2025-02-11 13:30:32,516] [INFO] [RANK 0]  iteration      162/   30000 | elapsed time per iteration (ms): 16460.9 | learning rate 5.433E-06 | total loss 9.538001E-02 | loss 9.538001E-02 |speed 3.64 samples/(min*GPU)
+[2025-02-11 13:30:32,518] [INFO] [RANK 0] time (ms) | forward: 7466.18 | backward: 7885.84 | allreduce: 0.00 | optimizer: 326.06 | data loader: 0.29
+[2025-02-11 13:30:48,618] [INFO] [RANK 0]  iteration      163/   30000 | elapsed time per iteration (ms): 16101.7 | learning rate 5.467E-06 | total loss 1.767229E-01 | loss 1.767229E-01 |speed 3.73 samples/(min*GPU)
+[2025-02-11 13:30:48,620] [INFO] [RANK 0] time (ms) | forward: 7902.64 | backward: 7925.23 | allreduce: 0.00 | optimizer: 268.41 | data loader: 0.70
+[2025-02-11 13:31:04,702] [INFO] [RANK 0]  iteration      164/   30000 | elapsed time per iteration (ms): 16084.3 | learning rate 5.500E-06 | total loss 8.426558E-02 | loss 8.426558E-02 |speed 3.73 samples/(min*GPU)
+[2025-02-11 13:31:04,703] [INFO] [RANK 0] time (ms) | forward: 7871.99 | backward: 7910.86 | allreduce: 0.00 | optimizer: 296.79 | data loader: 0.58
+[2025-02-11 13:31:22,420] [INFO] [RANK 0]  iteration      165/   30000 | elapsed time per iteration (ms): 17717.9 | learning rate 5.533E-06 | total loss 7.979442E-02 | loss 7.979442E-02 |speed 3.39 samples/(min*GPU)
+[2025-02-11 13:31:22,421] [INFO] [RANK 0] time (ms) | forward: 9296.26 | backward: 8090.72 | allreduce: 0.00 | optimizer: 325.91 | data loader: 0.75
+[2025-02-11 13:31:38,495] [INFO] [RANK 0]  iteration      166/   30000 | elapsed time per iteration (ms): 16075.4 | learning rate 5.567E-06 | total loss 6.248518E-02 | loss 6.248518E-02 |speed 3.73 samples/(min*GPU)
+[2025-02-11 13:31:38,497] [INFO] [RANK 0] time (ms) | forward: 7338.42 | backward: 7964.45 | allreduce: 0.00 | optimizer: 248.53 | data loader: 0.27
+[2025-02-11 13:31:55,197] [INFO] [RANK 0]  iteration      167/   30000 | elapsed time per iteration (ms): 16702.1 | learning rate 5.600E-06 | total loss 9.938052E-02 | loss 9.938052E-02 |speed 3.59 samples/(min*GPU)
+[2025-02-11 13:31:55,198] [INFO] [RANK 0] time (ms) | forward: 8444.78 | backward: 7968.07 | allreduce: 0.00 | optimizer: 283.98 | data loader: 0.28
+[2025-02-11 13:32:11,486] [INFO] [RANK 0]  iteration      168/   30000 | elapsed time per iteration (ms): 16288.4 | learning rate 5.633E-06 | total loss 9.123661E-02 | loss 9.123661E-02 |speed 3.68 samples/(min*GPU)
+[2025-02-11 13:32:11,487] [INFO] [RANK 0] time (ms) | forward: 8137.09 | backward: 7849.87 | allreduce: 0.00 | optimizer: 247.32 | data loader: 0.29
+[2025-02-11 13:32:28,847] [INFO] [RANK 0]  iteration      169/   30000 | elapsed time per iteration (ms): 17361.1 | learning rate 5.667E-06 | total loss 1.115497E-01 | loss 1.115497E-01 |speed 3.46 samples/(min*GPU)
+[2025-02-11 13:32:28,849] [INFO] [RANK 0] time (ms) | forward: 7899.07 | backward: 8149.27 | allreduce: 0.00 | optimizer: 306.99 | data loader: 0.28
+[2025-02-11 13:32:44,701] [INFO] [RANK 0]  iteration      170/   30000 | elapsed time per iteration (ms): 15854.4 | learning rate 5.700E-06 | total loss 7.481115E-02 | loss 7.481115E-02 |speed 3.78 samples/(min*GPU)
+[2025-02-11 13:32:44,702] [INFO] [RANK 0] time (ms) | forward: 7604.22 | backward: 7825.45 | allreduce: 0.00 | optimizer: 263.36 | data loader: 1.15
+[2025-02-11 13:33:00,567] [INFO] [RANK 0]  iteration      171/   30000 | elapsed time per iteration (ms): 15865.6 | learning rate 5.733E-06 | total loss 9.921022E-02 | loss 9.921022E-02 |speed 3.78 samples/(min*GPU)
+[2025-02-11 13:33:00,570] [INFO] [RANK 0] time (ms) | forward: 7340.53 | backward: 8047.59 | allreduce: 0.00 | optimizer: 471.35 | data loader: 0.33
+[2025-02-11 13:33:17,795] [INFO] [RANK 0]  iteration      172/   30000 | elapsed time per iteration (ms): 17227.8 | learning rate 5.767E-06 | total loss 8.500039E-02 | loss 8.500039E-02 |speed 3.48 samples/(min*GPU)
+[2025-02-11 13:33:17,796] [INFO] [RANK 0] time (ms) | forward: 7781.53 | backward: 8013.02 | allreduce: 0.00 | optimizer: 236.84 | data loader: 0.38
+[2025-02-11 13:33:36,132] [INFO] [RANK 0]  iteration      173/   30000 | elapsed time per iteration (ms): 18337.3 | learning rate 5.800E-06 | total loss 9.417732E-02 | loss 9.417732E-02 |speed 3.27 samples/(min*GPU)
+[2025-02-11 13:33:36,133] [INFO] [RANK 0] time (ms) | forward: 8901.38 | backward: 8102.94 | allreduce: 0.00 | optimizer: 299.96 | data loader: 0.62
+[2025-02-11 13:33:52,860] [INFO] [RANK 0]  iteration      174/   30000 | elapsed time per iteration (ms): 16728.6 | learning rate 5.833E-06 | total loss 1.054857E-01 | loss 1.054857E-01 |speed 3.59 samples/(min*GPU)
+[2025-02-11 13:33:52,862] [INFO] [RANK 0] time (ms) | forward: 8463.27 | backward: 7859.73 | allreduce: 0.00 | optimizer: 401.92 | data loader: 0.26
+[2025-02-11 13:34:09,424] [INFO] [RANK 0]  iteration      175/   30000 | elapsed time per iteration (ms): 16563.8 | learning rate 5.867E-06 | total loss 7.860482E-02 | loss 7.860482E-02 |speed 3.62 samples/(min*GPU)
+[2025-02-11 13:34:09,426] [INFO] [RANK 0] time (ms) | forward: 7766.85 | backward: 8409.53 | allreduce: 0.00 | optimizer: 322.94 | data loader: 0.24
+[2025-02-11 13:34:26,288] [INFO] [RANK 0]  iteration      176/   30000 | elapsed time per iteration (ms): 16863.3 | learning rate 5.900E-06 | total loss 6.778324E-02 | loss 6.778324E-02 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:34:26,291] [INFO] [RANK 0] time (ms) | forward: 8456.09 | backward: 8047.10 | allreduce: 0.00 | optimizer: 355.83 | data loader: 0.26
+[2025-02-11 13:34:43,398] [INFO] [RANK 0]  iteration      177/   30000 | elapsed time per iteration (ms): 17110.7 | learning rate 5.933E-06 | total loss 2.661633E-01 | loss 2.661633E-01 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:34:43,399] [INFO] [RANK 0] time (ms) | forward: 7676.60 | backward: 7886.23 | allreduce: 0.00 | optimizer: 434.19 | data loader: 1.40
+[2025-02-11 13:35:00,344] [INFO] [RANK 0]  iteration      178/   30000 | elapsed time per iteration (ms): 16945.4 | learning rate 5.967E-06 | total loss 1.291846E-01 | loss 1.291846E-01 |speed 3.54 samples/(min*GPU)
+[2025-02-11 13:35:00,346] [INFO] [RANK 0] time (ms) | forward: 8401.24 | backward: 8143.14 | allreduce: 0.00 | optimizer: 396.93 | data loader: 0.52
+[2025-02-11 13:35:17,965] [INFO] [RANK 0]  iteration      179/   30000 | elapsed time per iteration (ms): 17620.9 | learning rate 6.000E-06 | total loss 8.003347E-02 | loss 8.003347E-02 |speed 3.41 samples/(min*GPU)
+[2025-02-11 13:35:17,966] [INFO] [RANK 0] time (ms) | forward: 9423.03 | backward: 7930.21 | allreduce: 0.00 | optimizer: 262.76 | data loader: 0.32
+[2025-02-11 13:35:34,592] [INFO] [RANK 0]  iteration      180/   30000 | elapsed time per iteration (ms): 16627.1 | learning rate 6.033E-06 | total loss 6.838948E-02 | loss 6.838948E-02 |speed 3.61 samples/(min*GPU)
+[2025-02-11 13:35:34,593] [INFO] [RANK 0] time (ms) | forward: 8274.45 | backward: 7920.66 | allreduce: 0.00 | optimizer: 425.91 | data loader: 0.22
+[2025-02-11 13:35:52,232] [INFO] [RANK 0]  iteration      181/   30000 | elapsed time per iteration (ms): 17639.9 | learning rate 6.067E-06 | total loss 1.666350E-01 | loss 1.666350E-01 |speed 3.40 samples/(min*GPU)
+[2025-02-11 13:35:52,233] [INFO] [RANK 0] time (ms) | forward: 9126.65 | backward: 8020.97 | allreduce: 0.00 | optimizer: 487.91 | data loader: 0.61
+[2025-02-11 13:36:09,319] [INFO] [RANK 0]  iteration      182/   30000 | elapsed time per iteration (ms): 17087.9 | learning rate 6.100E-06 | total loss 7.013339E-02 | loss 7.013339E-02 |speed 3.51 samples/(min*GPU)
+[2025-02-11 13:36:09,321] [INFO] [RANK 0] time (ms) | forward: 8827.72 | backward: 7953.78 | allreduce: 0.00 | optimizer: 300.77 | data loader: 0.18
+[2025-02-11 13:36:26,609] [INFO] [RANK 0]  iteration      183/   30000 | elapsed time per iteration (ms): 17289.9 | learning rate 6.133E-06 | total loss 6.737067E-02 | loss 6.737067E-02 |speed 3.47 samples/(min*GPU)
+[2025-02-11 13:36:26,612] [INFO] [RANK 0] time (ms) | forward: 8495.75 | backward: 7974.31 | allreduce: 0.00 | optimizer: 336.34 | data loader: 0.40
+[2025-02-11 13:36:44,055] [INFO] [RANK 0]  iteration      184/   30000 | elapsed time per iteration (ms): 17446.0 | learning rate 6.167E-06 | total loss 1.055656E-01 | loss 1.055656E-01 |speed 3.44 samples/(min*GPU)
+[2025-02-11 13:36:44,058] [INFO] [RANK 0] time (ms) | forward: 8693.89 | backward: 7923.00 | allreduce: 0.00 | optimizer: 735.55 | data loader: 0.67
+[2025-02-11 13:37:01,276] [INFO] [RANK 0]  iteration      185/   30000 | elapsed time per iteration (ms): 17220.5 | learning rate 6.200E-06 | total loss 9.012962E-02 | loss 9.012962E-02 |speed 3.48 samples/(min*GPU)
+[2025-02-11 13:37:01,277] [INFO] [RANK 0] time (ms) | forward: 8664.41 | backward: 7910.57 | allreduce: 0.00 | optimizer: 521.89 | data loader: 0.62
+[2025-02-11 13:37:18,770] [INFO] [RANK 0]  iteration      186/   30000 | elapsed time per iteration (ms): 17493.7 | learning rate 6.233E-06 | total loss 1.928451E-01 | loss 1.928451E-01 |speed 3.43 samples/(min*GPU)
+[2025-02-11 13:37:18,771] [INFO] [RANK 0] time (ms) | forward: 8074.47 | backward: 7940.30 | allreduce: 0.00 | optimizer: 278.60 | data loader: 0.23
+[2025-02-11 13:37:36,707] [INFO] [RANK 0]  iteration      187/   30000 | elapsed time per iteration (ms): 17937.7 | learning rate 6.267E-06 | total loss 1.005332E-01 | loss 1.005332E-01 |speed 3.34 samples/(min*GPU)
+[2025-02-11 13:37:36,710] [INFO] [RANK 0] time (ms) | forward: 8501.94 | backward: 7929.65 | allreduce: 0.00 | optimizer: 336.47 | data loader: 0.27
+[2025-02-11 13:37:53,322] [INFO] [RANK 0]  iteration      188/   30000 | elapsed time per iteration (ms): 16614.4 | learning rate 6.300E-06 | total loss 9.446520E-02 | loss 9.446520E-02 |speed 3.61 samples/(min*GPU)
+[2025-02-11 13:37:53,324] [INFO] [RANK 0] time (ms) | forward: 7747.74 | backward: 8016.20 | allreduce: 0.00 | optimizer: 568.88 | data loader: 0.47
+[2025-02-11 13:38:11,008] [INFO] [RANK 0]  iteration      189/   30000 | elapsed time per iteration (ms): 17686.7 | learning rate 6.333E-06 | total loss 6.632957E-02 | loss 6.632957E-02 |speed 3.39 samples/(min*GPU)
+[2025-02-11 13:38:11,010] [INFO] [RANK 0] time (ms) | forward: 9190.81 | backward: 8180.26 | allreduce: 0.00 | optimizer: 309.44 | data loader: 0.48
+[2025-02-11 13:38:29,123] [INFO] [RANK 0]  iteration      190/   30000 | elapsed time per iteration (ms): 18114.1 | learning rate 6.367E-06 | total loss 7.486742E-02 | loss 7.486742E-02 |speed 3.31 samples/(min*GPU)
+[2025-02-11 13:38:29,125] [INFO] [RANK 0] time (ms) | forward: 9389.53 | backward: 8270.19 | allreduce: 0.00 | optimizer: 447.71 | data loader: 0.24
+[2025-02-11 13:38:45,983] [INFO] [RANK 0]  iteration      191/   30000 | elapsed time per iteration (ms): 16860.3 | learning rate 6.400E-06 | total loss 7.829932E-02 | loss 7.829932E-02 |speed 3.56 samples/(min*GPU)
+[2025-02-11 13:38:45,985] [INFO] [RANK 0] time (ms) | forward: 7621.41 | backward: 7989.77 | allreduce: 0.00 | optimizer: 624.81 | data loader: 0.47
+[2025-02-11 13:39:04,597] [INFO] [RANK 0]  iteration      192/   30000 | elapsed time per iteration (ms): 18613.7 | learning rate 6.433E-06 | total loss 2.460704E-01 | loss 2.460704E-01 |speed 3.22 samples/(min*GPU)
+[2025-02-11 13:39:04,598] [INFO] [RANK 0] time (ms) | forward: 9608.81 | backward: 8680.60 | allreduce: 0.00 | optimizer: 318.75 | data loader: 0.34
+[2025-02-11 13:39:22,344] [INFO] [RANK 0]  iteration      193/   30000 | elapsed time per iteration (ms): 17747.6 | learning rate 6.467E-06 | total loss 8.213951E-02 | loss 8.213951E-02 |speed 3.38 samples/(min*GPU)
+[2025-02-11 13:39:22,345] [INFO] [RANK 0] time (ms) | forward: 8977.42 | backward: 7989.34 | allreduce: 0.00 | optimizer: 594.28 | data loader: 0.28
+[2025-02-11 13:39:39,468] [INFO] [RANK 0]  iteration      194/   30000 | elapsed time per iteration (ms): 17123.2 | learning rate 6.500E-06 | total loss 1.468163E-01 | loss 1.468163E-01 |speed 3.50 samples/(min*GPU)
+[2025-02-11 13:39:39,483] [INFO] [RANK 0] time (ms) | forward: 8889.49 | backward: 7912.68 | allreduce: 0.00 | optimizer: 316.04 | data loader: 0.94
+[2025-02-11 13:39:57,811] [INFO] [RANK 0]  iteration      195/   30000 | elapsed time per iteration (ms): 18343.2 | learning rate 6.533E-06 | total loss 7.898737E-02 | loss 7.898737E-02 |speed 3.27 samples/(min*GPU)
+[2025-02-11 13:39:57,813] [INFO] [RANK 0] time (ms) | forward: 8744.22 | backward: 8047.02 | allreduce: 0.00 | optimizer: 384.82 | data loader: 0.53
+[2025-02-11 13:40:16,675] [INFO] [RANK 0]  iteration      196/   30000 | elapsed time per iteration (ms): 18864.2 | learning rate 6.567E-06 | total loss 8.045752E-02 | loss 8.045752E-02 |speed 3.18 samples/(min*GPU)
+[2025-02-11 13:40:16,703] [INFO] [RANK 0] time (ms) | forward: 8818.91 | backward: 7907.67 | allreduce: 0.00 | optimizer: 336.30 | data loader: 0.44
+[2025-02-11 13:40:33,155] [INFO] [RANK 0]  iteration      197/   30000 | elapsed time per iteration (ms): 16480.1 | learning rate 6.600E-06 | total loss 1.213196E-01 | loss 1.213196E-01 |speed 3.64 samples/(min*GPU)
+[2025-02-11 13:40:33,157] [INFO] [RANK 0] time (ms) | forward: 7490.83 | backward: 7778.75 | allreduce: 0.00 | optimizer: 402.18 | data loader: 0.60
+[2025-02-11 13:40:50,715] [INFO] [RANK 0]  iteration      198/   30000 | elapsed time per iteration (ms): 17560.2 | learning rate 6.633E-06 | total loss 1.277009E-01 | loss 1.277009E-01 |speed 3.42 samples/(min*GPU)
+[2025-02-11 13:40:50,721] [INFO] [RANK 0] time (ms) | forward: 8926.78 | backward: 8049.72 | allreduce: 0.00 | optimizer: 363.98 | data loader: 0.43
+[2025-02-11 13:41:06,442] [INFO] [RANK 0]  iteration      199/   30000 | elapsed time per iteration (ms): 15726.3 | learning rate 6.667E-06 | total loss 8.889969E-02 | loss 8.889969E-02 |speed 3.82 samples/(min*GPU)
+[2025-02-11 13:41:06,443] [INFO] [RANK 0] time (ms) | forward: 7493.95 | backward: 7949.05 | allreduce: 0.00 | optimizer: 274.33 | data loader: 0.32
+[2025-02-11 13:41:23,073] [INFO] [logging.py:128:log_dist] [Rank 0] step=200, skipped=0, lr=[6.666666666666667e-06, 6.666666666666667e-06], mom=[[0.9, 0.95], [0.9, 0.95]]
+[2025-02-11 13:41:23,146] [INFO] [RANK 0]  iteration      200/   30000 | elapsed time per iteration (ms): 16704.0 | learning rate 6.700E-06 | total loss 7.599426E-02 | loss 7.599426E-02 |speed 3.59 samples/(min*GPU)
+[2025-02-11 13:41:23,148] [INFO] [RANK 0] time (ms) | forward: 8491.35 | backward: 7939.18 | allreduce: 0.00 | optimizer: 229.16 | data loader: 0.23
+[2025-02-11 13:41:39,434] [INFO] [RANK 0]  iteration      201/   30000 | elapsed time per iteration (ms): 16288.2 | learning rate 6.733E-06 | total loss 8.352628E-02 | loss 8.352628E-02 |speed 3.68 samples/(min*GPU)
+[2025-02-11 13:41:39,436] [INFO] [RANK 0] time (ms) | forward: 7893.93 | backward: 7944.06 | allreduce: 0.00 | optimizer: 445.35 | data loader: 0.23
+[2025-02-11 13:41:56,365] [INFO] [RANK 0]  iteration      202/   30000 | elapsed time per iteration (ms): 16931.4 | learning rate 6.767E-06 | total loss 9.811696E-02 | loss 9.811696E-02 |speed 3.54 samples/(min*GPU)
+[2025-02-11 13:41:56,366] [INFO] [RANK 0] time (ms) | forward: 7911.26 | backward: 8067.79 | allreduce: 0.00 | optimizer: 283.97 | data loader: 0.43
+[2025-02-11 13:42:15,062] [INFO] [RANK 0]  iteration      203/   30000 | elapsed time per iteration (ms): 18696.9 | learning rate 6.800E-06 | total loss 7.112759E-02 | loss 7.112759E-02 |speed 3.21 samples/(min*GPU)
+[2025-02-11 13:42:15,064] [INFO] [RANK 0] time (ms) | forward: 8311.04 | backward: 8196.01 | allreduce: 0.00 | optimizer: 835.90 | data loader: 0.23
+[2025-02-11 13:42:32,763] [INFO] [RANK 0]  iteration      204/   30000 | elapsed time per iteration (ms): 17700.7 | learning rate 6.833E-06 | total loss 8.549581E-02 | loss 8.549581E-02 |speed 3.39 samples/(min*GPU)
+[2025-02-11 13:42:32,765] [INFO] [RANK 0] time (ms) | forward: 8861.90 | backward: 7979.55 | allreduce: 0.00 | optimizer: 221.80 | data loader: 0.45
+[2025-02-11 13:42:50,949] [INFO] [RANK 0]  iteration      205/   30000 | elapsed time per iteration (ms): 18186.1 | learning rate 6.867E-06 | total loss 6.905312E-02 | loss 6.905312E-02 |speed 3.30 samples/(min*GPU)
+[2025-02-11 13:42:50,951] [INFO] [RANK 0] time (ms) | forward: 8159.89 | backward: 7963.34 | allreduce: 0.00 | optimizer: 393.54 | data loader: 0.25
+[2025-02-11 13:43:07,957] [INFO] [RANK 0]  iteration      206/   30000 | elapsed time per iteration (ms): 17008.4 | learning rate 6.900E-06 | total loss 2.618582E-01 | loss 2.618582E-01 |speed 3.53 samples/(min*GPU)
+[2025-02-11 13:43:07,958] [INFO] [RANK 0] time (ms) | forward: 8677.81 | backward: 7921.59 | allreduce: 0.00 | optimizer: 350.57 | data loader: 0.22
+[2025-02-11 13:43:24,018] [INFO] [RANK 0]  iteration      207/   30000 | elapsed time per iteration (ms): 16060.8 | learning rate 6.933E-06 | total loss 6.819834E-02 | loss 6.819834E-02 |speed 3.74 samples/(min*GPU)
+[2025-02-11 13:43:24,021] [INFO] [RANK 0] time (ms) | forward: 7816.32 | backward: 7910.82 | allreduce: 0.00 | optimizer: 248.47 | data loader: 0.36
+[2025-02-11 13:43:40,850] [INFO] [RANK 0]  iteration      208/   30000 | elapsed time per iteration (ms): 16831.5 | learning rate 6.967E-06 | total loss 1.386150E-01 | loss 1.386150E-01 |speed 3.56 samples/(min*GPU)

@@ -1,0 +1,25 @@
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank1]:     training_main(
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+[rank1]:     iteration, skipped = train(model, optimizer,
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+[rank1]:     lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+[rank1]:     forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 199, in forward_step
+[rank1]:     loss, loss_dict = model.shared_step(batch)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 221, in shared_step
+[rank1]:     x = self.encode_first_stage(x, batch)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 278, in encode_first_stage
+[rank1]:     out = self.first_stage_model.encode(x[n * n_samples : (n + 1) * n_samples])
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 608, in encode
+[rank1]:     z = super().encode(x, return_reg_log, unregularized)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 224, in encode
+[rank1]:     z = self.encoder(x)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 818, in forward
+[rank1]:     h = self.down[i_level].block[i_block](h, temb)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 688, in forward
+[rank1]:     h = nonlinearity(h)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 69, in nonlinearity
+[rank1]:     return x * torch.sigmoid(x)
+Tried to allocate 4.04 GiB.

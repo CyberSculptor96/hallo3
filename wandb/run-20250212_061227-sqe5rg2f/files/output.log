@@ -1,0 +1,75 @@
+[2025-02-12 06:13:18,886] [INFO] [RANK 0]  iteration        1/   30000 | elapsed time per iteration (ms): 32051.7 | learning rate 6.667E-08 | total loss 1.827110E-01 | loss 1.827110E-01 |speed 1.87 samples/(min*GPU)
+[2025-02-12 06:13:18,889] [INFO] [RANK 0] after 1 iterations memory (MB) | allocated: 65733.8466796875 | max allocated: 73999.05908203125 | cached: 76160.0 | max cached: 76160.0
+[2025-02-12 06:13:18,890] [INFO] [RANK 0] time (ms) | forward: 22402.07 | backward: 7852.01 | allreduce: 0.00 | optimizer: 1750.49 | data loader: 2776.59
+Traceback (most recent call last):
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+    training_main(
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+    iteration, skipped = train(model, optimizer,
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+    lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+    forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 199, in forward_step
+    loss, loss_dict = model.shared_step(batch)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 221, in shared_step
+    x = self.encode_first_stage(x, batch)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 278, in encode_first_stage
+    out = self.first_stage_model.encode(x[n * n_samples : (n + 1) * n_samples])
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 608, in encode
+    z = super().encode(x, return_reg_log, unregularized)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 224, in encode
+    z = self.encoder(x)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 818, in forward
+    h = self.down[i_level].block[i_block](h, temb)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 688, in forward
+    h = nonlinearity(h)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 69, in nonlinearity
+    return x * torch.sigmoid(x)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.04 GiB. GPU 0 has a total capacity of 79.33 GiB of which 2.96 GiB is free. Process 77772 has 76.33 GiB memory in use. Of the allocated memory 72.56 GiB is allocated by PyTorch, and 2.06 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank0]:     training_main(
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+[rank0]:     iteration, skipped = train(model, optimizer,
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+[rank0]:     lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+[rank0]:     forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 199, in forward_step
+[rank0]:     loss, loss_dict = model.shared_step(batch)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 221, in shared_step
+[rank0]:     x = self.encode_first_stage(x, batch)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 278, in encode_first_stage
+[rank0]:     out = self.first_stage_model.encode(x[n * n_samples : (n + 1) * n_samples])
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 608, in encode
+[rank0]:     z = super().encode(x, return_reg_log, unregularized)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 224, in encode
+[rank0]:     z = self.encoder(x)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 818, in forward
+[rank0]:     h = self.down[i_level].block[i_block](h, temb)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 688, in forward
+[rank0]:     h = nonlinearity(h)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 69, in nonlinearity
+[rank0]:     return x * torch.sigmoid(x)
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.04 GiB. GPU 0 has a total capacity of 79.33 GiB of which 2.96 GiB is free. Process 77772 has 76.33 GiB memory in use. Of the allocated memory 72.56 GiB is allocated by PyTorch, and 2.06 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

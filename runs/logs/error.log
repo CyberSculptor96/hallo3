@@ -1,0 +1,52 @@
+## wandb报错，原因是项目根目录下存在名为wandb.py的文件，导致循环导包
+Traceback (most recent call last):
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/wangbenyou/huanghj/workspace/hallo3/wandb.py", line 1, in <module>
+    import wandb
+  File "/wangbenyou/huanghj/workspace/hallo3/wandb.py", line 2, in <module>
+    wandb.init(project='your-project-name', entity='your-username')
+AttributeError: partially initialized module 'wandb' has no attribute 'init' (most likely due to a circular import)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank0]:     training_main(
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 132, in training_main
+[rank0]:     init_wandb_writer(args)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/utils.py", line 38, in init_wandb_writer
+[rank0]:     wandb.init(
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1195, in init
+[rank0]:     wandb._sentry.reraise(e)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 155, in reraise
+[rank0]:     raise exc.with_traceback(sys.exc_info()[2])
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1180, in init
+[rank0]:     wi.setup(kwargs)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 189, in setup
+[rank0]:     self._wl = wandb_setup.setup(settings=setup_settings)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 325, in setup
+[rank0]:     ret = _setup(settings=settings)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 318, in _setup
+[rank0]:     wl = _WandbSetup(settings=settings)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+[rank0]:     _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+[rank0]:     self._setup()
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+[rank0]:     self._setup_manager()
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 283, in _setup_manager
+[rank0]:     self._manager = wandb_manager._Manager(settings=self._settings)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/wandb_manager.py", line 145, in __init__
+[rank0]:     self._service.start()
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 253, in start
+[rank0]:     self._launch_server()
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 247, in _launch_server
+[rank0]:     _sentry.reraise(e)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 155, in reraise
+[rank0]:     raise exc.with_traceback(sys.exc_info()[2])
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 245, in _launch_server
+[rank0]:     self._wait_for_ports(fname, proc=internal_proc)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 109, in _wait_for_ports
+[rank0]:     raise ServiceStartProcessError(
+[rank0]: wandb.sdk.service.service.ServiceStartProcessError: The wandb service process exited with 1. Ensure that `sys.executable` is a valid python interpreter. You can override it with the `_executable` setting or with the `WANDB__EXECUTABLE` environment variable.
+[rank0]: {'command': ['/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/python', '-m', 'wandb', 'service', '--debug', '--port-filename', '/tmp/tmptfqw35r7/port-39330.txt', '--pid', '39330', '--serve-sock'], 'sys_executable': '/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/python', 'which_python': '/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/python3', 'proc_out': '', 'proc_err': ''}

@@ -1,0 +1,122 @@
+2025-02-16 12:45:41,418 INFO    StreamThr :40650 [internal.py:wandb_internal():85] W&B internal server running at pid: 40650, started at: 2025-02-16 12:45:41.416272
+2025-02-16 12:45:41,421 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status
+2025-02-16 12:45:41,422 INFO    WriterThread:40650 [datastore.py:open_for_write():87] open: wandb/run-20250216_124541-xy7sezkt/run-xy7sezkt.wandb
+2025-02-16 12:45:41,426 DEBUG   SenderThread:40650 [sender.py:send():379] send: header
+2025-02-16 12:45:41,518 DEBUG   SenderThread:40650 [sender.py:send():379] send: run
+2025-02-16 12:45:42,183 INFO    SenderThread:40650 [dir_watcher.py:__init__():211] watching files in: wandb/run-20250216_124541-xy7sezkt/files
+2025-02-16 12:45:42,184 INFO    SenderThread:40650 [sender.py:_start_run_threads():1188] run started: xy7sezkt with start time 1739709941.416503
+2025-02-16 12:45:42,210 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: check_version
+2025-02-16 12:45:42,211 DEBUG   SenderThread:40650 [sender.py:send_request():406] send_request: check_version
+2025-02-16 12:45:42,535 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: run_start
+2025-02-16 12:45:42,556 DEBUG   HandlerThread:40650 [system_info.py:__init__():26] System info init
+2025-02-16 12:45:42,556 DEBUG   HandlerThread:40650 [system_info.py:__init__():41] System info init done
+2025-02-16 12:45:42,556 INFO    HandlerThread:40650 [system_monitor.py:start():194] Starting system monitor
+2025-02-16 12:45:42,556 INFO    SystemMonitor:40650 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-02-16 12:45:42,556 INFO    HandlerThread:40650 [system_monitor.py:probe():214] Collecting system info
+2025-02-16 12:45:42,558 INFO    SystemMonitor:40650 [interfaces.py:start():188] Started cpu monitoring
+2025-02-16 12:45:42,558 INFO    SystemMonitor:40650 [interfaces.py:start():188] Started disk monitoring
+2025-02-16 12:45:42,559 INFO    SystemMonitor:40650 [interfaces.py:start():188] Started gpu monitoring
+2025-02-16 12:45:42,560 INFO    SystemMonitor:40650 [interfaces.py:start():188] Started memory monitoring
+2025-02-16 12:45:42,560 INFO    SystemMonitor:40650 [interfaces.py:start():188] Started network monitoring
+2025-02-16 12:45:42,607 DEBUG   HandlerThread:40650 [system_info.py:probe():152] Probing system
+2025-02-16 12:45:42,611 DEBUG   HandlerThread:40650 [system_info.py:_probe_git():137] Probing git
+2025-02-16 12:45:42,624 DEBUG   HandlerThread:40650 [system_info.py:_probe_git():145] Probing git done
+2025-02-16 12:45:42,624 DEBUG   HandlerThread:40650 [system_info.py:probe():200] Probing system done
+2025-02-16 12:45:42,625 DEBUG   HandlerThread:40650 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35', 'python': '3.10.16', 'heartbeatAt': '2025-02-16T12:45:42.607756', 'startedAt': '2025-02-16T12:45:41.406338', 'docker': None, 'cuda': None, 'args': ('--wandb', '--base', 'configs/cogvideox_5b_i2v_s2.yaml', 'configs/sft_s2.yaml', '--seed', '30831'), 'state': 'running', 'program': '/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py', 'codePathLocal': 'hallo3/train_video.py', 'codePath': 'hallo3/train_video.py', 'git': {'remote': 'https://github.com/fudan-generative-vision/hallo3.git', 'commit': '6eb740afe12a2ae4c966568fa8381da05a65b0eb'}, 'email': None, 'root': '/wangbenyou/huanghj/workspace/hallo3', 'host': 'ae7unfqn0klqk-0', 'username': 'root', 'executable': '/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 2702.34375, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 1200.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1100.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2000.0, 'min': 800.0, 'max': 3400.0}, {'current': 1100.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 1800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2000.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 1600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1600.0, 'min': 800.0, 'max': 3400.0}, {'current': 1400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1100.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 900.0, 'min': 800.0, 'max': 3400.0}, {'current': 1400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2000.0, 'min': 800.0, 'max': 3400.0}, {'current': 1100.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 1755.3436584472656, 'used': 1060.92972946167}}, 'gpu': 'NVIDIA A800-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 2015.2796897888184}}
+2025-02-16 12:45:42,628 INFO    HandlerThread:40650 [system_monitor.py:probe():224] Finished collecting system info
+2025-02-16 12:45:42,628 INFO    HandlerThread:40650 [system_monitor.py:probe():227] Publishing system info
+2025-02-16 12:45:42,628 DEBUG   HandlerThread:40650 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2025-02-16 12:45:43,184 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250216_124541-xy7sezkt/files/conda-environment.yaml
+2025-02-16 12:45:56,191 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_modified():288] file/dir modified: wandb/run-20250216_124541-xy7sezkt/files/conda-environment.yaml
+2025-02-16 12:45:56,207 DEBUG   HandlerThread:40650 [system_info.py:_save_conda():224] Saving conda packages done
+2025-02-16 12:45:56,210 INFO    HandlerThread:40650 [system_monitor.py:probe():229] Finished publishing system info
+2025-02-16 12:45:56,223 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:45:56,224 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: keepalive
+2025-02-16 12:45:56,224 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:45:56,225 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: keepalive
+2025-02-16 12:45:56,225 DEBUG   SenderThread:40650 [sender.py:send():379] send: files
+2025-02-16 12:45:56,226 INFO    SenderThread:40650 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2025-02-16 12:45:56,758 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: python_packages
+2025-02-16 12:45:56,758 DEBUG   SenderThread:40650 [sender.py:send_request():406] send_request: python_packages
+2025-02-16 12:45:56,761 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:45:56,761 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: stop_status
+2025-02-16 12:45:56,762 DEBUG   SenderThread:40650 [sender.py:send_request():406] send_request: stop_status
+2025-02-16 12:45:56,765 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:45:57,007 DEBUG   SenderThread:40650 [sender.py:send():379] send: telemetry
+2025-02-16 12:45:57,191 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250216_124541-xy7sezkt/files/wandb-metadata.json
+2025-02-16 12:45:57,192 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250216_124541-xy7sezkt/files/requirements.txt
+2025-02-16 12:45:57,223 INFO    wandb-upload_0:40650 [upload_job.py:push():130] Uploaded file /tmp/tmpggu0wf6fwandb/584x2eui-wandb-metadata.json
+2025-02-16 12:45:57,765 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:45:58,763 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:45:59,763 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:00,763 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:01,764 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:01,765 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:02,764 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:03,764 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:04,764 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:05,764 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:06,766 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:06,768 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:07,766 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:08,767 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:09,767 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:10,767 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:11,760 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: stop_status
+2025-02-16 12:46:11,761 DEBUG   SenderThread:40650 [sender.py:send_request():406] send_request: stop_status
+2025-02-16 12:46:11,799 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:12,056 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:12,767 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:13,201 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_modified():288] file/dir modified: wandb/run-20250216_124541-xy7sezkt/files/config.yaml
+2025-02-16 12:46:13,767 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:14,768 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:15,768 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:16,768 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:17,769 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:17,771 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:18,769 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:19,769 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:20,769 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:21,769 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:22,770 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:22,773 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:23,770 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:24,771 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:25,773 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:26,760 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: stop_status
+2025-02-16 12:46:26,761 DEBUG   SenderThread:40650 [sender.py:send_request():406] send_request: stop_status
+2025-02-16 12:46:26,799 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:27,771 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:28,085 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:28,771 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:29,772 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:30,772 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:31,772 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:32,772 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:33,772 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:33,777 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:34,439 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: partial_history
+2025-02-16 12:46:34,442 DEBUG   SenderThread:40650 [sender.py:send():379] send: telemetry
+2025-02-16 12:46:34,443 DEBUG   SenderThread:40650 [sender.py:send():379] send: history
+2025-02-16 12:46:34,443 DEBUG   SenderThread:40650 [sender.py:send_request():406] send_request: summary_record
+2025-02-16 12:46:34,447 INFO    SenderThread:40650 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-02-16 12:46:34,773 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:35,214 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250216_124541-xy7sezkt/files/wandb-summary.json
+2025-02-16 12:46:35,214 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250216_124541-xy7sezkt/files/output.log
+2025-02-16 12:46:35,772 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:36,773 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:37,214 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_modified():288] file/dir modified: wandb/run-20250216_124541-xy7sezkt/files/output.log
+2025-02-16 12:46:38,601 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:38,779 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:38,882 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:39,882 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:40,882 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-16 12:46:42,561 DEBUG   SystemMonitor:40650 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-02-16 12:46:42,567 DEBUG   SenderThread:40650 [sender.py:send():379] send: stats
+2025-02-16 12:46:44,574 DEBUG   HandlerThread:40650 [handler.py:handle_request():158] handle_request: status_report
+2025-02-16 12:46:45,222 INFO    Thread-12 :40650 [dir_watcher.py:_on_file_modified():288] file/dir modified: wandb/run-20250216_124541-xy7sezkt/files/config.yaml
+2025-02-16 12:46:46,706 INFO    cpu       :40650 [interfaces.py:monitor():138] Process cpu has exited.
+2025-02-16 12:46:46,707 DEBUG   SystemMonitor:40650 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-02-16 12:46:46,707 DEBUG   SystemMonitor:40650 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-02-16 12:46:46,712 DEBUG   SenderThread:40650 [sender.py:send():379] send: stats
+2025-02-16 12:46:49,555 INFO    MainThread:40650 [internal.py:handle_exit():75] Internal process exited

@@ -1,0 +1,53 @@
+[2025-02-19 14:47:48,261] [INFO] DeepSpeed/CUDA is not installed, fallback to Pytorch checkpointing.
+[2025-02-19 14:47:48,678] [WARNING] [real_accelerator.py:181:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+[2025-02-19 14:47:48,686] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cpu (auto detect)
+Traceback (most recent call last):
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/sample_video.py", line 15, in <module>
+    from sat.model.base_model import get_model
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/__init__.py", line 6, in <module>
+    from .training.deepspeed_training import training_main
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 27, in <module>
+    import deepspeed
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/__init__.py", line 26, in <module>
+    from . import module_inject
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/module_inject/__init__.py", line 6, in <module>
+    from .replace_module import replace_transformer_layer, revert_transformer_layer, ReplaceWithTensorSlicing, GroupQuantizer, generic_injection
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 652, in <module>
+    from ..pipe import PipelineModule
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/pipe/__init__.py", line 6, in <module>
+    from ..runtime.pipe import PipelineModule, LayerSpec, TiedLayerSpec
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/pipe/__init__.py", line 6, in <module>
+    from .module import PipelineModule, LayerSpec, TiedLayerSpec
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/pipe/module.py", line 19, in <module>
+    from ..activation_checkpointing import checkpointing
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/activation_checkpointing/checkpointing.py", line 26, in <module>
+    from deepspeed.runtime.config import DeepSpeedConfig
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/config.py", line 58, in <module>
+    from ..autotuning.config import DeepSpeedAutotuningConfig
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/autotuning/__init__.py", line 6, in <module>
+    from .autotuner import Autotuner
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/autotuning/autotuner.py", line 31, in <module>
+    import mlflow
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/__init__.py", line 35, in <module>
+    from mlflow import (
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/data/__init__.py", line 5, in <module>
+    from mlflow.data import dataset_registry
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/data/dataset_registry.py", line 137, in <module>
+    from mlflow.data.pandas_dataset import from_pandas
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/data/pandas_dataset.py", line 6, in <module>
+    import pandas as pd
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/core/api.py", line 47, in <module>
+    from pandas.core.groupby import (
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/core/groupby/generic.py", line 68, in <module>
+    from pandas.core.frame import DataFrame
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+KeyboardInterrupt

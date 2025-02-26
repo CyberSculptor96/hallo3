@@ -1,0 +1,111 @@
+2025-02-17 13:10:17,038 INFO    StreamThr :19326 [internal.py:wandb_internal():85] W&B internal server running at pid: 19326, started at: 2025-02-17 13:10:17.037696
+2025-02-17 13:10:17,039 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status
+2025-02-17 13:10:17,041 INFO    WriterThread:19326 [datastore.py:open_for_write():87] open: wandb/run-20250217_131017-zj9z1e73/run-zj9z1e73.wandb
+2025-02-17 13:10:17,042 DEBUG   SenderThread:19326 [sender.py:send():379] send: header
+2025-02-17 13:10:17,072 DEBUG   SenderThread:19326 [sender.py:send():379] send: run
+2025-02-17 13:10:17,662 INFO    SenderThread:19326 [dir_watcher.py:__init__():211] watching files in: wandb/run-20250217_131017-zj9z1e73/files
+2025-02-17 13:10:17,662 INFO    SenderThread:19326 [sender.py:_start_run_threads():1188] run started: zj9z1e73 with start time 1739797817.038715
+2025-02-17 13:10:17,675 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: check_version
+2025-02-17 13:10:17,675 DEBUG   SenderThread:19326 [sender.py:send_request():406] send_request: check_version
+2025-02-17 13:10:18,108 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: run_start
+2025-02-17 13:10:18,116 DEBUG   HandlerThread:19326 [system_info.py:__init__():26] System info init
+2025-02-17 13:10:18,116 DEBUG   HandlerThread:19326 [system_info.py:__init__():41] System info init done
+2025-02-17 13:10:18,116 INFO    HandlerThread:19326 [system_monitor.py:start():194] Starting system monitor
+2025-02-17 13:10:18,116 INFO    SystemMonitor:19326 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-02-17 13:10:18,116 INFO    HandlerThread:19326 [system_monitor.py:probe():214] Collecting system info
+2025-02-17 13:10:18,117 INFO    SystemMonitor:19326 [interfaces.py:start():188] Started cpu monitoring
+2025-02-17 13:10:18,117 INFO    SystemMonitor:19326 [interfaces.py:start():188] Started disk monitoring
+2025-02-17 13:10:18,118 INFO    SystemMonitor:19326 [interfaces.py:start():188] Started gpu monitoring
+2025-02-17 13:10:18,118 INFO    SystemMonitor:19326 [interfaces.py:start():188] Started memory monitoring
+2025-02-17 13:10:18,119 INFO    SystemMonitor:19326 [interfaces.py:start():188] Started network monitoring
+2025-02-17 13:10:18,167 DEBUG   HandlerThread:19326 [system_info.py:probe():152] Probing system
+2025-02-17 13:10:18,169 DEBUG   HandlerThread:19326 [system_info.py:_probe_git():137] Probing git
+2025-02-17 13:10:18,177 DEBUG   HandlerThread:19326 [system_info.py:_probe_git():145] Probing git done
+2025-02-17 13:10:18,177 DEBUG   HandlerThread:19326 [system_info.py:probe():200] Probing system done
+2025-02-17 13:10:18,177 DEBUG   HandlerThread:19326 [system_monitor.py:probe():223] {'os': 'Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35', 'python': '3.10.16', 'heartbeatAt': '2025-02-17T13:10:18.167327', 'startedAt': '2025-02-17T13:10:17.030488', 'docker': None, 'cuda': None, 'args': ('--wandb', '--base', 'configs/cogvideox_5b_i2v_s2.yaml', 'configs/sft_s2.yaml', '--seed', '30922'), 'state': 'running', 'program': '/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py', 'codePathLocal': 'hallo3/train_video.py', 'codePath': 'hallo3/train_video.py', 'git': {'remote': 'https://github.com/fudan-generative-vision/hallo3.git', 'commit': '6eb740afe12a2ae4c966568fa8381da05a65b0eb'}, 'email': None, 'root': '/wangbenyou/huanghj/workspace/hallo3', 'host': 'acbd10enju1kr-0', 'username': 'root', 'executable': '/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 3333.59375, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2500.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 2300.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 1755.3436584472656, 'used': 386.3046760559082}}, 'gpu': 'NVIDIA A800-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 2015.2796897888184}}
+2025-02-17 13:10:18,179 INFO    HandlerThread:19326 [system_monitor.py:probe():224] Finished collecting system info
+2025-02-17 13:10:18,179 INFO    HandlerThread:19326 [system_monitor.py:probe():227] Publishing system info
+2025-02-17 13:10:18,179 DEBUG   HandlerThread:19326 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2025-02-17 13:10:18,664 INFO    Thread-12 :19326 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250217_131017-zj9z1e73/files/conda-environment.yaml
+2025-02-17 13:10:33,220 ERROR   HandlerThread:19326 [system_info.py:_save_conda():223] Error saving conda packages: Command '['conda', 'env', 'export']' timed out after 15 seconds
+Traceback (most recent call last):
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 216, in _save_conda
+    subprocess.call(
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/subprocess.py", line 347, in call
+    return p.wait(timeout=timeout)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/subprocess.py", line 1951, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['conda', 'env', 'export']' timed out after 15 seconds
+2025-02-17 13:10:33,259 DEBUG   HandlerThread:19326 [system_info.py:_save_conda():224] Saving conda packages done
+2025-02-17 13:10:33,261 INFO    HandlerThread:19326 [system_monitor.py:probe():229] Finished publishing system info
+2025-02-17 13:10:33,371 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:33,371 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: keepalive
+2025-02-17 13:10:33,372 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:33,372 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: keepalive
+2025-02-17 13:10:33,372 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:33,372 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: keepalive
+2025-02-17 13:10:33,372 DEBUG   SenderThread:19326 [sender.py:send():379] send: files
+2025-02-17 13:10:33,373 INFO    SenderThread:19326 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2025-02-17 13:10:33,669 INFO    Thread-12 :19326 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250217_131017-zj9z1e73/files/wandb-metadata.json
+2025-02-17 13:10:34,419 INFO    wandb-upload_0:19326 [upload_job.py:push():130] Uploaded file /tmp/tmp6k712t15wandb/nxmhtz02-wandb-metadata.json
+2025-02-17 13:10:37,374 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:38,588 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: python_packages
+2025-02-17 13:10:38,589 DEBUG   SenderThread:19326 [sender.py:send_request():406] send_request: python_packages
+2025-02-17 13:10:38,590 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: stop_status
+2025-02-17 13:10:38,591 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:38,591 DEBUG   SenderThread:19326 [sender.py:send_request():406] send_request: stop_status
+2025-02-17 13:10:38,671 INFO    Thread-12 :19326 [dir_watcher.py:_on_file_created():271] file/dir created: wandb/run-20250217_131017-zj9z1e73/files/requirements.txt
+2025-02-17 13:10:38,930 DEBUG   SenderThread:19326 [sender.py:send():379] send: telemetry
+2025-02-17 13:10:39,591 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:40,686 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:41,686 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:42,686 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:42,931 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:43,686 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:44,686 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:45,687 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:46,687 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:47,686 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:48,597 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:48,687 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:49,676 INFO    Thread-12 :19326 [dir_watcher.py:_on_file_modified():288] file/dir modified: wandb/run-20250217_131017-zj9z1e73/files/config.yaml
+2025-02-17 13:10:49,687 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:50,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:51,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:52,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:53,590 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: stop_status
+2025-02-17 13:10:53,591 DEBUG   SenderThread:19326 [sender.py:send_request():406] send_request: stop_status
+2025-02-17 13:10:53,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:54,687 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:54,843 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:10:55,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:56,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:57,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:58,688 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:10:59,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:00,593 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:11:00,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:01,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:02,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:03,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:04,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:05,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:06,592 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:11:06,690 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:07,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:08,591 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: stop_status
+2025-02-17 13:11:08,591 DEBUG   SenderThread:19326 [sender.py:send_request():406] send_request: stop_status
+2025-02-17 13:11:08,689 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:09,690 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:10,690 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:11,690 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: internal_messages
+2025-02-17 13:11:11,855 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:11:16,150 INFO    memory    :19326 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2025-02-17 13:11:16,150 DEBUG   SystemMonitor:19326 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-02-17 13:11:16,152 DEBUG   SystemMonitor:19326 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-02-17 13:11:16,152 DEBUG   SystemMonitor:19326 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-02-17 13:11:16,157 DEBUG   SenderThread:19326 [sender.py:send():379] send: stats
+2025-02-17 13:11:17,160 DEBUG   HandlerThread:19326 [handler.py:handle_request():158] handle_request: status_report
+2025-02-17 13:11:18,125 INFO    MainThread:19326 [internal.py:handle_exit():75] Internal process exited

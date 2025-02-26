@@ -1,0 +1,75 @@
+[2025-02-17 05:51:36,813] [INFO] [RANK 0]  iteration      746/   30000 | elapsed time per iteration (ms): 19476.8 | learning rate 9.851E-06 | total loss 6.635387E-02 | loss 6.635387E-02 |speed 3.08 samples/(min*GPU)
+[2025-02-17 05:51:36,815] [INFO] [RANK 0] time (ms) | forward: 8861.40 | backward: 8763.81 | allreduce: 0.00 | optimizer: 59.19 | data loader: 0.72
+[2025-02-17 05:51:54,750] [INFO] [RANK 0]  iteration      747/   30000 | elapsed time per iteration (ms): 17936.8 | learning rate 9.851E-06 | total loss 1.017734E-01 | loss 1.017734E-01 |speed 3.35 samples/(min*GPU)
+[2025-02-17 05:51:54,755] [INFO] [RANK 0] time (ms) | forward: 8621.94 | backward: 8875.61 | allreduce: 0.00 | optimizer: 62.33 | data loader: 0.39
+[2025-02-17 05:52:12,186] [INFO] [RANK 0]  iteration      748/   30000 | elapsed time per iteration (ms): 17436.2 | learning rate 9.850E-06 | total loss 7.103593E-02 | loss 7.103593E-02 |speed 3.44 samples/(min*GPU)
+[2025-02-17 05:52:12,188] [INFO] [RANK 0] time (ms) | forward: 8499.12 | backward: 8869.65 | allreduce: 0.00 | optimizer: 57.87 | data loader: 0.67
+Traceback (most recent call last):
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+    training_main(
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+    iteration, skipped = train(model, optimizer,
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+    lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+    forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 180, in forward_step
+    batch = next(data_iterator)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+    return self._process_data(data)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+    data.reraise()
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+    raise exception
+IndexError: Caught IndexError in DataLoader worker process 4.
+Original Traceback (most recent call last):
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/data_utils/configure_data.py", line 360, in __getitem__
+    return self.wrapped_data[index]
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/data_utils/configure_data.py", line 342, in __getitem__
+    return self.datasets[dataset_idx][sample_idx]
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/data_video.py", line 800, in __getitem__
+    audio_tensor = audio_emb[center_indices]
+IndexError: index 534 is out of bounds for dimension 0 with size 452
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank0]:     training_main(
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+[rank0]:     iteration, skipped = train(model, optimizer,
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+[rank0]:     lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+[rank0]:     forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 180, in forward_step
+[rank0]:     batch = next(data_iterator)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+[rank0]:     data = self._next_data()
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+[rank0]:     return self._process_data(data)
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+[rank0]:     data.reraise()
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/_utils.py", line 706, in reraise
+[rank0]:     raise exception
+[rank0]: IndexError: Caught IndexError in DataLoader worker process 4.
+[rank0]: Original Traceback (most recent call last):
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+[rank0]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+[rank0]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+[rank0]:     data = [self.dataset[idx] for idx in possibly_batched_index]
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/data_utils/configure_data.py", line 360, in __getitem__
+[rank0]:     return self.wrapped_data[index]
+[rank0]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/data_utils/configure_data.py", line 342, in __getitem__
+[rank0]:     return self.datasets[dataset_idx][sample_idx]
+[rank0]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/data_video.py", line 800, in __getitem__
+[rank0]:     audio_tensor = audio_emb[center_indices]
+[rank0]: IndexError: index 534 is out of bounds for dimension 0 with size 452

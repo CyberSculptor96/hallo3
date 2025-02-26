@@ -1,0 +1,21 @@
+Processing videos: 100%|█████████| 12692/12692 [23:09:44<00:00,  6.57s/it]
+
+root@cmqalmfjkm5c6-0:/wangbenyou/huanghj/data/hallo3-dataset# ls
+README.md  audio_emb  audios  caption  face_emb  face_mask  images  videos  vocals
+
+videos/caption/audios/images: 101543
+audio_emb:  93534
+face_emb:   93534
+face_mask:  93534
+vocals:     186776
+
+root@297hi17a9s0l1-0:/wangbenyou/huanghj/data/hallo3-dataset# du -h --max-depth=1 . | sort -hr
+7.2T    .
+6.6T    ./images
+388G    ./audio_emb
+109G    ./vocals
+47G     ./videos
+33G     ./audios
+5.8G    ./face_emb
+750M    ./face_mask
+58M     ./caption

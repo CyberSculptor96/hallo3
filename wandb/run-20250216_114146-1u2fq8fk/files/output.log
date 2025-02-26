@@ -1,0 +1,2 @@
+[2025-02-16 11:42:43,307] [INFO] [RANK 0]  iteration        1/   30000 | elapsed time per iteration (ms): 38951.1 | learning rate 6.667E-08 | total loss 6.711516E-02 | loss 6.711516E-02 |speed 1.54 samples/(min*GPU)
+[2025-02-16 11:42:43,311] [INFO] [RANK 0] after 1 iterations memory (MB) | allocated: 50834.029296875 | max allocated: 64148.8134765625 | cached: 58680.0 | max cached: 70036.0

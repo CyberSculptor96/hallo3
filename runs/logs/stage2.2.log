@@ -1,0 +1,1392 @@
+W0217 13:05:00.932000 140139295733568 torch/distributed/run.py:779] 
+W0217 13:05:00.932000 140139295733568 torch/distributed/run.py:779] *****************************************
+W0217 13:05:00.932000 140139295733568 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0217 13:05:00.932000 140139295733568 torch/distributed/run.py:779] *****************************************
+[2025-02-17 13:05:03,922] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-17 13:05:03,922] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-17 13:05:03,925] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-17 13:05:03,941] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+2025-02-17 13:05:10.941317: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-17 13:05:10.941864: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-17 13:05:10.941848: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-17 13:05:10.941867: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-17 13:05:10.958212: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-02-17 13:05:10.958252: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-02-17 13:05:10.958474: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-02-17 13:05:10.959067: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739797510.973517  112017 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739797510.973648  112016 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739797510.974120  112015 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739797510.974432  112018 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739797510.978479  112017 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1739797510.978567  112016 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1739797510.979294  112015 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+E0000 00:00:1739797510.980423  112018 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-17 13:05:10.996913: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-17 13:05:10.996915: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-17 13:05:10.997642: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-17 13:05:10.998326: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[2025-02-17 13:05:17,180] [INFO] using world size: 4
+[2025-02-17 13:05:17,181] [INFO] Will override arguments with manually specified deepspeed_config!
+[W217 13:05:18.894012097 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2025-02-17 13:05:18,046] [INFO] [comm.py:652:init_distributed] cdb=None
+[W217 13:05:18.910376715 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W217 13:05:18.910406902 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W217 13:05:18.910427098 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[2025-02-17 13:05:18,062] [INFO] [RANK 0] > initializing model parallel with size 1
+[2025-02-17 13:05:18,063] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-02-17 13:05:18,063] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-02-17 13:05:18,063] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-02-17 13:05:19,369] [INFO] [RANK 0] building SATVideoDiffusionEngine model ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:17<00:17, 17.54s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:19<00:19, 19.62s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:19<00:19, 19.80s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:18<00:18, 18.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:39<00:00, 19.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:39<00:00, 19.70s/it]
+Initialized embedder #0: FrozenT5Embedder with 4762310656 params. Trainable: False
+Loading checkpoint shards: 100%|██████████| 2/2 [00:39<00:00, 19.99s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:39<00:00, 19.96s/it]
+Initialized embedder #0: FrozenT5Embedder with 4762310656 params. Trainable: False
+Loading checkpoint shards: 100%|██████████| 2/2 [00:38<00:00, 19.27s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:38<00:00, 19.02s/it]
+Initialized embedder #0: FrozenT5Embedder with 4762310656 params. Trainable: False
+Loading checkpoint shards: 100%|██████████| 2/2 [00:38<00:00, 19.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:38<00:00, 19.13s/it]
+Initialized embedder #0: FrozenT5Embedder with 4762310656 params. Trainable: False
+Working with z of shape (1, 16, 32, 32) = 16384 dimensions.
+Working with z of shape (1, 16, 32, 32) = 16384 dimensions.
+Working with z of shape (1, 16, 32, 32) = 16384 dimensions.
+Working with z of shape (1, 16, 32, 32) = 16384 dimensions.
+Deleting key loss.logvar from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.shift from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.scale from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.bias from state_dict.
+Deleting key loss.logvar from state_dict.Deleting key loss.perceptual_loss.net.slice1.2.weight from state_dict.
+
+Deleting key loss.perceptual_loss.net.slice1.2.bias from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.shift from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.weight from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.scale from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.2.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.2.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.14.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.14.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.17.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.17.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.14.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.14.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.17.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.17.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.weight from state_dict.
+Deleting key loss.logvar from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.shift from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.scale from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.2.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.2.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.bias from state_dict.Deleting key loss.perceptual_loss.net.slice3.14.weight from state_dict.
+
+Deleting key loss.perceptual_loss.net.slice4.21.weight from state_dict.Deleting key loss.perceptual_loss.net.slice3.14.bias from state_dict.
+
+Deleting key loss.perceptual_loss.net.slice4.17.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.17.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.26.weight from state_dict.
+Deleting key loss.logvar from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.shift from state_dict.
+Deleting key loss.perceptual_loss.scaling_layer.scale from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.0.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.2.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice1.2.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.5.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice2.7.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.10.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.12.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice3.14.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.bias from state_dict.Deleting key loss.perceptual_loss.net.slice3.14.bias from state_dict.
+
+Deleting key loss.perceptual_loss.net.slice5.26.weight from state_dict.Deleting key loss.perceptual_loss.net.slice4.17.weight from state_dict.
+
+Deleting key loss.perceptual_loss.net.slice4.17.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.26.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.26.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.26.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.19.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.bias from state_dict.
+Deleting key loss.perceptual_loss.lin0.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin1.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin2.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin3.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin4.model.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.26.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.bias from state_dict.
+Deleting key loss.perceptual_loss.lin0.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin1.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin2.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin3.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin4.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice4.21.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.weight from state_dict.Deleting key loss.discriminator.blocks.0.downsample_res.conv.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.0.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.bias from state_dict.
+Deleting key loss.perceptual_loss.lin0.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin1.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin2.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.24.bias from state_dict.Deleting key loss.perceptual_loss.lin3.model.1.weight from state_dict.
+
+Deleting key loss.perceptual_loss.net.slice5.26.weight from state_dict.Deleting key loss.perceptual_loss.lin4.model.1.weight from state_dict.
+
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.weight from state_dict.Deleting key loss.discriminator.blocks.1.downsample.conv.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.26.bias from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.weight from state_dict.
+Deleting key loss.perceptual_loss.net.slice5.28.bias from state_dict.
+Deleting key loss.perceptual_loss.lin0.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin1.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin2.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin3.model.1.weight from state_dict.
+Deleting key loss.perceptual_loss.lin4.model.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.0.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.weight from state_dict.Deleting key loss.discriminator.blocks.1.net.0.conv.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.1.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.1.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.2.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample_res.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.0.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.net.2.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.3.downsample.conv.bias from state_dict.Deleting key loss.discriminator.blocks.4.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.conv_res.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.4.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.bias from state_dict.Deleting key loss.discriminator.blocks.3.downsample.conv.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.4.0.net.2.weight from state_dict.Deleting key loss.discriminator.blocks.4.0.conv_res.weight from state_dict.
+
+Deleting key loss.discriminator.blocks.4.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.0.bias from state_dict.Deleting key loss.discriminator.blocks.5.0.net.0.weight from state_dict.
+
+Deleting key loss.discriminator.blocks.4.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.4.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.conv_res.weight from state_dict.Deleting key loss.discriminator.blocks.5.0.net.2.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.5.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.bias from state_dict.Deleting key loss.discriminator.blocks.5.0.net.2.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.6.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.0.downsample.1.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.5.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.6.0.conv_res.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.bias from state_dict.Deleting key loss.discriminator.blocks.6.0.net.2.weight from state_dict.Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.bias from state_dict.
+
+
+Deleting key loss.discriminator.blocks.6.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.to_logits.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.to_logits.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.norm.gamma from state_dict.Deleting key loss.discriminator.to_logits.0.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_q.0.weight from state_dict.Deleting key loss.discriminator.to_logits.3.weight from state_dict.
+
+Deleting key loss.discriminator.to_logits.0.bias from state_dict.Deleting key loss.discriminator.to_logits.3.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.to_logits.3.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.to_logits.3.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.to_logits.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.0.net.2.bias from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_q.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_kv.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.0.fn.attn.to_out.0.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.norm.gamma from state_dict.
+Deleting key loss.discriminator.to_logits.0.bias from state_dict.Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.weight from state_dict.
+
+Deleting key loss.discriminator.to_logits.3.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.0.bias from state_dict.Deleting key loss.discriminator.to_logits.3.bias from state_dict.
+
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.weight from state_dict.
+Deleting key loss.discriminator.blocks.6.1.1.fn.net.2.bias from state_dict.
+Deleting key loss.discriminator.to_logits.0.weight from state_dict.
+Deleting key loss.discriminator.to_logits.0.bias from state_dict.
+Deleting key loss.discriminator.to_logits.3.weight from state_dict.
+Deleting key loss.discriminator.to_logits.3.bias from state_dict.
+Missing keys:  []
+Unexpected keys:  []
+Restored from ./pretrained_models/cogvideox-5b-i2v-sat/vae/3d-vae.pt
+Missing keys:  []
+Unexpected keys:  []
+Restored from ./pretrained_models/cogvideox-5b-i2v-sat/vae/3d-vae.pt
+Missing keys:  []
+Unexpected keys:  []
+Restored from ./pretrained_models/cogvideox-5b-i2v-sat/vae/3d-vae.pt
+Missing keys:  []
+Unexpected keys:  []
+Restored from ./pretrained_models/cogvideox-5b-i2v-sat/vae/3d-vae.pt
+[2025-02-17 13:07:36,175] [INFO] [RANK 0]  > number of parameters on model parallel rank 0: 19524432675
+[2025-02-17 13:08:14,111] [INFO] [RANK 0] global rank 0 is loading checkpoint ./stage-1/train-stage-1-02-07-14-24/2500/mp_rank_00_model_states.pt
+[2025-02-17 13:09:49,511] [INFO] [RANK 0] > successfully loaded ./stage-1/train-stage-1-02-07-14-24/2500/mp_rank_00_model_states.pt
+[1739797791.122069] [acbd10enju1kr-0:112015:f]        vfs_fuse.c:281  UCX  ERROR inotify_add_watch(/tmp) failed: No space left on device
+[1739797798.910318] [acbd10enju1kr-0:112016:f]        vfs_fuse.c:281  UCX  ERROR inotify_add_watch(/tmp) failed: No space left on device
+[1739797798.913949] [acbd10enju1kr-0:112017:f]        vfs_fuse.c:281  UCX  ERROR inotify_add_watch(/tmp) failed: No space left on device
+[1739797799.639741] [acbd10enju1kr-0:112018:f]        vfs_fuse.c:281  UCX  ERROR inotify_add_watch(/tmp) failed: No space left on device
+[2025-02-17 13:10:01,827] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_input_layernorm.weight
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_input_layernorm.bias
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_attn.query.weight
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_attn.query.bias
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_attn.key_value.weight
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_attn.key_value.bias
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_attn.dense.weight
+[2025-02-17 13:10:01,828] [INFO] [RANK 0] model.diffusion_model.transformer.layers.0.audio_attn.dense.bias
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_input_layernorm.weight
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_input_layernorm.bias
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_attn.query.weight
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_attn.query.bias
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_attn.key_value.weight
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_attn.key_value.bias
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_attn.dense.weight
+[2025-02-17 13:10:01,829] [INFO] [RANK 0] model.diffusion_model.transformer.layers.1.audio_attn.dense.bias
+[2025-02-17 13:10:01,830] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_input_layernorm.weight
+[2025-02-17 13:10:01,830] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_input_layernorm.bias
+[2025-02-17 13:10:01,830] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_attn.query.weight
+[2025-02-17 13:10:01,830] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_attn.query.bias
+[2025-02-17 13:10:01,830] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_attn.key_value.weight
+[2025-02-17 13:10:01,831] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_attn.key_value.bias
+[2025-02-17 13:10:01,831] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_attn.dense.weight
+[2025-02-17 13:10:01,831] [INFO] [RANK 0] model.diffusion_model.transformer.layers.2.audio_attn.dense.bias
+[2025-02-17 13:10:01,831] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_input_layernorm.weight
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_input_layernorm.bias
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_attn.query.weight
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_attn.query.bias
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_attn.key_value.weight
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_attn.key_value.bias
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_attn.dense.weight
+[2025-02-17 13:10:01,832] [INFO] [RANK 0] model.diffusion_model.transformer.layers.3.audio_attn.dense.bias
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_input_layernorm.weight
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_input_layernorm.bias
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_attn.query.weight
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_attn.query.bias
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_attn.key_value.weight
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_attn.key_value.bias
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_attn.dense.weight
+[2025-02-17 13:10:01,833] [INFO] [RANK 0] model.diffusion_model.transformer.layers.4.audio_attn.dense.bias
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_input_layernorm.weight
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_input_layernorm.bias
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_attn.query.weight
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_attn.query.bias
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_attn.key_value.weight
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_attn.key_value.bias
+[2025-02-17 13:10:01,834] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_attn.dense.weight
+[2025-02-17 13:10:01,835] [INFO] [RANK 0] model.diffusion_model.transformer.layers.5.audio_attn.dense.bias
+[2025-02-17 13:10:01,835] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_input_layernorm.weight
+[2025-02-17 13:10:01,835] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_input_layernorm.bias
+[2025-02-17 13:10:01,835] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_attn.query.weight
+[2025-02-17 13:10:01,836] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_attn.query.bias
+[2025-02-17 13:10:01,836] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_attn.key_value.weight
+[2025-02-17 13:10:01,836] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_attn.key_value.bias
+[2025-02-17 13:10:01,836] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_attn.dense.weight
+[2025-02-17 13:10:01,836] [INFO] [RANK 0] model.diffusion_model.transformer.layers.6.audio_attn.dense.bias
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_input_layernorm.weight
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_input_layernorm.bias
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_attn.query.weight
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_attn.query.bias
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_attn.key_value.weight
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_attn.key_value.bias
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_attn.dense.weight
+[2025-02-17 13:10:01,837] [INFO] [RANK 0] model.diffusion_model.transformer.layers.7.audio_attn.dense.bias
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_input_layernorm.weight
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_input_layernorm.bias
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_attn.query.weight
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_attn.query.bias
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_attn.key_value.weight
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_attn.key_value.bias
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_attn.dense.weight
+[2025-02-17 13:10:01,838] [INFO] [RANK 0] model.diffusion_model.transformer.layers.8.audio_attn.dense.bias
+[2025-02-17 13:10:01,839] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_input_layernorm.weight
+[2025-02-17 13:10:01,839] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_input_layernorm.bias
+[2025-02-17 13:10:01,839] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_attn.query.weight
+[2025-02-17 13:10:01,839] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_attn.query.bias
+[2025-02-17 13:10:01,839] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_attn.key_value.weight
+[2025-02-17 13:10:01,839] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_attn.key_value.bias
+[2025-02-17 13:10:01,840] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_attn.dense.weight
+[2025-02-17 13:10:01,840] [INFO] [RANK 0] model.diffusion_model.transformer.layers.9.audio_attn.dense.bias
+[2025-02-17 13:10:01,840] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_input_layernorm.weight
+[2025-02-17 13:10:01,840] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_input_layernorm.bias
+[2025-02-17 13:10:01,840] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_attn.query.weight
+[2025-02-17 13:10:01,841] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_attn.query.bias
+[2025-02-17 13:10:01,841] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_attn.key_value.weight
+[2025-02-17 13:10:01,841] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_attn.key_value.bias
+[2025-02-17 13:10:01,841] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_attn.dense.weight
+[2025-02-17 13:10:01,841] [INFO] [RANK 0] model.diffusion_model.transformer.layers.10.audio_attn.dense.bias
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_input_layernorm.weight
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_input_layernorm.bias
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_attn.query.weight
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_attn.query.bias
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_attn.key_value.weight
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_attn.key_value.bias
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_attn.dense.weight
+[2025-02-17 13:10:01,842] [INFO] [RANK 0] model.diffusion_model.transformer.layers.11.audio_attn.dense.bias
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_input_layernorm.weight
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_input_layernorm.bias
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_attn.query.weight
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_attn.query.bias
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_attn.key_value.weight
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_attn.key_value.bias
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_attn.dense.weight
+[2025-02-17 13:10:01,843] [INFO] [RANK 0] model.diffusion_model.transformer.layers.12.audio_attn.dense.bias
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_input_layernorm.weight
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_input_layernorm.bias
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_attn.query.weight
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_attn.query.bias
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_attn.key_value.weight
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_attn.key_value.bias
+[2025-02-17 13:10:01,844] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_attn.dense.weight
+[2025-02-17 13:10:01,845] [INFO] [RANK 0] model.diffusion_model.transformer.layers.13.audio_attn.dense.bias
+[2025-02-17 13:10:01,845] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_input_layernorm.weight
+[2025-02-17 13:10:01,845] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_input_layernorm.bias
+[2025-02-17 13:10:01,845] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_attn.query.weight
+[2025-02-17 13:10:01,845] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_attn.query.bias
+[2025-02-17 13:10:01,846] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_attn.key_value.weight
+[2025-02-17 13:10:01,846] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_attn.key_value.bias
+[2025-02-17 13:10:01,846] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_attn.dense.weight
+[2025-02-17 13:10:01,846] [INFO] [RANK 0] model.diffusion_model.transformer.layers.14.audio_attn.dense.bias
+[2025-02-17 13:10:01,846] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_input_layernorm.weight
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_input_layernorm.bias
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_attn.query.weight
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_attn.query.bias
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_attn.key_value.weight
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_attn.key_value.bias
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_attn.dense.weight
+[2025-02-17 13:10:01,847] [INFO] [RANK 0] model.diffusion_model.transformer.layers.15.audio_attn.dense.bias
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_input_layernorm.weight
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_input_layernorm.bias
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_attn.query.weight
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_attn.query.bias
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_attn.key_value.weight
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_attn.key_value.bias
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_attn.dense.weight
+[2025-02-17 13:10:01,848] [INFO] [RANK 0] model.diffusion_model.transformer.layers.16.audio_attn.dense.bias
+[2025-02-17 13:10:01,849] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_input_layernorm.weight
+[2025-02-17 13:10:01,849] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_input_layernorm.bias
+[2025-02-17 13:10:01,849] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_attn.query.weight
+[2025-02-17 13:10:01,849] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_attn.query.bias
+[2025-02-17 13:10:01,849] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_attn.key_value.weight
+[2025-02-17 13:10:01,850] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_attn.key_value.bias
+[2025-02-17 13:10:01,850] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_attn.dense.weight
+[2025-02-17 13:10:01,850] [INFO] [RANK 0] model.diffusion_model.transformer.layers.17.audio_attn.dense.bias
+[2025-02-17 13:10:01,850] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_input_layernorm.weight
+[2025-02-17 13:10:01,850] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_input_layernorm.bias
+[2025-02-17 13:10:01,851] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_attn.query.weight
+[2025-02-17 13:10:01,851] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_attn.query.bias
+[2025-02-17 13:10:01,851] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_attn.key_value.weight
+[2025-02-17 13:10:01,851] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_attn.key_value.bias
+[2025-02-17 13:10:01,851] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_attn.dense.weight
+[2025-02-17 13:10:01,851] [INFO] [RANK 0] model.diffusion_model.transformer.layers.18.audio_attn.dense.bias
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_input_layernorm.weight
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_input_layernorm.bias
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_attn.query.weight
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_attn.query.bias
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_attn.key_value.weight
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_attn.key_value.bias
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_attn.dense.weight
+[2025-02-17 13:10:01,852] [INFO] [RANK 0] model.diffusion_model.transformer.layers.19.audio_attn.dense.bias
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_input_layernorm.weight
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_input_layernorm.bias
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_attn.query.weight
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_attn.query.bias
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_attn.key_value.weight
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_attn.key_value.bias
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_attn.dense.weight
+[2025-02-17 13:10:01,853] [INFO] [RANK 0] model.diffusion_model.transformer.layers.20.audio_attn.dense.bias
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_input_layernorm.weight
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_input_layernorm.bias
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_attn.query.weight
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_attn.query.bias
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_attn.key_value.weight
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_attn.key_value.bias
+[2025-02-17 13:10:01,854] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_attn.dense.weight
+[2025-02-17 13:10:01,855] [INFO] [RANK 0] model.diffusion_model.transformer.layers.21.audio_attn.dense.bias
+[2025-02-17 13:10:01,855] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_input_layernorm.weight
+[2025-02-17 13:10:01,855] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_input_layernorm.bias
+[2025-02-17 13:10:01,855] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_attn.query.weight
+[2025-02-17 13:10:01,855] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_attn.query.bias
+[2025-02-17 13:10:01,856] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_attn.key_value.weight
+[2025-02-17 13:10:01,856] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_attn.key_value.bias
+[2025-02-17 13:10:01,856] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_attn.dense.weight
+[2025-02-17 13:10:01,856] [INFO] [RANK 0] model.diffusion_model.transformer.layers.22.audio_attn.dense.bias
+[2025-02-17 13:10:01,856] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_input_layernorm.weight
+[2025-02-17 13:10:01,856] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_input_layernorm.bias
+[2025-02-17 13:10:01,857] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_attn.query.weight
+[2025-02-17 13:10:01,857] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_attn.query.bias
+[2025-02-17 13:10:01,857] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_attn.key_value.weight
+[2025-02-17 13:10:01,857] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_attn.key_value.bias
+[2025-02-17 13:10:01,857] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_attn.dense.weight
+[2025-02-17 13:10:01,857] [INFO] [RANK 0] model.diffusion_model.transformer.layers.23.audio_attn.dense.bias
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_input_layernorm.weight
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_input_layernorm.bias
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_attn.query.weight
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_attn.query.bias
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_attn.key_value.weight
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_attn.key_value.bias
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_attn.dense.weight
+[2025-02-17 13:10:01,858] [INFO] [RANK 0] model.diffusion_model.transformer.layers.24.audio_attn.dense.bias
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_input_layernorm.weight
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_input_layernorm.bias
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_attn.query.weight
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_attn.query.bias
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_attn.key_value.weight
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_attn.key_value.bias
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_attn.dense.weight
+[2025-02-17 13:10:01,859] [INFO] [RANK 0] model.diffusion_model.transformer.layers.25.audio_attn.dense.bias
+[2025-02-17 13:10:01,860] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_input_layernorm.weight
+[2025-02-17 13:10:01,860] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_input_layernorm.bias
+[2025-02-17 13:10:01,860] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_attn.query.weight
+[2025-02-17 13:10:01,860] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_attn.query.bias
+[2025-02-17 13:10:01,860] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_attn.key_value.weight
+[2025-02-17 13:10:01,860] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_attn.key_value.bias
+[2025-02-17 13:10:01,861] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_attn.dense.weight
+[2025-02-17 13:10:01,861] [INFO] [RANK 0] model.diffusion_model.transformer.layers.26.audio_attn.dense.bias
+[2025-02-17 13:10:01,861] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_input_layernorm.weight
+[2025-02-17 13:10:01,861] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_input_layernorm.bias
+[2025-02-17 13:10:01,861] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_attn.query.weight
+[2025-02-17 13:10:01,861] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_attn.query.bias
+[2025-02-17 13:10:01,862] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_attn.key_value.weight
+[2025-02-17 13:10:01,862] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_attn.key_value.bias
+[2025-02-17 13:10:01,862] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_attn.dense.weight
+[2025-02-17 13:10:01,862] [INFO] [RANK 0] model.diffusion_model.transformer.layers.27.audio_attn.dense.bias
+[2025-02-17 13:10:01,862] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_input_layernorm.weight
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_input_layernorm.bias
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_attn.query.weight
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_attn.query.bias
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_attn.key_value.weight
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_attn.key_value.bias
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_attn.dense.weight
+[2025-02-17 13:10:01,863] [INFO] [RANK 0] model.diffusion_model.transformer.layers.28.audio_attn.dense.bias
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_input_layernorm.weight
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_input_layernorm.bias
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_attn.query.weight
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_attn.query.bias
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_attn.key_value.weight
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_attn.key_value.bias
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_attn.dense.weight
+[2025-02-17 13:10:01,864] [INFO] [RANK 0] model.diffusion_model.transformer.layers.29.audio_attn.dense.bias
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_input_layernorm.weight
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_input_layernorm.bias
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_attn.query.weight
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_attn.query.bias
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_attn.key_value.weight
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_attn.key_value.bias
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_attn.dense.weight
+[2025-02-17 13:10:01,865] [INFO] [RANK 0] model.diffusion_model.transformer.layers.30.audio_attn.dense.bias
+[2025-02-17 13:10:01,866] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_input_layernorm.weight
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_input_layernorm.bias
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_attn.query.weight
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_attn.query.bias
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_attn.key_value.weight
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_attn.key_value.bias
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_attn.dense.weight
+[2025-02-17 13:10:01,867] [INFO] [RANK 0] model.diffusion_model.transformer.layers.31.audio_attn.dense.bias
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_input_layernorm.weight
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_input_layernorm.bias
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_attn.query.weight
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_attn.query.bias
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_attn.key_value.weight
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_attn.key_value.bias
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_attn.dense.weight
+[2025-02-17 13:10:01,868] [INFO] [RANK 0] model.diffusion_model.transformer.layers.32.audio_attn.dense.bias
+[2025-02-17 13:10:01,869] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_input_layernorm.weight
+[2025-02-17 13:10:01,869] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_input_layernorm.bias
+[2025-02-17 13:10:01,869] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_attn.query.weight
+[2025-02-17 13:10:01,869] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_attn.query.bias
+[2025-02-17 13:10:01,870] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_attn.key_value.weight
+[2025-02-17 13:10:01,870] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_attn.key_value.bias
+[2025-02-17 13:10:01,870] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_attn.dense.weight
+[2025-02-17 13:10:01,870] [INFO] [RANK 0] model.diffusion_model.transformer.layers.33.audio_attn.dense.bias
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_input_layernorm.weight
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_input_layernorm.bias
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_attn.query.weight
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_attn.query.bias
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_attn.key_value.weight
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_attn.key_value.bias
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_attn.dense.weight
+[2025-02-17 13:10:01,871] [INFO] [RANK 0] model.diffusion_model.transformer.layers.34.audio_attn.dense.bias
+[2025-02-17 13:10:01,872] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_input_layernorm.weight
+[2025-02-17 13:10:01,872] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_input_layernorm.bias
+[2025-02-17 13:10:01,872] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_attn.query.weight
+[2025-02-17 13:10:01,872] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_attn.query.bias
+[2025-02-17 13:10:01,872] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_attn.key_value.weight
+[2025-02-17 13:10:01,894] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_attn.key_value.bias
+[2025-02-17 13:10:01,895] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_attn.dense.weight
+[2025-02-17 13:10:01,895] [INFO] [RANK 0] model.diffusion_model.transformer.layers.35.audio_attn.dense.bias
+[2025-02-17 13:10:01,896] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_input_layernorm.weight
+[2025-02-17 13:10:01,896] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_input_layernorm.bias
+[2025-02-17 13:10:01,897] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_attn.query.weight
+[2025-02-17 13:10:01,897] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_attn.query.bias
+[2025-02-17 13:10:01,897] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_attn.key_value.weight
+[2025-02-17 13:10:01,897] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_attn.key_value.bias
+[2025-02-17 13:10:01,897] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_attn.dense.weight
+[2025-02-17 13:10:01,897] [INFO] [RANK 0] model.diffusion_model.transformer.layers.36.audio_attn.dense.bias
+[2025-02-17 13:10:01,898] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_input_layernorm.weight
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_input_layernorm.bias
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_attn.query.weight
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_attn.query.bias
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_attn.key_value.weight
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_attn.key_value.bias
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_attn.dense.weight
+[2025-02-17 13:10:01,899] [INFO] [RANK 0] model.diffusion_model.transformer.layers.37.audio_attn.dense.bias
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_input_layernorm.weight
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_input_layernorm.bias
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_attn.query.weight
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_attn.query.bias
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_attn.key_value.weight
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_attn.key_value.bias
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_attn.dense.weight
+[2025-02-17 13:10:01,901] [INFO] [RANK 0] model.diffusion_model.transformer.layers.38.audio_attn.dense.bias
+[2025-02-17 13:10:01,903] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_input_layernorm.weight
+[2025-02-17 13:10:01,903] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_input_layernorm.bias
+[2025-02-17 13:10:01,903] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_attn.query.weight
+[2025-02-17 13:10:01,903] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_attn.query.bias
+[2025-02-17 13:10:01,903] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_attn.key_value.weight
+[2025-02-17 13:10:01,903] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_attn.key_value.bias
+[2025-02-17 13:10:01,904] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_attn.dense.weight
+[2025-02-17 13:10:01,904] [INFO] [RANK 0] model.diffusion_model.transformer.layers.39.audio_attn.dense.bias
+[2025-02-17 13:10:01,905] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_input_layernorm.weight
+[2025-02-17 13:10:01,918] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_input_layernorm.bias
+[2025-02-17 13:10:01,919] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_attn.query.weight
+[2025-02-17 13:10:01,919] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_attn.query.bias
+[2025-02-17 13:10:01,919] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_attn.key_value.weight
+[2025-02-17 13:10:01,919] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_attn.key_value.bias
+[2025-02-17 13:10:01,919] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_attn.dense.weight
+[2025-02-17 13:10:01,919] [INFO] [RANK 0] model.diffusion_model.transformer.layers.40.audio_attn.dense.bias
+[2025-02-17 13:10:01,921] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_input_layernorm.weight
+[2025-02-17 13:10:01,921] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_input_layernorm.bias
+[2025-02-17 13:10:01,921] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_attn.query.weight
+[2025-02-17 13:10:01,921] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_attn.query.bias
+[2025-02-17 13:10:01,921] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_attn.key_value.weight
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_attn.key_value.bias
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_attn.dense.weight
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.layers.41.audio_attn.dense.bias
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.proj1.weight
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.proj1.bias
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.proj2.weight
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.proj2.bias
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.proj3.weight
+[2025-02-17 13:10:01,922] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.proj3.bias
+[2025-02-17 13:10:01,923] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.norm.weight
+[2025-02-17 13:10:01,923] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.norm.bias
+[2025-02-17 13:10:01,923] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.conv1.weight
+[2025-02-17 13:10:01,923] [INFO] [RANK 0] model.diffusion_model.transformer.audio_proj.conv1.bias
+[2025-02-17 13:10:01,950] [INFO] [RANK 0] ***** Total trainable parameters: 2236127744 *****
+[2025-02-17 13:10:01,950] [INFO] [RANK 0] [<class 'sat.ops.layernorm.LayerNorm'>, <class 'torch.nn.modules.normalization.LayerNorm'>, <class 'sat.ops.layernorm.RMSNorm'>] is set to no_weight_decay
+[2025-02-17 13:10:01,960] [INFO] [RANK 0] Syncing initialized parameters...
+[2025-02-17 13:10:03,327] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 4
+[2025-02-17 13:10:03,328] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2025-02-17 13:10:03,330] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 4
+[2025-02-17 13:10:03,331] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2025-02-17 13:10:03,332] [INFO] [RANK 0] Finished syncing initialized parameters.
+[2025-02-17 13:10:03,332] [INFO] [RANK 0] Using optimizer sat.ops.FusedEmaAdam from sat.
+[2025-02-17 13:10:03,333] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed info: version=0.16.2, git-hash=unknown, git-branch=unknown
+[2025-02-17 13:10:03,333] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 4
+[2025-02-17 13:10:03,333] [INFO] [config.py:733:__init__] Config mesh_device None world_size = 4
+[2025-02-17 13:10:03,333] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2025-02-17 13:10:03,333] [WARNING] [config_utils.py:70:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2025-02-17 13:10:04,724] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+
+Using /root/.cache/torch_extensions/py310_cu121 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /root/.cache/torch_extensions/py310_cu121/fused_ema_adam/build.ninja...
+/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/cpp_extension.py:1965: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Building extension module fused_ema_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_ema_adam...
+Loading extension module fused_ema_adam...Loading extension module fused_ema_adam...Loading extension module fused_ema_adam...
+
+
+Time to load fused_ema_adam op: 2.6402428150177 secondsTime to load fused_ema_adam op: 2.6400468349456787 seconds
+Time to load fused_ema_adam op: 2.6402060985565186 seconds
+
+Time to load fused_ema_adam op: 2.640921115875244 seconds
+[2025-02-17 13:10:07,478] [INFO] [logging.py:128:log_dist] [Rank 0] Using client callable to create basic optimizer
+[2025-02-17 13:10:07,478] [INFO] [logging.py:128:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2025-02-17 13:10:07,558] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Basic Optimizer = FusedEmaAdam
+[2025-02-17 13:10:07,558] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=FusedEmaAdam type=<class 'sat.ops.fused_ema_adam.FusedEmaAdam'>
+[2025-02-17 13:10:07,558] [WARNING] [engine.py:1244:_do_optimizer_sanity_check] **** You are using ZeRO with an untested optimizer, proceed with caution *****
+[2025-02-17 13:10:07,558] [INFO] [logging.py:128:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 2 optimizer
+[2025-02-17 13:10:07,559] [INFO] [stage_1_and_2.py:149:__init__] Reduce bucket size 1000000000
+[2025-02-17 13:10:07,559] [INFO] [stage_1_and_2.py:150:__init__] Allgather bucket size 1000000000
+[2025-02-17 13:10:07,559] [INFO] [stage_1_and_2.py:151:__init__] CPU Offload: False
+[2025-02-17 13:10:07,559] [INFO] [stage_1_and_2.py:152:__init__] Round robin gradient partitioning: False
+[2025-02-17 13:10:11,691] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2025-02-17 13:10:11,693] [INFO] [utils.py:782:see_memory_usage] MA 38.46 GB         Max_MA 38.46 GB         CA 39.29 GB         Max_CA 39 GB 
+[2025-02-17 13:10:11,693] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 280.5 GB, percent = 13.9%
+[2025-02-17 13:10:12,731] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2025-02-17 13:10:12,731] [INFO] [utils.py:782:see_memory_usage] MA 38.46 GB         Max_MA 40.54 GB         CA 41.38 GB         Max_CA 41 GB 
+[2025-02-17 13:10:12,732] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 280.05 GB, percent = 13.9%
+[2025-02-17 13:10:12,732] [INFO] [stage_1_and_2.py:544:__init__] optimizer state initialized
+[2025-02-17 13:10:13,141] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2025-02-17 13:10:13,142] [INFO] [utils.py:782:see_memory_usage] MA 38.46 GB         Max_MA 38.46 GB         CA 41.38 GB         Max_CA 41 GB 
+[2025-02-17 13:10:13,143] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 280.7 GB, percent = 13.9%
+[2025-02-17 13:10:13,149] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer
+[2025-02-17 13:10:13,151] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2025-02-17 13:10:13,151] [INFO] [logging.py:128:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2025-02-17 13:10:13,151] [INFO] [logging.py:128:log_dist] [Rank 0] step=0, skipped=0, lr=[1.0, 1.0], mom=[[0.9, 0.95], [0.9, 0.95]]
+[2025-02-17 13:10:13,168] [INFO] [config.py:999:print] DeepSpeedEngine configuration:
+[2025-02-17 13:10:13,169] [INFO] [config.py:1003:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2025-02-17 13:10:13,169] [INFO] [config.py:1003:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2025-02-17 13:10:13,169] [INFO] [config.py:1003:print]   amp_enabled .................. False
+[2025-02-17 13:10:13,169] [INFO] [config.py:1003:print]   amp_params ................... False
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   bfloat16_enabled ............. True
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   bfloat16_immediate_grad_update  False
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   checkpoint_parallel_write_pipeline  False
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   checkpoint_tag_validation_enabled  True
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   checkpoint_tag_validation_fail  False
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f6f619f5240>
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   communication_data_type ...... None
+[2025-02-17 13:10:13,170] [INFO] [config.py:1003:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2025-02-17 13:10:13,171] [INFO] [config.py:1003:print]   curriculum_enabled_legacy .... False
+[2025-02-17 13:10:13,171] [INFO] [config.py:1003:print]   curriculum_params_legacy ..... False
+[2025-02-17 13:10:13,217] [INFO] [config.py:1003:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   data_efficiency_enabled ...... False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   dataloader_drop_last ......... False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   disable_allgather ............ False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   dump_state ................... False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   dynamic_loss_scale_args ...... None
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_enabled ........... False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_gas_boundary_resolution  1
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_layer_num ......... 0
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_max_iter .......... 100
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_stability ......... 1e-06
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_tol ............... 0.01
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   eigenvalue_verbose ........... False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   elasticity_enabled ........... False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   fp16_auto_cast ............... None
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   fp16_enabled ................. False
+[2025-02-17 13:10:13,218] [INFO] [config.py:1003:print]   fp16_master_weights_and_gradients  False
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   global_rank .................. 0
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   grad_accum_dtype ............. None
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   gradient_accumulation_steps .. 1
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   gradient_clipping ............ 0.1
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   gradient_predivide_factor .... 1.0
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   graph_harvesting ............. False
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   initial_dynamic_scale ........ 1
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   load_universal_checkpoint .... False
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   loss_scale ................... 1.0
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   memory_breakdown ............. False
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   mics_hierarchial_params_gather  False
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   mics_shard_size .............. -1
+[2025-02-17 13:10:13,219] [INFO] [config.py:1003:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   optimizer_legacy_fusion ...... False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   optimizer_name ............... None
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   optimizer_params ............. None
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   pld_enabled .................. False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   pld_params ................... False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   prescale_gradients ........... False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   scheduler_name ............... None
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   scheduler_params ............. None
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   seq_parallel_communication_data_type  torch.float32
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   sparse_attention ............. None
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   sparse_gradients_enabled ..... False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   steps_per_print .............. 50
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   timers_config ................ enabled=True synchronized=True
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   train_batch_size ............. 4
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   train_micro_batch_size_per_gpu  1
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   use_data_before_expert_parallel_  False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   use_node_local_storage ....... False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   wall_clock_breakdown ......... False
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   weight_quantization_config ... None
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   world_size ................... 4
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   zero_allow_untested_optimizer  True
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   zero_config .................. stage=2 contiguous_gradients=False reduce_scatter=True reduce_bucket_size=1000000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=1000000000 overlap_comm=True load_from_fp32_weights=False elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   zero_enabled ................. True
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   zero_force_ds_cpu_optimizer .. True
+[2025-02-17 13:10:13,220] [INFO] [config.py:1003:print]   zero_optimization_stage ...... 2
+[2025-02-17 13:10:13,221] [INFO] [config.py:989:print_user_config]   json = {
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 1, 
+    "steps_per_print": 50, 
+    "gradient_clipping": 0.1, 
+    "zero_optimization": {
+        "stage": 2, 
+        "cpu_offload": false, 
+        "contiguous_gradients": false, 
+        "overlap_comm": true, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 1.000000e+09, 
+        "allgather_bucket_size": 1.000000e+09, 
+        "load_from_fp32_weights": false
+    }, 
+    "zero_allow_untested_optimizer": true, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "fp16": {
+        "enabled": false
+    }, 
+    "loss_scale": 0, 
+    "loss_scale_window": 400, 
+    "hysteresis": 2, 
+    "min_loss_scale": 1, 
+    "activation_checkpointing": {
+        "partition_activations": false, 
+        "contiguous_memory_optimization": false
+    }, 
+    "wall_clock_breakdown": false
+}
+[2025-02-17 13:10:13,221] [INFO] [RANK 0] learning rate decaying style linear, ratio 10.0
+[2025-02-17 13:10:13,221] [INFO] [RANK 0] Finetuning Model...
+[2025-02-17 13:10:13,221] [INFO] [RANK 0] arguments:
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   base ......................... ['configs/cogvideox_5b_i2v_s2.yaml', 'configs/sft_s2.yaml']
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   model_parallel_size .......... 1
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   force_pretrain ............... False
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   device ....................... 0
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   debug ........................ False
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   log_image .................... True
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   output_dir ................... samples
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   input_dir .................... None
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   input_type ................... cli
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   input_file ................... input.txt
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   final_size ................... 2048
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   sdedit ....................... False
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   grid_num_rows ................ 1
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   force_inference .............. False
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   lcm_steps .................... None
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   sampling_num_frames .......... 32
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   sampling_fps ................. 8
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   only_save_latents ............ False
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   only_log_video_latents ....... True
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   latent_channels .............. 32
+[2025-02-17 13:10:13,221] [INFO] [RANK 0]   image2video .................. False
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   experiment_name .............. train-stage-2-02-17-13-05
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   train_iters .................. 30000
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   batch_size ................... 1
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   lr ........................... 1e-05
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   mode ......................... finetune
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   seed ......................... 30922
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   zero_stage ................... 0
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   checkpoint_activations ....... True
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   checkpoint_num_layers ........ 1
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   checkpoint_skip_layers ....... 0
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   fp16 ......................... False
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   bf16 ......................... True
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   gradient_accumulation_steps .. 1
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   profiling .................... -1
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   epochs ....................... None
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   log_interval ................. 1
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   summary_dir .................. 
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   save_args .................... False
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   lr_decay_iters ............... None
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   lr_decay_style ............... linear
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   lr_decay_ratio ............... 0.1
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   warmup ....................... 0.01
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   weight_decay ................. 0.0001
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   save ......................... stage-2/train-stage-2-02-17-13-05
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   load ......................... ./stage-1/train-stage-1-02-07-14-24
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   force_train .................. True
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   save_interval ................ 200
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   no_save_rng .................. False
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   no_load_rng .................. True
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   resume_dataloader ............ False
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   distributed_backend .......... nccl
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   local_rank ................... 0
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   exit_interval ................ None
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   wandb ........................ True
+[2025-02-17 13:10:13,222] [INFO] [RANK 0]   wandb_project_name ........... default_project
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   eval_batch_size .............. 1
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   eval_iters ................... 1
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   eval_interval ................ 30000
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   strict_eval .................. False
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   train_data ................... ['./data/hallo3_2-55f.json']
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   train_data_weights ........... None
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   iterable_dataset ............. False
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   iterable_dataset_eval ........ 
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   batch_from_same_dataset ...... False
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   valid_data ................... ['./data/hallo3-55f.json']
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   test_data .................... None
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   split ........................ 1,0,0
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   num_workers .................. 1
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   block_size ................... 10000
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   prefetch_factor .............. 4
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   sample_rate .................. 16000
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   wav2vec_model_path ........... None
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   wav2vec_features ............. all
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   audio_separator_model_path ... None
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   face_analysis_model_path ..... None
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   deepspeed .................... True
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   deepspeed_config ............. {'train_micro_batch_size_per_gpu': 1, 'gradient_accumulation_steps': 1, 'steps_per_print': 50, 'gradient_clipping': 0.1, 'zero_optimization': {'stage': 2, 'cpu_offload': False, 'contiguous_gradients': False, 'overlap_comm': True, 'reduce_scatter': True, 'reduce_bucket_size': 1000000000, 'allgather_bucket_size': 1000000000, 'load_from_fp32_weights': False}, 'zero_allow_untested_optimizer': True, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}, 'loss_scale': 0, 'loss_scale_window': 400, 'hysteresis': 2, 'min_loss_scale': 1, 'activation_checkpointing': {'partition_activations': False, 'contiguous_memory_optimization': False}, 'wall_clock_breakdown': False}
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   deepscale .................... False
+[2025-02-17 13:10:13,223] [INFO] [RANK 0]   deepscale_config ............. None
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   model_config ................. {'scale_factor': 0.7, 'disable_first_stage_autocast': True, 'latent_input': False, 'noised_image_input': True, 'noised_image_all_concat': False, 'noised_image_dropout': 0.05, 'not_trainable_prefixes': ['ref_model'], 'train_prefix': {'model': ['audio']}, 'log_keys': ['txt'], 'denoiser_config': {'target': 'sgm.modules.diffusionmodules.denoiser.DiscreteDenoiser', 'params': {'num_idx': 1000, 'quantize_c_noise': False, 'weighting_config': {'target': 'sgm.modules.diffusionmodules.denoiser_weighting.EpsWeighting'}, 'scaling_config': {'target': 'sgm.modules.diffusionmodules.denoiser_scaling.VideoScaling'}, 'discretization_config': {'target': 'sgm.modules.diffusionmodules.discretizer.ZeroSNRDDPMDiscretization', 'params': {'shift_scale': 1.0}}}}, 'network_config': {'target': 'dit_video_concat.DiffusionTransformer', 'params': {'time_embed_dim': 512, 'elementwise_affine': True, 'num_frames': 49, 'time_compressed_rate': 4, 'latent_width': 90, 'latent_height': 60, 'num_layers': 42, 'patch_size': 2, 'in_channels': 32, 'out_channels': 16, 'hidden_size': 3072, 'adm_in_channels': 256, 'num_attention_heads': 48, 'add_audio_module': True, 'transformer_args': {'checkpoint_activations': True, 'vocab_size': 1, 'max_sequence_length': 64, 'layernorm_order': 'pre', 'skip_init': False, 'model_parallel_size': 1, 'is_decoder': False, 'cross_attn_hidden_size': 768, 'face_cross_attn_hidden_size': 1024, 'num_layers': 42, 'hidden_size': 3072, 'num_attention_heads': 48, 'parallel_output': True, 'add_audio_module': True}, 'modules': {'pos_embed_config': {'target': 'dit_video_concat.Rotary3DPositionEmbeddingMixin', 'params': {'learnable_pos_embed': True, 'hidden_size_head': 64, 'text_length': 226}}, 'patch_embed_config': {'target': 'dit_video_concat.ImagePatchEmbeddingMixin', 'params': {'text_hidden_size': 4096}}, 'adaln_layer_config': {'target': 'dit_video_concat.AdaLNMixin', 'params': {'qk_ln': True}}, 'final_layer_config': {'target': 'dit_video_concat.FinalLayerMixin'}}, 'dtype': 'bf16'}}, 'ref_network_config': {'target': 'ref_dit_video_concat.DiffusionTransformer', 'params': {'time_embed_dim': 512, 'elementwise_affine': True, 'num_frames': 49, 'time_compressed_rate': 4, 'latent_width': 90, 'latent_height': 60, 'num_layers': 42, 'patch_size': 2, 'in_channels': 32, 'out_channels': 16, 'hidden_size': 3072, 'adm_in_channels': 256, 'num_attention_heads': 48, 'transformer_args': {'checkpoint_activations': False, 'vocab_size': 1, 'max_sequence_length': 64, 'layernorm_order': 'pre', 'skip_init': False, 'model_parallel_size': 1, 'is_decoder': False, 'num_layers': 42, 'hidden_size': 3072, 'num_attention_heads': 48, 'parallel_output': True}, 'modules': {'pos_embed_config': {'target': 'ref_dit_video_concat.Rotary3DPositionEmbeddingMixin', 'params': {'learnable_pos_embed': True, 'hidden_size_head': 64, 'text_length': 226}}, 'patch_embed_config': {'target': 'ref_dit_video_concat.ImagePatchEmbeddingMixin', 'params': {'text_hidden_size': 4096}}, 'adaln_layer_config': {'target': 'ref_dit_video_concat.AdaLNMixin', 'params': {'qk_ln': True}}, 'final_layer_config': {'target': 'ref_dit_video_concat.FinalLayerMixin'}}, 'dtype': 'bf16'}}, 'conditioner_config': {'target': 'sgm.modules.GeneralConditioner', 'params': {'emb_models': [{'is_trainable': False, 'input_key': 'txt', 'ucg_rate': 0.1, 'target': 'sgm.modules.encoders.modules.FrozenT5Embedder', 'params': {'model_dir': './pretrained_models/t5-v1_1-xxl', 'max_length': 226}}]}}, 'first_stage_config': {'target': 'vae_modules.autoencoder.VideoAutoencoderInferenceWrapper', 'params': {'cp_size': 1, 'ckpt_path': './pretrained_models/cogvideox-5b-i2v-sat/vae/3d-vae.pt', 'ignore_keys': ['loss'], 'loss_config': {'target': 'torch.nn.Identity'}, 'regularizer_config': {'target': 'vae_modules.regularizers.DiagonalGaussianRegularizer'}, 'encoder_config': {'target': 'vae_modules.cp_enc_dec.ContextParallelEncoder3D', 'params': {'double_z': True, 'z_channels': 16, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 2, 4], 'attn_resolutions': [], 'num_res_blocks': 3, 'dropout': 0.0, 'gather_norm': True}}, 'decoder_config': {'target': 'vae_modules.cp_enc_dec.ContextParallelDecoder3D', 'params': {'double_z': True, 'z_channels': 16, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 2, 4], 'attn_resolutions': [], 'num_res_blocks': 3, 'dropout': 0.0, 'gather_norm': True}}}}, 'loss_fn_config': {'target': 'sgm.modules.diffusionmodules.loss.VideoDiffusionLoss', 'params': {'batch2model_keys': ['audio_emb', 'face_emb'], 'fixed_frames': 0, 'offset_noise_level': 0, 'sigma_sampler_config': {'target': 'sgm.modules.diffusionmodules.sigma_sampling.DiscreteSampling', 'params': {'uniform_sampling': True, 'num_idx': 1000, 'discretization_config': {'target': 'sgm.modules.diffusionmodules.discretizer.ZeroSNRDDPMDiscretization', 'params': {'shift_scale': 1.0}}}}}}, 'sampler_config': {'target': 'sgm.modules.diffusionmodules.sampling.VPSDEDPMPP2MSampler', 'params': {'fixed_frames': 0, 'num_steps': 50, 'verbose': True, 'discretization_config': {'target': 'sgm.modules.diffusionmodules.discretizer.ZeroSNRDDPMDiscretization', 'params': {'shift_scale': 1.0}}, 'guider_config': {'target': 'sgm.modules.diffusionmodules.guiders.DynamicCFG', 'params': {'scale': 6, 'exp': 5, 'num_steps': 50}}}}}
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   data_config .................. {'target': 'data_video.Stage2_SFTDataset', 'params': {'video_size': [480, 720], 'fps': 8, 'max_num_frames': 49, 'skip_frms_num': 3.0}}
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   cuda ......................... True
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   rank ......................... 0
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   world_size ................... 4
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   deepspeed_activation_checkpointing  True
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   master_ip .................... acbd10enju1kr-0
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   master_port .................. 51272
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   log_config ................... [{'model': {'scale_factor': 0.7, 'disable_first_stage_autocast': True, 'latent_input': False, 'noised_image_input': True, 'noised_image_all_concat': False, 'noised_image_dropout': 0.05, 'not_trainable_prefixes': ['ref_model'], 'train_prefix': {'model': ['audio']}, 'log_keys': ['txt'], 'denoiser_config': {'target': 'sgm.modules.diffusionmodules.denoiser.DiscreteDenoiser', 'params': {'num_idx': 1000, 'quantize_c_noise': False, 'weighting_config': {'target': 'sgm.modules.diffusionmodules.denoiser_weighting.EpsWeighting'}, 'scaling_config': {'target': 'sgm.modules.diffusionmodules.denoiser_scaling.VideoScaling'}, 'discretization_config': {'target': 'sgm.modules.diffusionmodules.discretizer.ZeroSNRDDPMDiscretization', 'params': {'shift_scale': 1.0}}}}, 'network_config': {'target': 'dit_video_concat.DiffusionTransformer', 'params': {'time_embed_dim': 512, 'elementwise_affine': True, 'num_frames': 49, 'time_compressed_rate': 4, 'latent_width': 90, 'latent_height': 60, 'num_layers': 42, 'patch_size': 2, 'in_channels': 32, 'out_channels': 16, 'hidden_size': 3072, 'adm_in_channels': 256, 'num_attention_heads': 48, 'add_audio_module': True, 'transformer_args': {'checkpoint_activations': True, 'vocab_size': 1, 'max_sequence_length': 64, 'layernorm_order': 'pre', 'skip_init': False, 'model_parallel_size': 1, 'is_decoder': False, 'cross_attn_hidden_size': 768, 'face_cross_attn_hidden_size': 1024}, 'modules': {'pos_embed_config': {'target': 'dit_video_concat.Rotary3DPositionEmbeddingMixin', 'params': {'learnable_pos_embed': True, 'hidden_size_head': 64, 'text_length': 226}}, 'patch_embed_config': {'target': 'dit_video_concat.ImagePatchEmbeddingMixin', 'params': {'text_hidden_size': 4096}}, 'adaln_layer_config': {'target': 'dit_video_concat.AdaLNMixin', 'params': {'qk_ln': True}}, 'final_layer_config': {'target': 'dit_video_concat.FinalLayerMixin'}}}}, 'ref_network_config': {'target': 'ref_dit_video_concat.DiffusionTransformer', 'params': {'time_embed_dim': 512, 'elementwise_affine': True, 'num_frames': 49, 'time_compressed_rate': 4, 'latent_width': 90, 'latent_height': 60, 'num_layers': 42, 'patch_size': 2, 'in_channels': 32, 'out_channels': 16, 'hidden_size': 3072, 'adm_in_channels': 256, 'num_attention_heads': 48, 'transformer_args': {'checkpoint_activations': False, 'vocab_size': 1, 'max_sequence_length': 64, 'layernorm_order': 'pre', 'skip_init': False, 'model_parallel_size': 1, 'is_decoder': False}, 'modules': {'pos_embed_config': {'target': 'ref_dit_video_concat.Rotary3DPositionEmbeddingMixin', 'params': {'learnable_pos_embed': True, 'hidden_size_head': 64, 'text_length': 226}}, 'patch_embed_config': {'target': 'ref_dit_video_concat.ImagePatchEmbeddingMixin', 'params': {'text_hidden_size': 4096}}, 'adaln_layer_config': {'target': 'ref_dit_video_concat.AdaLNMixin', 'params': {'qk_ln': True}}, 'final_layer_config': {'target': 'ref_dit_video_concat.FinalLayerMixin'}}}}, 'conditioner_config': {'target': 'sgm.modules.GeneralConditioner', 'params': {'emb_models': [{'is_trainable': False, 'input_key': 'txt', 'ucg_rate': 0.1, 'target': 'sgm.modules.encoders.modules.FrozenT5Embedder', 'params': {'model_dir': './pretrained_models/t5-v1_1-xxl', 'max_length': 226}}]}}, 'first_stage_config': {'target': 'vae_modules.autoencoder.VideoAutoencoderInferenceWrapper', 'params': {'cp_size': 1, 'ckpt_path': './pretrained_models/cogvideox-5b-i2v-sat/vae/3d-vae.pt', 'ignore_keys': ['loss'], 'loss_config': {'target': 'torch.nn.Identity'}, 'regularizer_config': {'target': 'vae_modules.regularizers.DiagonalGaussianRegularizer'}, 'encoder_config': {'target': 'vae_modules.cp_enc_dec.ContextParallelEncoder3D', 'params': {'double_z': True, 'z_channels': 16, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 2, 4], 'attn_resolutions': [], 'num_res_blocks': 3, 'dropout': 0.0, 'gather_norm': True}}, 'decoder_config': {'target': 'vae_modules.cp_enc_dec.ContextParallelDecoder3D', 'params': {'double_z': True, 'z_channels': 16, 'resolution': 256, 'in_channels': 3, 'out_ch': 3, 'ch': 128, 'ch_mult': [1, 2, 2, 4], 'attn_resolutions': [], 'num_res_blocks': 3, 'dropout': 0.0, 'gather_norm': True}}}}, 'loss_fn_config': {'target': 'sgm.modules.diffusionmodules.loss.VideoDiffusionLoss', 'params': {'batch2model_keys': ['audio_emb', 'face_emb'], 'fixed_frames': 0, 'offset_noise_level': 0, 'sigma_sampler_config': {'target': 'sgm.modules.diffusionmodules.sigma_sampling.DiscreteSampling', 'params': {'uniform_sampling': True, 'num_idx': 1000, 'discretization_config': {'target': 'sgm.modules.diffusionmodules.discretizer.ZeroSNRDDPMDiscretization', 'params': {'shift_scale': 1.0}}}}}}, 'sampler_config': {'target': 'sgm.modules.diffusionmodules.sampling.VPSDEDPMPP2MSampler', 'params': {'fixed_frames': 0, 'num_steps': 50, 'verbose': True, 'discretization_config': {'target': 'sgm.modules.diffusionmodules.discretizer.ZeroSNRDDPMDiscretization', 'params': {'shift_scale': 1.0}}, 'guider_config': {'target': 'sgm.modules.diffusionmodules.guiders.DynamicCFG', 'params': {'scale': 6, 'exp': 5, 'num_steps': 50}}}}}}, {'args': {'checkpoint_activations': True, 'model_parallel_size': 1, 'experiment_name': 'train-stage-2', 'mode': 'finetune', 'load': './stage-1/train-stage-1-02-07-14-24', 'no_load_rng': True, 'train_iters': 30000, 'eval_iters': 1, 'eval_interval': 30000, 'eval_batch_size': 1, 'save': 'stage-2', 'save_interval': 200, 'log_interval': 1, 'train_data': ['./data/hallo3_2-55f.json'], 'valid_data': ['./data/hallo3-55f.json'], 'split': '1,0,0', 'num_workers': 1, 'force_train': True, 'only_log_video_latents': True}, 'data': {'target': 'data_video.Stage2_SFTDataset', 'params': {'video_size': [480, 720], 'fps': 8, 'max_num_frames': 49, 'skip_frms_num': 3.0}}, 'deepspeed': {'train_micro_batch_size_per_gpu': 1, 'gradient_accumulation_steps': 1, 'steps_per_print': 50, 'gradient_clipping': 0.1, 'zero_optimization': {'stage': 2, 'cpu_offload': False, 'contiguous_gradients': False, 'overlap_comm': True, 'reduce_scatter': True, 'reduce_bucket_size': 1000000000, 'allgather_bucket_size': 1000000000, 'load_from_fp32_weights': False}, 'zero_allow_untested_optimizer': True, 'bf16': {'enabled': True}, 'fp16': {'enabled': False}, 'loss_scale': 0, 'loss_scale_window': 400, 'hysteresis': 2, 'min_loss_scale': 1, 'optimizer': {'type': 'sat.ops.FusedEmaAdam', 'params': {'lr': '1e-5', 'betas': [0.9, 0.95], 'eps': '1e-8', 'weight_decay': '1e-4'}}, 'activation_checkpointing': {'partition_activations': False, 'contiguous_memory_optimization': False}, 'wall_clock_breakdown': False}}]
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   do_train ..................... True
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   val_last_shape ............... []
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   val_drop_number .............. 0
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   do_valid ..................... True
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   do_test ...................... False
+[2025-02-17 13:10:13,224] [INFO] [RANK 0]   iteration .................... 0
+wandb: Currently logged in as: hhj2950526463 (hhj2950526463-sun-yat-sen-university). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.19.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.17.5
+wandb: Run data is saved locally in wandb/run-20250217_131017-zj9z1e73
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run train-stage-2-02-17-13-05
+wandb: ⭐️ View project at https://wandb.ai/hhj2950526463-sun-yat-sen-university/default_project
+wandb: 🚀 View run at https://wandb.ai/hhj2950526463-sun-yat-sen-university/default_project/runs/zj9z1e73
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank1]:     training_main(
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+[rank1]:     iteration, skipped = train(model, optimizer,
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+[rank1]:     lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+[rank1]:     forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 199, in forward_step
+[rank1]:     loss, loss_dict = model.shared_step(batch)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 221, in shared_step
+[rank1]:     x = self.encode_first_stage(x, batch)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank1]:     return func(*args, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 278, in encode_first_stage
+[rank1]:     out = self.first_stage_model.encode(x[n * n_samples : (n + 1) * n_samples])
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 608, in encode
+[rank1]:     z = super().encode(x, return_reg_log, unregularized)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 224, in encode
+[rank1]:     z = self.encoder(x)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 818, in forward
+[rank1]:     h = self.down[i_level].block[i_block](h, temb)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 689, in forward
+[rank1]:     h = self.conv1(h, clear_cache=clear_fake_cp_cache)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 428, in forward
+[rank1]:     output_parallel = self.conv(input_parallel)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank1]:     return self._call_impl(*args, **kwargs)
+[rank1]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank1]:     return forward_call(*args, **kwargs)
+[rank1]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/utils.py", line 88, in forward
+[rank1]:     output = torch.cat(output_chunks, dim=2)
+[rank1]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.04 GiB. GPU 1 has a total capacity of 79.33 GiB of which 3.58 GiB is free. Process 114202 has 30.06 MiB memory in use. Process 9705 has 14.49 GiB memory in use. Process 3739 has 61.20 GiB memory in use. Of the allocated memory 58.27 GiB is allocated by PyTorch, and 892.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank2]:     training_main(
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+[rank2]:     iteration, skipped = train(model, optimizer,
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+[rank2]:     lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+[rank2]:     forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 199, in forward_step
+[rank2]:     loss, loss_dict = model.shared_step(batch)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 221, in shared_step
+[rank2]:     x = self.encode_first_stage(x, batch)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 278, in encode_first_stage
+[rank2]:     out = self.first_stage_model.encode(x[n * n_samples : (n + 1) * n_samples])
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 608, in encode
+[rank2]:     z = super().encode(x, return_reg_log, unregularized)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 224, in encode
+[rank2]:     z = self.encoder(x)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 818, in forward
+[rank2]:     h = self.down[i_level].block[i_block](h, temb)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 689, in forward
+[rank2]:     h = self.conv1(h, clear_cache=clear_fake_cp_cache)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 428, in forward
+[rank2]:     output_parallel = self.conv(input_parallel)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/utils.py", line 88, in forward
+[rank2]:     output = torch.cat(output_chunks, dim=2)
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.04 GiB. GPU 2 has a total capacity of 79.33 GiB of which 3.58 GiB is free. Process 114202 has 30.06 MiB memory in use. Process 9706 has 14.49 GiB memory in use. Process 3740 has 61.20 GiB memory in use. Of the allocated memory 58.27 GiB is allocated by PyTorch, and 892.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 227, in <module>
+[rank3]:     training_main(
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 157, in training_main
+[rank3]:     iteration, skipped = train(model, optimizer,
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 359, in train
+[rank3]:     lm_loss, skipped_iter, metrics = train_step(train_data_iterator,
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 443, in train_step
+[rank3]:     forward_ret = forward_step(data_iterator, model, args, timers, **kwargs)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/train_video.py", line 199, in forward_step
+[rank3]:     loss, loss_dict = model.shared_step(batch)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 221, in shared_step
+[rank3]:     x = self.encode_first_stage(x, batch)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank3]:     return func(*args, **kwargs)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/diffusion_video.py", line 278, in encode_first_stage
+[rank3]:     out = self.first_stage_model.encode(x[n * n_samples : (n + 1) * n_samples])
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 608, in encode
+[rank3]:     z = super().encode(x, return_reg_log, unregularized)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/autoencoder.py", line 224, in encode
+[rank3]:     z = self.encoder(x)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 818, in forward
+[rank3]:     h = self.down[i_level].block[i_block](h, temb)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 689, in forward
+[rank3]:     h = self.conv1(h, clear_cache=clear_fake_cp_cache)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/cp_enc_dec.py", line 428, in forward
+[rank3]:     output_parallel = self.conv(input_parallel)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank3]:     return self._call_impl(*args, **kwargs)
+[rank3]:   File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank3]:     return forward_call(*args, **kwargs)
+[rank3]:   File "/wangbenyou/huanghj/workspace/hallo3/hallo3/vae_modules/utils.py", line 88, in forward
+[rank3]:     output = torch.cat(output_chunks, dim=2)
+[rank3]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.04 GiB. GPU 3 has a total capacity of 79.33 GiB of which 3.77 GiB is free. Process 114202 has 30.06 MiB memory in use. Process 9707 has 14.49 GiB memory in use. Process 3741 has 61.01 GiB memory in use. Of the allocated memory 58.27 GiB is allocated by PyTorch, and 892.46 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+W0217 13:11:12.153000 140139295733568 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 112015 closing signal SIGTERM
+W0217 13:11:12.157000 140139295733568 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 112016 closing signal SIGTERM
+W0217 13:11:12.157000 140139295733568 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 112018 closing signal SIGTERM
+E0217 13:11:15.633000 140139295733568 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 2 (pid: 112017) of binary: /sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/python
+Traceback (most recent call last):
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+hallo3/train_video.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-02-17_13:11:12
+  host      : acbd10enju1kr-0
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 112017)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

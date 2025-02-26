@@ -1,0 +1,9 @@
+number of parameters on model parallel rank 0: 17288304931 = 17G
+
+[2025-02-07 09:55:33,536] [INFO] [RANK 0]  iteration        1/   30000 | elapsed time per iteration (ms): 99196.0 | learning rate 6.667E-08 | total loss 1.756253E-01 | loss 1.756253E-01 |speed 0.60 samples/(min*GPU)
+[2025-02-07 09:55:33,540] [INFO] [RANK 0] after 1 iterations memory (MB) | allocated: 41516.5224609375 | max allocated: 59760.69775390625 | cached: 56038.0 | max cached: 66454.0
+[2025-02-07 09:55:33,540] [INFO] [RANK 0] time (ms) | forward: 86960.53 | backward: 11684.34 | allreduce: 0.00 | optimizer: 536.10 | data loader: 8185.34
+[2025-02-07 09:56:16,721] [INFO] [RANK 0]  iteration        2/   30000 | elapsed time per iteration (ms): 43181.9 | learning rate 1.000E-07 | total loss 1.330637E-01 | loss 1.330637E-01 |speed 1.39 samples/(min*GPU)
+[2025-02-07 09:56:16,754] [INFO] [RANK 0] time (ms) | forward: 30671.39 | backward: 12283.42 | allreduce: 0.00 | optimizer: 181.71 | data loader: 10.94
+[2025-02-07 09:56:52,610] [INFO] [RANK 0]  iteration        3/   30000 | elapsed time per iteration (ms): 35891.7 | learning rate 1.333E-07 | total loss 1.102021E-01 | loss 1.102021E-01 |speed 1.67 samples/(min*GPU)
+[2025-02-07 09:56:52,615] [INFO] [RANK 0] time (ms) | forward: 23259.90 | backward: 12395.37 | allreduce: 0.00 | optimizer: 167.15 | data loader: 5.56
