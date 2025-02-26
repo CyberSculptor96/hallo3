@@ -3,8 +3,9 @@ args:
   latent_channels: 16
   mode: inference
 
+  # load: ./stage-2/train-stage-2-02-17-01-39   # ./pretrained_models/hallo3
+  # load: ./stage-1/train-stage-1-02-16-05-03     # ./pretrained_models/cogvideox-5b-i2v-sat/transformer
   load: ./pretrained_models/hallo3
-
   batch_size: 1
   input_type: txt
   sampling_image_size: [480, 720]
