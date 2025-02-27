@@ -6,7 +6,7 @@ The script takes in command-line arguments to specify the input and output direc
 and rank for distributed processing.
 
 Usage:
-    python -m scripts.data_preprocess --input_dir /path/to/video_dir --dataset_name dataset_name --gpu_status --parallelism 4 --rank 0
+    python -m scripts.data_preprocess --input /path/to/video_dir --dataset_name dataset_name --gpu_status --parallelism 4 --rank 0
 
 Example:
     python -m scripts.data_preprocess -i data/videos -o data/output -g -p 4 -r 0
@@ -15,7 +15,8 @@ import argparse
 import logging
 import os
 from pathlib import Path
-from typing import List
+from typing import List, Union
+import json
 
 import cv2
 import torch
@@ -40,7 +41,11 @@ def setup_directories(video_path: Path) -> dict:
     Returns:
         dict: A dictionary containing paths for various directories.
     """
-    base_dir = video_path.parent.parent
+    if args.input.is_file() and args.input.suffix == '.json':
+        base_dir = "/sskj-prod/gzs/test/huanghj/data/shunian-dataset"
+    else:
+        base_dir = video_path.parent.parent
+    
     dirs = {
         "face_mask": base_dir / "face_mask",
         "face_emb": base_dir / "face_emb",
@@ -134,20 +139,32 @@ def process_all_videos(input_video_list: List[Path], output_dir: Path) -> None:
                              image_processor, audio_processor)
 
 
-def get_video_paths(source_dir: Path, parallelism: int, rank: int) -> List[Path]:
+## 增加对json文件输入的支持
+def get_video_paths(source: Union[Path, str], parallelism: int, rank: int) -> List[Path]:
     """
     Get paths of videos to process, partitioned for parallel processing.
 
     Args:
-        source_dir (Path): Source directory containing videos.
+        source (Union[Path, str]): Source directory containing videos or a JSON file with video paths.
         parallelism (int): Level of parallelism.
         rank (int): Rank for distributed processing.
 
     Returns:
         List[Path]: List of video paths to process.
     """
-    video_paths = [item for item in sorted(
-        source_dir.iterdir()) if item.is_file() and item.suffix == '.mp4']
+    if isinstance(source, Path) and source.is_file() and source.suffix == '.json':
+        # If the input is a JSON file, read video paths from it
+        with open(source, 'r') as f:
+            data = json.load(f)
+        video_paths = sorted([Path(entry['video-path']) for entry in data if 'video-path' in entry and Path(entry['video-path']).exists()])
+    else:
+        # Otherwise, treat it as a directory and find all .mp4 files
+        source_dir = Path(source)
+        video_paths = [item for item in sorted(source_dir.iterdir()) if item.is_file() and item.suffix == '.mp4']
+    
+    # Partition the video paths for parallel processing
+    if rank == 0:
+        print(f"{len(video_paths)=}")
     return [video_paths[i] for i in range(len(video_paths)) if i % parallelism == rank]
 
 
@@ -155,8 +172,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Process videos to prepare data for training. Run this script twice with different GPU status parameters."
     )
-    parser.add_argument("-i", "--input_dir", type=Path,
-                        required=True, help="Directory containing videos")
+    parser.add_argument("-i", "--input", type=Path,
+                        required=True, help="Directory containing videos or a JSON file with video paths")
     parser.add_argument("-o", "--output_dir", type=Path,
                         help="Directory to save results, default is parent dir of input dir")
     parser.add_argument("-p", "--parallelism", default=1,
@@ -167,10 +184,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.output_dir is None:
-        args.output_dir = args.input_dir.parent
+        args.output_dir = args.input.parent
 
     video_path_list = get_video_paths(
-        args.input_dir, args.parallelism, args.rank)
+        args.input, args.parallelism, args.rank)
 
     if not video_path_list:
         logging.warning("No videos to process.")
