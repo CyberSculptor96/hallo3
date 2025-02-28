@@ -17,6 +17,7 @@ import os
 from pathlib import Path
 from typing import List, Union
 import json
+import shutil
 
 import cv2
 import torch
@@ -42,7 +43,7 @@ def setup_directories(video_path: Path) -> dict:
         dict: A dictionary containing paths for various directories.
     """
     if args.input.is_file() and args.input.suffix == '.json':
-        base_dir = "/sskj-prod/gzs/test/huanghj/data/shunian-dataset"
+        base_dir = args.input.parent
     else:
         base_dir = video_path.parent.parent
     
@@ -104,6 +105,11 @@ def process_single_video(video_path: Path,
         audio_emb, _ = audio_processor.preprocess(audio_path, fps=fps)
         torch.save(audio_emb, str(
             dirs["audio_emb"] / f"{video_path.stem}.pt"))
+        
+        ## 及时删除images文件夹，减少存储占用
+        if os.path.exists(images_output_dir):
+            shutil.rmtree(images_output_dir)
+
     except Exception as e:
         logging.error(f"Failed to process video {video_path}: {e}")
 
