@@ -1,4 +1,4 @@
-<h1 align='center'>Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Diffusion Transformer Networks</h1>
+<h1 align='center'>Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Video Diffusion Transformer</h1>
 
 <div align='center'>
     <a href='https://github.com/cuijh26' target='_blank'>Jiahao Cui</a><sup>1</sup>&emsp;
@@ -27,12 +27,15 @@
     <a href='https://huggingface.co/fudan-generative-ai/hallo3'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
     <a href='assets/wechat.jpeg'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
 </div>
+<div align='Center'>
+    <i><strong><a href='https://cvpr.thecvf.com/Conferences/2025' target='_blank'>CVPR 2025</a></strong></i>
+</div>
 <br>
 
 <table align='center' border="0" style="width: 100%; text-align: center; margin-top: 80px;">
   <tr>
     <td>
-      <video align='center' src="https://github.com/user-attachments/assets/f8161b36-8338-488e-98b2-615e3cbe146e" muted autoplay loop></video>
+      <video align='center' src="https://github.com/user-attachments/assets/f14bf935-ceaa-4dae-98b9-d7e54633475d" muted autoplay loop></video>
     </td>
   </tr>
 </table>
@@ -68,6 +71,7 @@ Visit our [project page](https://fudan-generative-vision.github.io/hallo3/#/) to
 
 ## 📰 News
 
+- **`2025/02/27`**: 🎉🎉🎉 Our paper has been accepted to [CVPR 2025](https://cvpr.thecvf.com/Conferences/2025).
 - **`2025/01/27`**: 🎉🎉🎉 Release training data on [HuggingFace](https://huggingface.co/datasets/fudan-generative-ai/hallo3_training_data). The collection comprises over 70 hours of talking-head videos, complemented by an additional 50 hours of dynamic video clips featuring vibrant foregrounds and backgrounds.
 
 ## ⚙️ Installation
@@ -109,7 +113,7 @@ Using `huggingface-cli` to download the models:
 
 ```shell
 cd $ProjectRootDir
-pip install huggingface-cli
+pip install "huggingface_hub[cli]"
 huggingface-cli download fudan-generative-ai/hallo3 --local-dir ./pretrained_models
 ```
 
@@ -258,7 +262,7 @@ If you find our work useful for your research, please consider citing the paper:
 
 ```
 @misc{cui2024hallo3,
-	title={Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Diffusion Transformer Networks}, 
+	title={Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Video Diffusion Transformer}, 
 	author={Jiahao Cui and Hui Li and Yun Zhan and Hanlin Shang and Kaihui Cheng and Yuqi Ma and Shan Mu and Hang Zhou and Jingdong Wang and Siyu Zhu},
 	year={2024},
 	eprint={2412.00733},
