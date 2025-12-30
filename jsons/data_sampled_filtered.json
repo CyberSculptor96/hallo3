@@ -1,0 +1,80 @@
+[
+    {
+        "id": "AI_UMnTM4o8-scene293-scene5",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/AI_UMnTM4o8-scene293_scene5-seed27769/AI_UMnTM4o8-scene293_scene5-seed27769.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/AI_UMnTM4o8-scene293_scene5-seed27769.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "uzosYIbFARM-scene37-scene33",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/uzosYIbFARM-scene37_scene33-seed3230/uzosYIbFARM-scene37_scene33-seed3230.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/uzosYIbFARM-scene37_scene33-seed3230.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "NuVSTYstoX4-scene33-scene11",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/NuVSTYstoX4-scene33_scene11-seed27769/NuVSTYstoX4-scene33_scene11-seed27769.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/NuVSTYstoX4-scene33_scene11-seed27769.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "HyUYa-BnjU8-scene115-scene6",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/HyUYa-BnjU8-scene115_scene6-seed2220/HyUYa-BnjU8-scene115_scene6-seed2220.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/HyUYa-BnjU8-scene115_scene6-seed2220.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "J5QY31PshYo-scene3-scene5",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/J5QY31PshYo-scene3_scene5-seed29622/J5QY31PshYo-scene3_scene5-seed29622.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/J5QY31PshYo-scene3_scene5-seed29622.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "wGn3hHxlMUs-scene17-scene2",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/wGn3hHxlMUs-scene17_scene2-seed2220/wGn3hHxlMUs-scene17_scene2-seed2220.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/wGn3hHxlMUs-scene17_scene2-seed2220.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "Ss1fcASwYT8-scene39-scene2",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/Ss1fcASwYT8-scene39_scene2-seed27769/Ss1fcASwYT8-scene39_scene2-seed27769.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/Ss1fcASwYT8-scene39_scene2-seed27769.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "FvHwDjF06nM-scene29-scene3",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/FvHwDjF06nM-scene29_scene3-seed27769/FvHwDjF06nM-scene29_scene3-seed27769.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/FvHwDjF06nM-scene29_scene3-seed27769.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "Ss1fcASwYT8-scene13-scene4",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/Ss1fcASwYT8-scene13_scene4-seed27769/Ss1fcASwYT8-scene13_scene4-seed27769.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/Ss1fcASwYT8-scene13_scene4-seed27769.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "e9qeI_3P2SY-scene15-scene64",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/e9qeI_3P2SY-scene15_scene64-seed3230/e9qeI_3P2SY-scene15_scene64-seed3230.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/e9qeI_3P2SY-scene15_scene64-seed3230.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "5ZblghpFx9o-scene24-scene2",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/5ZblghpFx9o-scene24_scene2-seed27769/5ZblghpFx9o-scene24_scene2-seed27769.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/5ZblghpFx9o-scene24_scene2-seed27769.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "lZ9WucieYmY-scene24-scene8",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/lZ9WucieYmY-scene24_scene8-seed2220/lZ9WucieYmY-scene24_scene8-seed2220.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/lZ9WucieYmY-scene24_scene8-seed2220.m4a",
+        "fps": 24.0
+    },
+    {
+        "id": "7G8_J3sgdDc-scene11-scene3",
+        "video-path": "/wangbenyou/huanghj/workspace/hallo3/output/output_testset/7G8_J3sgdDc-scene11_scene3-seed2220/7G8_J3sgdDc-scene11_scene3-seed2220.mp4",
+        "audio-path": "/wangbenyou/huanghj/workspace/hallo3/user/audios/7G8_J3sgdDc-scene11_scene3-seed2220.m4a",
+        "fps": 24.0
+    }
+]

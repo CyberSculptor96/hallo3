@@ -2,17 +2,19 @@
 stage-1/
 stage-2/
 pretrained_models/
-evaluation/
+evaluation/dataset
 hallo3/
 data/
 json/
+examples/
 
 # 忽略临时缓存和日志文件
 .cache/
 temp/
 assets/
 __pycache__/
-.vscode/
+wandb/
+# .vscode/
 
 # Git 相关
 .git/

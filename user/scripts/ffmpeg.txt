@@ -1,0 +1,1 @@
+ffmpeg -v error -count_frames -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 input.mp4

@@ -1,53 +1,29 @@
-[2025-02-19 14:47:48,261] [INFO] DeepSpeed/CUDA is not installed, fallback to Pytorch checkpointing.
-[2025-02-19 14:47:48,678] [WARNING] [real_accelerator.py:181:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
-[2025-02-19 14:47:48,686] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cpu (auto detect)
+[2025-04-16 21:27:19,833] [INFO] DeepSpeed/CUDA is not installed, fallback to Pytorch checkpointing.
+[2025-04-16 21:27:21,255] [WARNING] [real_accelerator.py:181:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+[2025-04-16 21:27:21,291] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cpu (auto detect)
+2025-04-16 21:27:45.943987: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-04-16 21:27:45.963619: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1744871265.981334    9650 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1744871265.988218    9650 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-04-16 21:27:46.011608: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[2025-04-16 21:28:09,244] [WARNING] No training data specified
+[2025-04-16 21:28:09,245] [WARNING] No train_iters (recommended) or epochs specified, use default 10k iters.
+[2025-04-16 21:28:09,245] [INFO] using world size: 1
 Traceback (most recent call last):
-  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/sample_video.py", line 15, in <module>
-    from sat.model.base_model import get_model
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/__init__.py", line 6, in <module>
-    from .training.deepspeed_training import training_main
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/sat/training/deepspeed_training.py", line 27, in <module>
-    import deepspeed
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/__init__.py", line 26, in <module>
-    from . import module_inject
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/module_inject/__init__.py", line 6, in <module>
-    from .replace_module import replace_transformer_layer, revert_transformer_layer, ReplaceWithTensorSlicing, GroupQuantizer, generic_injection
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/module_inject/replace_module.py", line 652, in <module>
-    from ..pipe import PipelineModule
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/pipe/__init__.py", line 6, in <module>
-    from ..runtime.pipe import PipelineModule, LayerSpec, TiedLayerSpec
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/pipe/__init__.py", line 6, in <module>
-    from .module import PipelineModule, LayerSpec, TiedLayerSpec
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/pipe/module.py", line 19, in <module>
-    from ..activation_checkpointing import checkpointing
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/activation_checkpointing/checkpointing.py", line 26, in <module>
-    from deepspeed.runtime.config import DeepSpeedConfig
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/runtime/config.py", line 58, in <module>
-    from ..autotuning.config import DeepSpeedAutotuningConfig
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/autotuning/__init__.py", line 6, in <module>
-    from .autotuner import Autotuner
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/deepspeed/autotuning/autotuner.py", line 31, in <module>
-    import mlflow
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/__init__.py", line 35, in <module>
-    from mlflow import (
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/data/__init__.py", line 5, in <module>
-    from mlflow.data import dataset_registry
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/data/dataset_registry.py", line 137, in <module>
-    from mlflow.data.pandas_dataset import from_pandas
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/mlflow/data/pandas_dataset.py", line 6, in <module>
-    import pandas as pd
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/__init__.py", line 49, in <module>
-    from pandas.core.api import (
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/core/api.py", line 47, in <module>
-    from pandas.core.groupby import (
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
-    from pandas.core.groupby.generic import (
-  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/pandas/core/groupby/generic.py", line 68, in <module>
-    from pandas.core.frame import DataFrame
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
-  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
-  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
-KeyboardInterrupt
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/sample_video.py", line 442, in <module>
+    args = get_args(args_list)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/arguments.py", line 185, in get_args
+    initialize_distributed(args)
+  File "/wangbenyou/huanghj/workspace/hallo3/hallo3/arguments.py", line 226, in initialize_distributed
+    torch.distributed.init_process_group(
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+    return func(*args, **kwargs)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 93, in wrapper
+    func_return = func(*args, **kwargs)
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1368, in init_process_group
+    default_pg, _ = _new_process_group_helper(
+  File "/sds_wangby/group_conda_envs/anaconda3/envs/hallo3/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 1594, in _new_process_group_helper
+    backend_class = ProcessGroupNCCL(
+ValueError: ProcessGroupNCCL is only supported with GPUs, no GPUs found!

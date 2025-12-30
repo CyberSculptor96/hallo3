@@ -5,7 +5,9 @@ args:
   mode: finetune
   
   # stage 2
-  load: './stage-1/train-stage-1-02-07-14-24'  # checkpoint path
+  # load: './stage-1/train-stage-1-02-07-14-24'  # checkpoint path
+  # load: "pretrained_models/hallo3"
+  load: "stage-2/train-stage-2-03-18-04-53"
 
   no_load_rng: True
   train_iters: 30000 
@@ -13,10 +15,11 @@ args:
   eval_interval: 30000
   eval_batch_size: 1
   save: stage-2
-  save_interval: 200
+  save_interval: 500
   log_interval: 1
   train_data: [
-    "./data/hallo3_2-55f.json",
+    "./data/shunian-hallo3-22k.json",
+    # "./data/hallo3_2-55f.json",
   ] # Train data path
   valid_data: [ 
     "./data/hallo3-55f.json",

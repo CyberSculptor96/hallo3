@@ -17,11 +17,11 @@ import os
 from pathlib import Path
 from typing import List, Union
 import json
-
+import shutil
+import subprocess
 import cv2
 import torch
 from tqdm import tqdm
-
 from sgm.utils.audio_processor import AudioProcessor
 from sgm.utils.image_processor import ImageProcessorForDataProcessing
 from sgm.utils.util import convert_video_to_images, extract_audio_from_videos, get_fps
@@ -42,7 +42,7 @@ def setup_directories(video_path: Path) -> dict:
         dict: A dictionary containing paths for various directories.
     """
     if args.input.is_file() and args.input.suffix == '.json':
-        base_dir = "/sskj-prod/gzs/test/huanghj/data/shunian-dataset"
+        base_dir = args.input.parent
     else:
         base_dir = video_path.parent.parent
     
@@ -81,7 +81,7 @@ def process_single_video(video_path: Path,
         images_output_dir = output_dir / 'images' / video_path.stem
         images_output_dir.mkdir(parents=True, exist_ok=True)
         images_output_dir = convert_video_to_images(
-            video_path, images_output_dir)
+            video_path, images_output_dir, fps=24.0)
         logging.info(f"Images saved to: {images_output_dir}")
         
         fps = get_fps(video_path)
@@ -89,8 +89,18 @@ def process_single_video(video_path: Path,
         audio_output_dir = output_dir / 'audios'
         audio_output_dir.mkdir(parents=True, exist_ok=True)
         audio_output_path = audio_output_dir / f'{video_path.stem}.wav'
-        audio_output_path = extract_audio_from_videos(
-            video_path, audio_output_path)
+        m4a_audio_path = video_path.resolve().with_suffix(".m4a")
+        if not m4a_audio_path.exists():
+            audio_output_path = extract_audio_from_videos(
+                video_path, audio_output_path)
+        else:
+            ffmpeg_cmd = [
+                "ffmpeg", '-v', 'error',
+                "-y", "-i", str(m4a_audio_path),
+                str(audio_output_path)
+            ]
+            subprocess.run(ffmpeg_cmd, check=True)
+
         logging.info(f"Audio extracted to: {audio_output_path}")
 
         face_mask, face_emb, _, _, _ = image_processor.preprocess(
@@ -101,9 +111,13 @@ def process_single_video(video_path: Path,
             dirs["face_emb"] / f"{video_path.stem}.pt"))
         audio_path = output_dir / "audios" / f"{video_path.stem}.wav"
         
-        audio_emb, _ = audio_processor.preprocess(audio_path, fps=fps)
+        audio_emb, _ = audio_processor.preprocess(audio_path, fps=fps, expected_seq_len=121)
         torch.save(audio_emb, str(
             dirs["audio_emb"] / f"{video_path.stem}.pt"))
+        
+        ## 及时删除images文件夹，减少存储占用
+        shutil.rmtree(images_output_dir)
+
     except Exception as e:
         logging.error(f"Failed to process video {video_path}: {e}")
 
@@ -117,10 +131,11 @@ def process_all_videos(input_video_list: List[Path], output_dir: Path) -> None:
         output_dir (Path): Directory to save the output.
         gpu_status (bool): Whether to use GPU for processing.
     """
-    face_analysis_model_path = "../pretrained_models/face_analysis"
-    landmark_model_path = "../pretrained_models/face_analysis/models/face_landmarker_v2_with_blendshapes.task"
-    audio_separator_model_file = "../pretrained_models/audio_separator/Kim_Vocal_2.onnx"
-    wav2vec_model_path = '../pretrained_models/wav2vec/wav2vec2-base-960h'
+    project_root = Path(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+    face_analysis_model_path = project_root / "pretrained_models/face_analysis"
+    landmark_model_path = project_root / "pretrained_models/face_analysis/models/face_landmarker_v2_with_blendshapes.task"
+    audio_separator_model_file = project_root / "pretrained_models/audio_separator/Kim_Vocal_2.onnx"
+    wav2vec_model_path = project_root / "pretrained_models/wav2vec/wav2vec2-base-960h"
 
     audio_processor = AudioProcessor(
         16000,

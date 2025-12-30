@@ -1,0 +1,221 @@
+2025-03-06 03:59:09.000829: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-03-06 03:59:09.026044: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1741233549.063178   14036 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1741233549.080843   14036 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-03-06 03:59:09.111831: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Some weights of Wav2VecModel were not initialized from the model checkpoint at /wangbenyou/huanghj/workspace/hallo3/pretrained_models/wav2vec/wav2vec2-base-960h and are newly initialized: ['wav2vec2.masked_spec_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-03-06 04:00:15,667 - INFO - Separator version 0.21.2 instantiating with output_dir: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/vocals, output_format: WAV
+2025-03-06 04:00:15,671 - INFO - Operating System: Linux #1 SMP Mon Oct 19 16:18:59 UTC 2020
+2025-03-06 04:00:15,671 - INFO - System: Linux Node: a4r67vti5eu6v-0 Release: 3.10.0-1160.el7.x86_64 Machine: x86_64 Proc: x86_64
+2025-03-06 04:00:15,672 - INFO - Python Version: 3.10.16
+2025-03-06 04:00:15,672 - INFO - PyTorch Version: 2.4.0+cu121
+2025-03-06 04:00:16,135 - INFO - FFmpeg installed: ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers
+2025-03-06 04:00:16,181 - INFO - ONNX Runtime GPU package installed with version: 1.20.1
+2025-03-06 04:00:16,182 - INFO - ONNX Runtime CPU package installed with version: 1.20.1
+2025-03-06 04:00:16,183 - INFO - CUDA is available in Torch, setting Torch device to CUDA
+2025-03-06 04:00:16,183 - INFO - ONNXruntime has CUDAExecutionProvider available, enabling acceleration
+2025-03-06 04:00:16,183 - INFO - Loading model Kim_Vocal_2.onnx...
+2025-03-06 04:00:18,642 - INFO - Load model duration: 00:00:02
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1741233625.180101   14036 task_runner.cc:85] GPU suport is not available: INTERNAL: ; RET_CHECK failure (mediapipe/gpu/gl_context_egl.cc:77) display != EGL_NO_DISPLAYeglGetDisplay() returned error 0x300c
+W0000 00:00:1741233625.181032   14036 face_landmarker_graph.cc:174] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1741233625.305015   20091 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1741233625.324094   20079 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+len(video_paths)=10
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'sdpa_kernel': '0', 'use_tf32': '1', 'fuse_conv_bias': '0', 'prefer_nhwc': '0', 'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'tunable_op_enable': '0', 'use_ep_level_unified_stream': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'user_compute_stream': '0', 'cudnn_conv_use_max_workspace': '1'}}
+find model: /wangbenyou/huanghj/workspace/hallo3/pretrained_models/face_analysis/models/1k3d68.onnx landmark_3d_68 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'sdpa_kernel': '0', 'use_tf32': '1', 'fuse_conv_bias': '0', 'prefer_nhwc': '0', 'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'tunable_op_enable': '0', 'use_ep_level_unified_stream': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'user_compute_stream': '0', 'cudnn_conv_use_max_workspace': '1'}}
+find model: /wangbenyou/huanghj/workspace/hallo3/pretrained_models/face_analysis/models/2d106det.onnx landmark_2d_106 ['None', 3, 192, 192] 0.0 1.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'sdpa_kernel': '0', 'use_tf32': '1', 'fuse_conv_bias': '0', 'prefer_nhwc': '0', 'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'tunable_op_enable': '0', 'use_ep_level_unified_stream': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'user_compute_stream': '0', 'cudnn_conv_use_max_workspace': '1'}}
+find model: /wangbenyou/huanghj/workspace/hallo3/pretrained_models/face_analysis/models/genderage.onnx genderage ['None', 3, 96, 96] 0.0 1.0
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'sdpa_kernel': '0', 'use_tf32': '1', 'fuse_conv_bias': '0', 'prefer_nhwc': '0', 'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'tunable_op_enable': '0', 'use_ep_level_unified_stream': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'user_compute_stream': '0', 'cudnn_conv_use_max_workspace': '1'}}
+find model: /wangbenyou/huanghj/workspace/hallo3/pretrained_models/face_analysis/models/glintr100.onnx recognition ['None', 3, 112, 112] 127.5 127.5
+Applied providers: ['CUDAExecutionProvider', 'CPUExecutionProvider'], with options: {'CPUExecutionProvider': {}, 'CUDAExecutionProvider': {'sdpa_kernel': '0', 'use_tf32': '1', 'fuse_conv_bias': '0', 'prefer_nhwc': '0', 'tunable_op_max_tuning_duration_ms': '0', 'enable_skip_layer_norm_strict_mode': '0', 'tunable_op_tuning_enable': '0', 'tunable_op_enable': '0', 'use_ep_level_unified_stream': '0', 'device_id': '0', 'has_user_compute_stream': '0', 'gpu_external_empty_cache': '0', 'cudnn_conv_algo_search': 'EXHAUSTIVE', 'cudnn_conv1d_pad_to_nc1d': '0', 'gpu_mem_limit': '18446744073709551615', 'gpu_external_alloc': '0', 'gpu_external_free': '0', 'arena_extend_strategy': 'kNextPowerOfTwo', 'do_copy_in_default_stream': '1', 'enable_cuda_graph': '0', 'user_compute_stream': '0', 'cudnn_conv_use_max_workspace': '1'}}
+find model: /wangbenyou/huanghj/workspace/hallo3/pretrained_models/face_analysis/models/scrfd_10g_bnkps.onnx detection [1, 3, '?', '?'] 127.5 128.0
+set det-size: (640, 640)
+Processing videos:   0%|          | 0/10 [00:00<?, ?it/s]2025-03-06 04:00:25,362 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-1PHi-xcDXg-scene58_scene1.mp4
+2025-03-06 04:00:28,536 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-1PHi-xcDXg-scene58_scene1
+2025-03-06 04:00:29,011 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-1PHi-xcDXg-scene58_scene1.wav
+2025-03-06 04:00:52,201 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-1PHi-xcDXg-scene58_scene1.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-1PHi-xcDXg-scene58_scene1.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-1PHi-xcDXg-scene58_scene1/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:02<00:02,  2.56s/it][A
+100%|██████████| 2/2 [00:02<00:00,  1.31s/it][A100%|██████████| 2/2 [00:02<00:00,  1.50s/it]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.19it/s][A
+100%|██████████| 2/2 [00:00<00:00,  4.28it/s][A100%|██████████| 2/2 [00:00<00:00,  4.26it/s]
+2025-03-06 04:01:06,724 - INFO - Saving Vocals stem to videovideo-1PHi-xcDXg-scene58_scene1_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:01:08,515 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:01:08,515 - INFO - Using pydub for writing.
+2025-03-06 04:01:10,012 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:01:10,013 - INFO - Separation duration: 00:00:17
+Processing videos:  10%|█         | 1/10 [00:47<07:11, 47.97s/it]2025-03-06 04:01:13,318 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-E__YQCJumY-scene5_scene2.mp4
+2025-03-06 04:01:16,978 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-E__YQCJumY-scene5_scene2
+2025-03-06 04:01:17,716 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-E__YQCJumY-scene5_scene2.wav
+2025-03-06 04:01:33,950 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-E__YQCJumY-scene5_scene2.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-E__YQCJumY-scene5_scene2.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-E__YQCJumY-scene5_scene2/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.69it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.57it/s][A100%|██████████| 2/2 [00:00<00:00,  2.38it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  3.74it/s][A
+100%|██████████| 2/2 [00:00<00:00,  4.16it/s][A100%|██████████| 2/2 [00:00<00:00,  4.08it/s]
+2025-03-06 04:01:35,499 - INFO - Saving Vocals stem to videovideo-E__YQCJumY-scene5_scene2_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:01:35,505 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:01:35,505 - INFO - Using pydub for writing.
+2025-03-06 04:01:36,429 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:01:36,429 - INFO - Separation duration: 00:00:02
+Processing videos:  20%|██        | 2/10 [01:12<04:31, 33.92s/it]2025-03-06 04:01:37,403 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-L0s0cPgJig-scene40_scene1.mp4
+2025-03-06 04:01:42,555 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-L0s0cPgJig-scene40_scene1
+2025-03-06 04:01:42,888 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-L0s0cPgJig-scene40_scene1.wav
+2025-03-06 04:01:59,225 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-L0s0cPgJig-scene40_scene1.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-L0s0cPgJig-scene40_scene1.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-L0s0cPgJig-scene40_scene1/%04d.png
+#face is invalid: 0
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.91it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.23it/s][A100%|██████████| 2/2 [00:00<00:00,  2.18it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.69it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.80it/s][A100%|██████████| 2/2 [00:00<00:00,  3.90it/s]
+2025-03-06 04:02:00,717 - INFO - Saving Vocals stem to videovideo-L0s0cPgJig-scene40_scene1_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:02:00,718 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:02:00,718 - INFO - Using pydub for writing.
+2025-03-06 04:02:01,732 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:02:01,732 - INFO - Separation duration: 00:00:02
+Processing videos:  30%|███       | 3/10 [01:37<03:30, 30.11s/it]2025-03-06 04:02:02,977 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-NSbGPiZDXA-scene126_scene2.mp4
+2025-03-06 04:02:06,788 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-NSbGPiZDXA-scene126_scene2
+2025-03-06 04:02:07,122 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-NSbGPiZDXA-scene126_scene2.wav
+2025-03-06 04:02:21,501 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-NSbGPiZDXA-scene126_scene2.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-NSbGPiZDXA-scene126_scene2.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-NSbGPiZDXA-scene126_scene2/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  3.38it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.51it/s][A100%|██████████| 2/2 [00:00<00:00,  2.59it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.82it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.91it/s][A100%|██████████| 2/2 [00:00<00:00,  3.63it/s]
+2025-03-06 04:02:22,872 - INFO - Saving Vocals stem to videovideo-NSbGPiZDXA-scene126_scene2_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:02:22,879 - INFO - Audio duration is 0.00 hours (4.99 seconds).
+2025-03-06 04:02:22,879 - INFO - Using pydub for writing.
+2025-03-06 04:02:23,717 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:02:23,717 - INFO - Separation duration: 00:00:02
+Processing videos:  40%|████      | 4/10 [01:58<02:39, 26.65s/it]2025-03-06 04:02:24,328 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-PBB2phaQKc-scene1_scene159.mp4
+2025-03-06 04:02:27,491 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-PBB2phaQKc-scene1_scene159
+2025-03-06 04:02:27,821 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-PBB2phaQKc-scene1_scene159.wav
+2025-03-06 04:02:41,992 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-PBB2phaQKc-scene1_scene159.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-PBB2phaQKc-scene1_scene159.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-PBB2phaQKc-scene1_scene159/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.11it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.31it/s][A100%|██████████| 2/2 [00:00<00:00,  2.25it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.70it/s][A
+100%|██████████| 2/2 [00:00<00:00,  4.42it/s][A100%|██████████| 2/2 [00:00<00:00,  4.36it/s]
+2025-03-06 04:02:43,409 - INFO - Saving Vocals stem to videovideo-PBB2phaQKc-scene1_scene159_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:02:43,410 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:02:43,416 - INFO - Using pydub for writing.
+2025-03-06 04:02:44,468 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:02:44,468 - INFO - Separation duration: 00:00:02
+Processing videos:  50%|█████     | 5/10 [02:19<02:02, 24.47s/it]2025-03-06 04:02:44,939 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-PBB2phaQKc-scene1_scene68.mp4
+2025-03-06 04:02:47,628 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-PBB2phaQKc-scene1_scene68
+2025-03-06 04:02:47,945 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-PBB2phaQKc-scene1_scene68.wav
+2025-03-06 04:03:01,314 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-PBB2phaQKc-scene1_scene68.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-PBB2phaQKc-scene1_scene68.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-PBB2phaQKc-scene1_scene68/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.88it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.43it/s][A100%|██████████| 2/2 [00:00<00:00,  2.32it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.27it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.83it/s][A100%|██████████| 2/2 [00:00<00:00,  2.73it/s]
+2025-03-06 04:03:03,039 - INFO - Saving Vocals stem to videovideo-PBB2phaQKc-scene1_scene68_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:03:03,071 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:03:03,071 - INFO - Using pydub for writing.
+2025-03-06 04:03:04,091 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:03:04,091 - INFO - Separation duration: 00:00:02
+Processing videos:  60%|██████    | 6/10 [02:39<01:31, 22.98s/it]2025-03-06 04:03:05,007 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-YmMu65-DvI-scene78_scene5.mp4
+2025-03-06 04:03:07,333 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-YmMu65-DvI-scene78_scene5
+2025-03-06 04:03:07,591 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-YmMu65-DvI-scene78_scene5.wav
+2025-03-06 04:03:18,793 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-YmMu65-DvI-scene78_scene5.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-YmMu65-DvI-scene78_scene5.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-YmMu65-DvI-scene78_scene5/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.12it/s][A
+100%|██████████| 2/2 [00:00<00:00,  2.20it/s][A100%|██████████| 2/2 [00:00<00:00,  2.18it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.07it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.80it/s][A100%|██████████| 2/2 [00:00<00:00,  3.83it/s]
+2025-03-06 04:03:20,401 - INFO - Saving Vocals stem to videovideo-YmMu65-DvI-scene78_scene5_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:03:20,403 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:03:20,403 - INFO - Using pydub for writing.
+2025-03-06 04:03:21,416 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:03:21,416 - INFO - Separation duration: 00:00:02
+Processing videos:  70%|███████   | 7/10 [02:56<01:03, 21.05s/it]2025-03-06 04:03:22,099 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-cPUv5zCggA-scene1_scene39.mp4
+2025-03-06 04:03:24,537 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-cPUv5zCggA-scene1_scene39
+2025-03-06 04:03:24,818 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-cPUv5zCggA-scene1_scene39.wav
+2025-03-06 04:03:34,592 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-cPUv5zCggA-scene1_scene39.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-cPUv5zCggA-scene1_scene39.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-cPUv5zCggA-scene1_scene39/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.08it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.08it/s][A100%|██████████| 2/2 [00:00<00:00,  2.87it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  4.45it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.08it/s][A100%|██████████| 2/2 [00:00<00:00,  3.23it/s]
+2025-03-06 04:03:36,000 - INFO - Saving Vocals stem to videovideo-cPUv5zCggA-scene1_scene39_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:03:36,001 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:03:36,002 - INFO - Using pydub for writing.
+2025-03-06 04:03:37,125 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:03:37,125 - INFO - Separation duration: 00:00:02
+Processing videos:  80%|████████  | 8/10 [03:12<00:38, 19.39s/it]2025-03-06 04:03:37,925 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-j838dxyHyE-scene260_scene23.mp4
+2025-03-06 04:03:41,371 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-j838dxyHyE-scene260_scene23
+2025-03-06 04:03:41,700 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-j838dxyHyE-scene260_scene23.wav
+2025-03-06 04:03:57,470 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo-j838dxyHyE-scene260_scene23.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo-j838dxyHyE-scene260_scene23.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo-j838dxyHyE-scene260_scene23/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  2.29it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.94it/s][A100%|██████████| 2/2 [00:01<00:00,  1.99it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  3.35it/s][A
+100%|██████████| 2/2 [00:00<00:00,  3.90it/s][A100%|██████████| 2/2 [00:00<00:00,  3.80it/s]
+2025-03-06 04:03:59,072 - INFO - Saving Vocals stem to videovideo-j838dxyHyE-scene260_scene23_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:03:59,073 - INFO - Audio duration is 0.00 hours (4.99 seconds).
+2025-03-06 04:03:59,073 - INFO - Using pydub for writing.
+2025-03-06 04:03:59,815 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:03:59,815 - INFO - Separation duration: 00:00:02
+Processing videos:  90%|█████████ | 9/10 [03:35<00:20, 20.57s/it]2025-03-06 04:04:01,091 - INFO - Processing video: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo03yDOx1tH0A-scene157_scene1.mp4
+2025-03-06 04:04:03,399 - INFO - Images saved to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo03yDOx1tH0A-scene157_scene1
+2025-03-06 04:04:03,690 - INFO - Audio extracted to: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo03yDOx1tH0A-scene157_scene1.wav
+2025-03-06 04:04:12,344 - INFO - Starting separation process for audio_file_path: /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/audios/videovideo03yDOx1tH0A-scene157_scene1.wav
+Running command: ffmpeg -v error -i /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos/videovideo03yDOx1tH0A-scene157_scene1.mp4 -vf fps=24.0 /wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/images/videovideo03yDOx1tH0A-scene157_scene1/%04d.png
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  1.37it/s][A
+100%|██████████| 2/2 [00:01<00:00,  1.66it/s][A100%|██████████| 2/2 [00:01<00:00,  1.61it/s]
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+ 50%|█████     | 1/2 [00:00<00:00,  5.75it/s][A
+100%|██████████| 2/2 [00:00<00:00,  4.79it/s][A100%|██████████| 2/2 [00:00<00:00,  4.90it/s]
+2025-03-06 04:04:14,079 - INFO - Saving Vocals stem to videovideo03yDOx1tH0A-scene157_scene1_(Vocals)_Kim_Vocal_2.wav...
+2025-03-06 04:04:14,080 - INFO - Audio duration is 0.00 hours (5.06 seconds).
+2025-03-06 04:04:14,080 - INFO - Using pydub for writing.
+2025-03-06 04:04:15,548 - INFO - Clearing input audio file paths, sources and stems...
+2025-03-06 04:04:15,548 - INFO - Separation duration: 00:00:03
+Processing videos: 100%|██████████| 10/10 [03:50<00:00, 18.86s/it]Processing videos: 100%|██████████| 10/10 [03:50<00:00, 23.08s/it]

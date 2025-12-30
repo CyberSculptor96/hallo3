@@ -1,0 +1,2 @@
+运行check_fps_and_frames.py，检查evaluation/dataset/HDTF/outputs/videos目录下的所有生成视频的
+fps均为25，总帧数均为125.

@@ -214,6 +214,8 @@ class ImageProcessorForDataProcessing():
             landmarks, height, width = get_landmark_overframes(
                 self.landmarker, source_image_path)
             assert len(landmarks) == len(os.listdir(source_image_path))
+            landmarks = [item for item in landmarks if len(item) > 0]
+            # assert len(landmarks) > 0
 
             # 3 render face and lip mask
             face_mask = get_union_face_mask(landmarks, height, width)

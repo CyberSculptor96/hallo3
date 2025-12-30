@@ -497,6 +497,8 @@ def get_union_face_mask(landmarks, height, width, expand_ratio=1):
     """
     face_masks = []
     for landmark in landmarks:
+        if len(landmark) == 0:
+            continue
         face_masks.append(get_face_mask(landmarks=landmark,height=height,width=width,expand_ratio=expand_ratio))
     union_mask = get_union_mask(face_masks)
     return union_mask
@@ -887,7 +889,7 @@ def get_fps(video_path: Path):
     
     return fps
  
-def convert_video_to_images(video_path: Path, output_dir: Path) -> Path:
+def convert_video_to_images(video_path: Path, output_dir: Path, fps: float = 25) -> Path:
     """
     Convert a video file into a sequence of images.
 
@@ -906,8 +908,9 @@ def convert_video_to_images(video_path: Path, output_dir: Path) -> Path:
     """
     ffmpeg_command = [
         'ffmpeg',
+        '-v', 'error',
         '-i', str(video_path),
-        '-vf', 'fps=25',
+        '-vf', f'fps={fps}',
         str(output_dir / '%04d.png')
     ]
 

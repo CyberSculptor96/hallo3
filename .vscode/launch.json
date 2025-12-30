@@ -1,0 +1,131 @@
+{
+    "configurations": [
+        {
+            "name": "Train Video with torchrun",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "torch.distributed.run",
+            "console": "integratedTerminal",
+            "args": [
+                "--standalone",
+                "--nproc_per_node=4",
+                "--master_port",
+                "27502",
+                "hallo3/train_video.py",
+                "--base",
+                "configs/cogvideox_5b_i2v_s1.yaml",
+                "configs/sft_s1.yaml",
+                // "configs/cogvideox_5b_i2v_s2.yaml",
+                // "configs/sft_s2.yaml",
+                "--seed",
+                "12345"
+            ],
+            "env": {
+                "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True",
+                "SEED": "12345"
+            },
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 包含参数的 run_syncnet.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--initial_model=/wangbenyou/huanghj/workspace/hallo3/evaluation/syncnet_python/data/syncnet_v2.model",
+                "--videofile=/wangbenyou/huanghj/workspace/hallo3/output/output_testset/1F8VqXsUGjQ-scene21_scene12-seed27769/1F8VqXsUGjQ-scene21_scene12-seed27769.mp4",
+                "--reference=1F8VqXsUGjQ-scene21_scene12",
+                "--data_dir=/wangbenyou/huanghj/workspace/hallo3/evaluation/syncnet_python/output"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 包含参数的 lip_sync_filter.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--config=/wangbenyou/huanghj/workspace/hallo3/evaluation/audio_video_sync_filter/config/config.yaml"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 包含参数的 fid_score.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "/wangbenyou/huanghj/workspace/hallo3/evaluation/pytorch_fid/dataset_pair/all_images",
+                // "/wangbenyou/huanghj/workspace/hallo3/evaluation/pytorch_fid/dataset_pair/all_images-real",
+                "--save-stats",
+                "/wangbenyou/huanghj/workspace/hallo3/evaluation/pytorch_fid/output"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 包含参数的 extract_meta_info.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                // "-i", "/wangbenyou/shunian/workspace/talking_face/Talking-Face-Datapipe/7_video_caption/data/test_time/sample/fixed_sample_data_total.json",
+                "-r", "/wangbenyou/huanghj/data/shunian-hallo3-dataset",
+                "-n", "shunian-dataset-hallo3",
+                // "-i", "/wangbenyou/shunian/workspace/talking_face/Talking-Face-Datapipe/7_video_caption/data/test_time/sample/fixed_sample_data_total.json",
+                "-w=1"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 包含参数的 data_preprocess.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                // "-i", "/wangbenyou/huanghj/workspace/hallo3/json/fixed_sample_data_total.json",
+                // // "-i", "/wangbenyou/huanghj/data/shunian-hallo3-dataset/videos",
+                // "-o", "/wangbenyou/huanghj/data/shunian-hallo3-dataset",
+                // "-p=8",
+                // "-r=0"
+                "-i", "/wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/videos",
+                // "-i", "/wangbenyou/huanghj/data/shunian-hallo3-dataset/videos",
+                "-o", "/wangbenyou/huanghj/data/shunian-hallo3-dataset/dev/",
+                "-p=1",
+                "-r=0"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 包含参数的 sample_video.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--base",
+                "./configs/cogvideox_5b_i2v_s2.yaml",
+                "./configs/inference.yaml",
+                "--seed",
+                "1",
+                "--input-file",
+                "./examples/inference/input.txt",
+                "--output-dir",
+                "./output"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Python 调试程序: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+    ]
+}

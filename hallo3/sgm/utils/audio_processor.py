@@ -70,7 +70,7 @@ class AudioProcessor:
         self.wav2vec_feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(wav2vec_model_path, local_files_only=True)
 
 
-    def preprocess(self, wav_file: str, clip_length: int=-1, fps: float=25.0):
+    def preprocess(self, wav_file: str, clip_length: int=-1, fps: float=25.0, expected_seq_len: int=121):
         """
         Preprocess a WAV audio file by separating the vocals from the background and resampling it to a 16 kHz sample rate.
         The separated vocal track is then converted into wav2vec2 for further processing or analysis.
@@ -103,6 +103,9 @@ class AudioProcessor:
         speech_array, sampling_rate = librosa.load(vocal_audio_file, sr=self.sample_rate)
         audio_feature = np.squeeze(self.wav2vec_feature_extractor(speech_array, sampling_rate=sampling_rate).input_values)
         seq_len = math.ceil(len(audio_feature) / self.sample_rate * fps)
+        # if abs(seq_len - expected_seq_len) > 2:
+        #     print(f"[Warning]: {wav_file} has a seq_len of {seq_len}, which is too short or too long.")
+        # seq_len = expected_seq_len
         audio_length = seq_len
 
         audio_feature = torch.from_numpy(audio_feature).float().to(device=self.device)

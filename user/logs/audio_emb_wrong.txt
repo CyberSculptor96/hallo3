@@ -1,3 +1,5 @@
+错误原因：audio_embs中有些.pt文件的第一维的size小于视频帧数。
+
 [2025-02-17 05:51:36,813] [INFO] [RANK 0]  iteration      746/   30000 | elapsed time per iteration (ms): 19476.8 | learning rate 9.851E-06 | total loss 6.635387E-02 | loss 6.635387E-02 |speed 3.08 samples/(min*GPU)
 [2025-02-17 05:51:36,815] [INFO] [RANK 0] time (ms) | forward: 8861.40 | backward: 8763.81 | allreduce: 0.00 | optimizer: 59.19 | data loader: 0.72
 [2025-02-17 05:51:54,750] [INFO] [RANK 0]  iteration      747/   30000 | elapsed time per iteration (ms): 17936.8 | learning rate 9.851E-06 | total loss 1.017734E-01 | loss 1.017734E-01 |speed 3.35 samples/(min*GPU)

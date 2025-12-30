@@ -245,7 +245,6 @@ def sampling_main(args, model_cls):
     T, H, W, C, F = args.sampling_num_frames, image_size[0], image_size[1], args.latent_channels, 8
     L = (T-1)*4 + 1
 
-
     num_samples = [1]
     force_uc_zero_embeddings = ["txt"]
     device = model.device
@@ -253,182 +252,206 @@ def sampling_main(args, model_cls):
     model = model.to("cuda")
     n_motion_frame = 2
     mask_rate = 0.1
+
+    # 检查断点文件
+    checkpoint_file = os.path.join(args.output_dir, "checkpoint.txt")
+    if os.path.exists(checkpoint_file):
+        with open(checkpoint_file, "r") as f:
+            completed_tasks = f.read().splitlines()
+        print(f"Found checkpoint with {len(completed_tasks)} completed tasks")
+    else:
+        completed_tasks = []
+        print("Starting fresh run with no checkpoint")
+
     with torch.no_grad():
         for text, cnt in tqdm(data_iter):
-            assert args.image2video
-            
-            input_list = text.split("@@")
-            assert len(input_list)==3
-            text, image_path, audio_path = input_list[0], input_list[1], input_list[2]
-            assert os.path.exists(image_path), image_path
-            assert os.path.exists(audio_path), audio_path
-            
+            try:
+                assert args.image2video
+                
+                input_list = text.split("@@")
+                assert len(input_list)==3
+                text, image_path, audio_path = input_list[0], input_list[1], input_list[2]
+                assert os.path.exists(image_path), image_path
+                assert os.path.exists(audio_path), audio_path
+                
+                # 生成任务唯一标识
+                task_id = f"{image_path}@@{audio_path}"
+                
+                # 检查是否已完成
+                if task_id in completed_tasks:
+                    print(f"Skipping completed task: {task_id}")
+                    continue
 
-            name = os.path.splitext(os.path.basename(image_path))[0] + "-" + os.path.splitext(os.path.basename(audio_path))[0] + f"-seed_{args.seed}"
-            save_path = os.path.join(args.output_dir, name)
-            os.makedirs(save_path, exist_ok=True)
+                name = os.path.splitext(os.path.basename(image_path))[0] + "-" + os.path.splitext(os.path.basename(audio_path))[0] + f"-seed_{args.seed}"
+                save_path = os.path.join(args.output_dir, name)
+                os.makedirs(save_path, exist_ok=True)
 
-            audio_emb, length = audio_processor.preprocess(audio_path, L)
-            audio_emb = process_audio_emb(audio_emb) 
+                audio_emb, length = audio_processor.preprocess(audio_path, L)
+                audio_emb = process_audio_emb(audio_emb) 
 
-            face_emb, face_mask_path = image_processor.preprocess(image_path, save_path, 1.2)
-            face_emb = face_emb.reshape(1, -1)
-            face_emb = torch.tensor(face_emb).to("cuda")
-            
-            image = Image.open(image_path).convert("RGB")
-            image = transform(image).unsqueeze(0).to("cuda")
-            face_mask = Image.open(face_mask_path).convert("RGB")
-            face_mask = transform(face_mask).unsqueeze(0).to("cuda")
-            ref_image = image * face_mask
-            
-            _, _, h, w = image.shape
-            if h==w:
-                is_padding = True
-            else:
-                is_padding = False
-            
-            if is_padding:
-                image = resize_for_square_padding(image, image_size).clamp(0, 1)
-            else:
-                image = resize_for_rectangle_crop(image, image_size, reshape_mode="center").unsqueeze(0)
-            
-            image = image * 2.0 - 1.0
-            motion_image = image.unsqueeze(2).to(torch.bfloat16)
-            ref_image_pixel = image.unsqueeze(2).to(torch.bfloat16)
-            
-            
-            if is_padding:
-                ref_image = resize_for_square_padding(ref_image, image_size).clamp(0, 1)
-            else:
-                ref_image = resize_for_rectangle_crop(ref_image, image_size, reshape_mode="center").unsqueeze(0)
-            
-            
-            ref_image = ref_image * 2.0 - 1.0
-            ref_image = ref_image.unsqueeze(2).to(torch.bfloat16)
-            
-            motion_image = torch.cat([motion_image]*n_motion_frame, dim=2)
-            mask_image = add_mask_to_first_frame(motion_image, mask_rate=mask_rate)
-            mask_image = torch.cat([ref_image_pixel, mask_image], dim=2)
-            mask_image = model.encode_first_stage(mask_image, None)
-            mask_image = mask_image.permute(0, 2, 1, 3, 4).contiguous()
-            
-            ref_image = model.encode_first_stage(ref_image, None)
-            ref_image = ref_image.permute(0, 2, 1, 3, 4).contiguous()
-                    
-            pad_shape = (mask_image.shape[0], T - 1, C, H // F, W // F)
-            mask_image = torch.concat([mask_image, torch.zeros(pad_shape).to(mask_image.device).to(mask_image.dtype)], dim=1)
-
-            value_dict = {
-                "prompt": text,
-                "negative_prompt": "",
-                "num_frames": torch.tensor(T).unsqueeze(0),
-            }
-
-            batch, batch_uc = get_batch(
-                get_unique_embedder_keys_from_conditioner(model.conditioner), value_dict, num_samples
-            )
-            for key in batch:
-                if isinstance(batch[key], torch.Tensor):
-                    print(key, batch[key].shape)
-                elif isinstance(batch[key], list):
-                    print(key, [len(l) for l in batch[key]])
+                face_emb, face_mask_path = image_processor.preprocess(image_path, save_path, 1.2)
+                face_emb = face_emb.reshape(1, -1)
+                face_emb = torch.tensor(face_emb).to("cuda")
+                
+                image = Image.open(image_path).convert("RGB")
+                image = transform(image).unsqueeze(0).to("cuda")
+                face_mask = Image.open(face_mask_path).convert("RGB")
+                face_mask = transform(face_mask).unsqueeze(0).to("cuda")
+                ref_image = image * face_mask
+                
+                _, _, h, w = image.shape
+                if h==w:
+                    is_padding = True
                 else:
-                    print(key, batch[key])
-            c, uc = model.conditioner.get_unconditional_conditioning(
-                batch,
-                batch_uc=batch_uc,
-                force_uc_zero_embeddings=force_uc_zero_embeddings,
-            )
-
-            for k in c:
-                if not k == "crossattn":
-                    c[k], uc[k] = map(lambda y: y[k][: math.prod(num_samples)].to("cuda"), (c, uc))
-
-            times = audio_emb.shape[0] // (L-n_motion_frame)
-            if times * (L-n_motion_frame) < audio_emb.shape[0]:
-                times += 1
-            video = []
-            pre_fix = torch.zeros_like(audio_emb[:n_motion_frame])
-
-            # times = 1
-            for t in range(times):
-                print(f"[{t+1}/{times}]")
-
-                if args.image2video and mask_image is not None:
-                    c["concat"] = mask_image
-                    uc["concat"] = mask_image
-
-                assert args.batch_size == 1
-                audio_tensor = audio_emb[
-                    t * (L-n_motion_frame): min((t + 1) * (L-n_motion_frame), audio_emb.shape[0])
-                ]
+                    is_padding = False
                 
-                audio_tensor = torch.cat([pre_fix, audio_tensor], dim=0)
-                pre_fix = audio_tensor[-n_motion_frame:]
+                if is_padding:
+                    image = resize_for_square_padding(image, image_size).clamp(0, 1)
+                else:
+                    image = resize_for_rectangle_crop(image, image_size, reshape_mode="center").unsqueeze(0)
                 
-                if audio_tensor.shape[0]!=L:
-                    pad = L - audio_tensor.shape[0]
-                    assert pad > 0
-                    padding = pre_fix[-1:].repeat(pad, *([1] * (pre_fix.dim() - 1)))
-                    audio_tensor = torch.cat([audio_tensor, padding], dim=0)
+                image = image * 2.0 - 1.0
+                motion_image = image.unsqueeze(2).to(torch.bfloat16)
+                ref_image_pixel = image.unsqueeze(2).to(torch.bfloat16)
                 
-                audio_tensor = audio_tensor.unsqueeze(0).to(device=device, dtype=torch.bfloat16)
+                if is_padding:
+                    ref_image = resize_for_square_padding(ref_image, image_size).clamp(0, 1)
+                else:
+                    ref_image = resize_for_rectangle_crop(ref_image, image_size, reshape_mode="center").unsqueeze(0)
                 
-                samples_z = sample_func(
-                    c,
-                    uc=uc,
-                    batch_size=1,
-                    shape=(T, C, H // F, W // F),
-                    audio_emb=audio_tensor,
-                    ref_image=ref_image,
-                    face_emb=face_emb
-                )
-
-                samples_z = samples_z.permute(0, 2, 1, 3, 4).contiguous()
-
-                torch.cuda.empty_cache()
-                latent = 1.0 / model.scale_factor * samples_z
-
-                # Decode latent serial to save GPU memory
-                recons = []
-                loop_num = (T - 1) // 2
-                for i in range(loop_num):
-                    if i == 0:
-                        start_frame, end_frame = 0, 3
-                    else:
-                        start_frame, end_frame = i * 2 + 1, i * 2 + 3
-                    if i == loop_num - 1:
-                        clear_fake_cp_cache = True
-                    else:
-                        clear_fake_cp_cache = False
-                    with torch.no_grad():
-                        recon = model.first_stage_model.decode(
-                            latent[:, :, start_frame:end_frame].contiguous(), clear_fake_cp_cache=clear_fake_cp_cache
-                        )
-
-                    recons.append(recon)
-
-                recon = torch.cat(recons, dim=2).to(torch.float32)
-                samples_x = recon.permute(0, 2, 1, 3, 4).contiguous()
-                samples = torch.clamp((samples_x + 1.0) / 2.0, min=0.0, max=1.0).cpu()
+                ref_image = ref_image * 2.0 - 1.0
+                ref_image = ref_image.unsqueeze(2).to(torch.bfloat16)
                 
-                motion_image = samples[:,-n_motion_frame:].permute(0, 2, 1, 3, 4).contiguous().to(dtype=torch.bfloat16, device="cuda")
-                motion_image = motion_image * 2 - 1
+                motion_image = torch.cat([motion_image]*n_motion_frame, dim=2)
                 mask_image = add_mask_to_first_frame(motion_image, mask_rate=mask_rate)
                 mask_image = torch.cat([ref_image_pixel, mask_image], dim=2)
                 mask_image = model.encode_first_stage(mask_image, None)
                 mask_image = mask_image.permute(0, 2, 1, 3, 4).contiguous()
                 
+                ref_image = model.encode_first_stage(ref_image, None)
+                ref_image = ref_image.permute(0, 2, 1, 3, 4).contiguous()
+                        
+                pad_shape = (mask_image.shape[0], T - 1, C, H // F, W // F)
                 mask_image = torch.concat([mask_image, torch.zeros(pad_shape).to(mask_image.device).to(mask_image.dtype)], dim=1)
-                
-                video.append(samples[:, n_motion_frame:])
 
-            video = torch.cat(video, dim=1)
-            video = video[:, :length]
-            
-            if mpu.get_model_parallel_rank() == 0:
-                save_video_as_grid_and_mp4_with_audio(video, save_path, audio_path, fps=args.sampling_fps, is_padding=is_padding)
-                print("saving in: ", save_path)
+                value_dict = {
+                    "prompt": text,
+                    "negative_prompt": "",
+                    "num_frames": torch.tensor(T).unsqueeze(0),
+                }
+
+                batch, batch_uc = get_batch(
+                    get_unique_embedder_keys_from_conditioner(model.conditioner), value_dict, num_samples
+                )
+                for key in batch:
+                    if isinstance(batch[key], torch.Tensor):
+                        print(key, batch[key].shape)
+                    elif isinstance(batch[key], list):
+                        print(key, [len(l) for l in batch[key]])
+                    else:
+                        print(key, batch[key])
+                c, uc = model.conditioner.get_unconditional_conditioning(
+                    batch,
+                    batch_uc=batch_uc,
+                    force_uc_zero_embeddings=force_uc_zero_embeddings,
+                )
+
+                for k in c:
+                    if not k == "crossattn":
+                        c[k], uc[k] = map(lambda y: y[k][: math.prod(num_samples)].to("cuda"), (c, uc))
+
+                times = audio_emb.shape[0] // (L-n_motion_frame)
+                if times * (L-n_motion_frame) < audio_emb.shape[0]:
+                    times += 1
+                video = []
+                pre_fix = torch.zeros_like(audio_emb[:n_motion_frame])
+
+                for t in range(times):
+                    print(f"[{t+1}/{times}]")
+
+                    if args.image2video and mask_image is not None:
+                        c["concat"] = mask_image
+                        uc["concat"] = mask_image
+
+                    assert args.batch_size == 1
+                    audio_tensor = audio_emb[
+                        t * (L-n_motion_frame): min((t + 1) * (L-n_motion_frame), audio_emb.shape[0])
+                    ]
+                    
+                    audio_tensor = torch.cat([pre_fix, audio_tensor], dim=0)
+                    pre_fix = audio_tensor[-n_motion_frame:]
+                    
+                    if audio_tensor.shape[0]!=L:
+                        pad = L - audio_tensor.shape[0]
+                        assert pad > 0
+                        padding = pre_fix[-1:].repeat(pad, *([1] * (pre_fix.dim() - 1)))
+                        audio_tensor = torch.cat([audio_tensor, padding], dim=0)
+                    
+                    audio_tensor = audio_tensor.unsqueeze(0).to(device=device, dtype=torch.bfloat16)
+                    
+                    samples_z = sample_func(
+                        c,
+                        uc=uc,
+                        batch_size=1,
+                        shape=(T, C, H // F, W // F),
+                        audio_emb=audio_tensor,
+                        ref_image=ref_image,
+                        face_emb=face_emb
+                    )
+
+                    samples_z = samples_z.permute(0, 2, 1, 3, 4).contiguous()
+
+                    torch.cuda.empty_cache()
+                    latent = 1.0 / model.scale_factor * samples_z
+
+                    # Decode latent serial to save GPU memory
+                    recons = []
+                    loop_num = (T - 1) // 2
+                    for i in range(loop_num):
+                        if i == 0:
+                            start_frame, end_frame = 0, 3
+                        else:
+                            start_frame, end_frame = i * 2 + 1, i * 2 + 3
+                        if i == loop_num - 1:
+                            clear_fake_cp_cache = True
+                        else:
+                            clear_fake_cp_cache = False
+                        with torch.no_grad():
+                            recon = model.first_stage_model.decode(
+                                latent[:, :, start_frame:end_frame].contiguous(), clear_fake_cp_cache=clear_fake_cp_cache
+                            )
+
+                        recons.append(recon)
+
+                    recon = torch.cat(recons, dim=2).to(torch.float32)
+                    samples_x = recon.permute(0, 2, 1, 3, 4).contiguous()
+                    samples = torch.clamp((samples_x + 1.0) / 2.0, min=0.0, max=1.0).cpu()
+                    
+                    motion_image = samples[:,-n_motion_frame:].permute(0, 2, 1, 3, 4).contiguous().to(dtype=torch.bfloat16, device="cuda")
+                    motion_image = motion_image * 2 - 1
+                    mask_image = add_mask_to_first_frame(motion_image, mask_rate=mask_rate)
+                    mask_image = torch.cat([ref_image_pixel, mask_image], dim=2)
+                    mask_image = model.encode_first_stage(mask_image, None)
+                    mask_image = mask_image.permute(0, 2, 1, 3, 4).contiguous()
+                    
+                    mask_image = torch.concat([mask_image, torch.zeros(pad_shape).to(mask_image.device).to(mask_image.dtype)], dim=1)
+                    
+                    video.append(samples[:, n_motion_frame:])
+
+                video = torch.cat(video, dim=1)
+                video = video[:, :length]
+                
+                if mpu.get_model_parallel_rank() == 0:
+                    save_video_as_grid_and_mp4_with_audio(video, save_path, audio_path, fps=args.sampling_fps, is_padding=is_padding)
+                    print("saving in: ", save_path)
+                    
+                # 记录已完成的任务
+                with open(checkpoint_file, "a") as f:
+                    f.write(f"{task_id}\n")
+                    
+            except Exception as e:
+                print(f"Error processing task: {str(e)}")
+                continue
 
 
 if __name__ == "__main__":

@@ -1,3 +1,0 @@
-A woman talking on a dimly lit beach with the waves of the sea behind her@@examples/inference/images/0003.jpg@@examples/inference/audios/0003.wav
-A little girl talking around a campfire@@examples/inference/images/0001.jpg@@examples/inference/audios/0001.wav
-An older man with messy hair is on vacation at the beach, posting selfie videos to show his friends the turquoise sea behind him@@examples/inference/images/0008.jpg@@examples/inference/audios/0008.wav
